@@ -1,8 +1,8 @@
-article,year,n_crops,crop_spec,crop_gmo,crop_density,n_plots,size_plots,fertilizer,soil_work,weed_control,treatment_timing,herbicide,n_treatments,weedy_control,weed_free_control,crop_metric,test,effect_of_weeds,,effect_of_herbicides
-myers2005,2001,1,corn,TRUE,69000,,,TRUE,ploughing,chemical,POST,glyphosate,1,TRUE,TRUE,yield,ANOVA,decrease,,increase
-myers2005,2002,1,corn,TRUE,69000,,,TRUE,ploughing,chemical,POST,glyphosate,1,TRUE,TRUE,yield,ANOVA,decrease,,increase
-vangessel1995,1991,1,corn,FALSE,86100,10,"37,5",TRUE,NA,manual,POST,no,1,TRUE,TRUE,yield,ANOVA,decrease,"-0,12",NA
-vangessel1995,1992,1,corn,FALSE,86100,13,"37,5",TRUE,NA,manual,POST,no,1,TRUE,TRUE,yield,ANOVA,decrease,"-0,06",NA
-silva2011,2006,1,corn,FALSE,50000,40,NA,TRUE,hoeing,mechanic,NA,,,TRUE,TRUE,yield,,,,
-silva2011,2006,1,corn,FALSE,50000,40,NA,TRUE,hoeing,mechanic,NA,,,TRUE,TRUE,leaf_surface,,,,
-silva2011,2006,1,corn,FALSE,50000,40,NA,TRUE,hoeing,mechanic,NA,,,TRUE,TRUE,dry_matter,,,,
+article,year,n,species,gmo,density,fertilizer,soil_work,weed_control,treatment_timing,herbicide,n_treatments,metric,test,effect_of_weeds,effect_of_weeds_quant,effect_of_herb,effect_of_herb_quant
+myers2005,2001,1,corn,TRUE,69000,TRUE,ploughing,chemical,POST,glyphosate,1,yield,ANOVA,decrease,NA,increase,
+myers2005,2002,1,corn,TRUE,69000,TRUE,ploughing,chemical,POST,glyphosate,1,yield,ANOVA,decrease,NA,increase,
+vangessel1995,1991,1,corn,FALSE,86100,TRUE,NA,manual,POST,no,1,yield,ANOVA,decrease,-0.12,NA,
+vangessel1995,1992,1,corn,FALSE,86100,TRUE,NA,manual,POST,no,1,yield,ANOVA,decrease,-0.06,NA,
+silva2011,2006,1,corn,FALSE,50000,TRUE,hoeing,mechanic,NA,,,yield,,,,,
+silva2011,2006,1,corn,FALSE,50000,TRUE,hoeing,mechanic,NA,,,leaf_surface,,,,,
+silva2011,2006,1,corn,FALSE,50000,TRUE,hoeing,mechanic,NA,,,dry_matter,,,,,

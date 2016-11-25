@@ -1,5 +1,5 @@
-article,first_author,country,year_start,year_end,affiliation,financing,experiment_type
-myers2005,myers_mw,usa,2001,2002,pennsylvania_university,public,field
-vangessel1995,vangessel_mj,usa,1991,1992,colorado_university,public,field
-silva2011,silva_psl,brazil,2006,2007,brazil_universities,public,field
-tharp1999,tharp_be,usa,1996,1997,michigan_university,NA,field
+article,country,year_start,year_end,financing,
+myers2005,usa,2001,2002,public,
+vangessel1995,usa,1991,1992,public,
+silva2011,brazil,2006,2007,public,
+tharp1999,usa,1996,1997,NA,
