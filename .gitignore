@@ -1,0 +1,31 @@
+# generic files
+*~
+.~*
+.RData
+*.aux
+*.out
+*.log
+*.synctex.gz
+*.sw*
+*.bbl
+*.blg
+*.gl*
+*.xdy
+*.nav
+*.toc
+*.snm
+*.Rhistory
+*.Rout
+*.fdb_latexmk
+*.fls
+*.glsdefs
+*.ist
+*.lof
+
+# specific files
+R/reading_grid.ods
+
+# directories
+pdfs/
+
+# keep specific files
