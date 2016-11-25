@@ -1,0 +1,6 @@
+article,n_species,type,metrics,weed_free_control,effect_of_control
+myers2005,1,plants,density,TRUE,decrease
+myers2005,1,plants,height,TRUE,decrease
+myers2005,1,plants,aboveground_biomass,TRUE,decrease
+vangessel1995,NA,plants,density,TRUE,decrease
+silva2011,18,plants,density,FALSE,decrease
