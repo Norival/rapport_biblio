@@ -24,8 +24,11 @@
 
 # specific files
 R/reading_grid.ods
+report.txt
 
 # directories
 pdfs/
+notes/
+latex
 
 # keep specific files
