@@ -2,7 +2,8 @@ article,year,n_species,species,type,metrics
 myers2005,,1,SORVU,plants,density
 myers2005,,1,SORVU,plants,height
 myers2005,,1,SORVU,plants,aboveground_biomass
-vangessel1995,,NA,,plants,density
+vangessel1995,1991,NA,NA,plants,density
+vangessel1995,1992,NA,NA,plants,density
 silva2011,,18,,plants,density
 silva2011,,,,,
 tharp1999,1996,4,SETFA,plants,percent_control

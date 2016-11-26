@@ -1,8 +1,8 @@
 article,year,experiment_type,farmer,n_farms,n_plots,size_plots,weedfree_control,weedy_control
 myers2005,2001,field,FALSE,5,NA,NA,TRUE,TRUE
 myers2005,2002,field,FALSE,5,NA,NA,TRUE,TRUE
-vangessel1995,1991,field,FALSE,,10,37.5,,
-vangessel1995,1993,field,FALSE,,13,37.5,,
+vangessel1995,1991,field,FALSE,1,10,37.5,TRUE,TRUE
+vangessel1995,1992,field,FALSE,,13,37.5,TRUE,TRUE
 silva2011,,field,FALSE,,40,,,
 tharp1999,1996,field,FALSE,1,,32.5,TRUE,TRUE
 tharp1999,1997,field,FALSE,,,37.6,TRUE,TRUE
