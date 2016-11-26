@@ -2,3 +2,4 @@ x 2016-11-26 @read influence of herbicide application rate, timing, and interrow
 x 2016-11-26 @read influence of weed density and distribution on corn (zea-mays) yield
 x 2016-11-26 @read the effect of weed density and application timing on weed control and corn grain yield
 x 2016-11-26 @read growth and yield of corn grain and green ear in competition with weeds
+x 2016-11-26 @reading_grid re-organize columns (make a separate results file)

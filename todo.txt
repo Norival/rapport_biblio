@@ -1,5 +1,4 @@
 (A) @README update data structure
-(A) @reading_grid re-organize columns (make a separate results file)
 (A) @report make a detailed plan
 (A) @find tillage and weed management affects winter-wheat yield in an integrated pest-management system
 (A) @read effect of postemergence glyphosate application timing on weed control and grain yield in glyphosate-resistant corn: results of a 2-yr multistate study
