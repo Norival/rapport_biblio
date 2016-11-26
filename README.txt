@@ -44,22 +44,20 @@ Informations sur les cultures.
 - n [num]                       : nombre de cultures différentes
 - species [string]              : espèces de cultures
 - gmo [bool]                    : culture OGM ou non [TRUE/FALSE]
+- gmo_type [string]             : type d'OGM (résistant à un herbicide, etc.)
 - density [num]                 : densité de semis de la culture (en graines /
                                        hectare)
 - fertilizer [bool]             : utilisation d'un fertilisant [TRUE/FALSE]
-- soil_work [string]            : travail du sol mis ne oeuvre [ploughing/hoeing]
+- soil_work [string]            : travail du sol mis en oeuvre [ploughing/hoeing]
 - weed_control [string]         : type de contrôle des adventices
                                   [manual/mechanic/chemical/no_control]
-- treatment_timing [string]     : timing du traitement herbicide [post/pre]
+- treatment_timing [string]     : timing du traitement herbicide
+                                  [POST/PRE/LPOST/EPOST]
 - herbicide [string]            : quel herbicide a été utilisé
 - n_treatments [num]            : nombre de traitements effectués
 - metric [string]               : donnée mesurée sur la culture
-- test [string]                 : test statistique utilisé sur la métrique
-- effect_of_weeds [string]      : effet qualitatif des adventices sur la métrique
-- effect_of_weeds_quant [num]   : effet quantitatif des adventices sur la
-                                  culture
-- effect_of_herb [string]       : effet qualitatif des herbicides sur la métrique
-- effect_of_herb_quant [string] : effet quantitatif des herbicides sur la métrique
+- adjustment [string]           : ajustement effectué sur la métrique (ex:
+                                  ajustment d'humidité pour le rendement)
 
 #### reading_weeds.csv
 
@@ -73,7 +71,15 @@ Informations sur les adventices trouvées.
 - type [string]                   : comment sont échantillonnées les adventices
                                     [plants/seed_bank]
 - metric [string]                 : donnée mesurée sur les adventices
-- test [string]                   : test statistique utilisé sur la métrique
-- effect_of_control [string]      : effet qualitatif sur la métrique
-- effect_of_control [string]      : effet qualitatif des adventices sur la métrique
-- effect_of_control_quant [string]: effet quantitatifdes adventices sur la métrique
+
+
+#### reading_results.csv
+
+Résultats trouvés sur les adventices et les cultures.
+
+- weed_species [string]   : espèce d'adventice
+- type [string]           : type de résultat (traitement ou contrôle)
+- herbicide [string]      : herbicide analysé
+- application_rate [num]  : taux d'application de l'herbicide considéré
+- percent_control [num]   : pourcentage de contrôle effectué sur les adventices
+- grain_yield [num]       : rendement en graines de la culture
