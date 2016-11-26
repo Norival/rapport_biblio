@@ -4,8 +4,8 @@ myers2005,,1,SORVU,plants,height
 myers2005,,1,SORVU,plants,aboveground_biomass
 vangessel1995,1991,NA,NA,plants,density
 vangessel1995,1992,NA,NA,plants,density
-silva2011,,18,,plants,density
-silva2011,,,,,
+silva2011,2006,18,ALRTE,plants,diversity
+silva2011,2006,18,,plants,aboveground_biomass
 tharp1999,1996,4,SETFA,plants,percent_control
 tharp1999,1996,4,CHEAL,plants,percent_control
 tharp1999,1996,4,AMARE,plants,percent_control
