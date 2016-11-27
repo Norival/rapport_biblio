@@ -1,5 +1,6 @@
-article,country,year_start,year_end,financing,
-myers2005,usa,2001,2002,public,
-vangessel1995,usa,1991,1992,public,
-silva2011,brazil,2006,2006,public,
-tharp1999,usa,1996,1997,NA,
+article,country,year_start,year_end,financing
+myers2005,usa,2001,2002,public
+vangessel1995,usa,1991,1992,public
+silva2011,brazil,2006,2006,public
+tharp1999,usa,1996,1997,NA
+gower2003,usa,1998,1999,mixed
