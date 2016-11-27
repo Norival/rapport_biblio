@@ -8,6 +8,8 @@ x 2016-11-26 @reading_grid Complete vangessel1995 to fit with new grid
 (A) @read reduced row spacing for improved wheat yields in weed-free and weed-infested fields
 (A) @reading_grid Calculate percentage of yield loss when quantitative data is available
 (B) @stats Start to make a R script to load and visualize data
+(C) @stats @bibliometry Make R script to analyze bibliometry data
+(C) @bibliometry Organize bibliometry data
 (B) @read the influence of post-emergence weed harrowing on selectivity, crop recovery and crop yield in different growth stages of winter wheat
 (B) @read effect of ac 263,222, imazethapyr, and nicosulfuron on weed control and imidazolinone-tolerant corn (zea mays) yield
 (B) @read corn yield after 10 years of different cropping sequences and weed management practices
