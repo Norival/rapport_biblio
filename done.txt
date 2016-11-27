@@ -4,3 +4,10 @@ x 2016-11-26 @read the effect of weed density and application timing on weed con
 x 2016-11-26 @read growth and yield of corn grain and green ear in competition with weeds
 x 2016-11-26 @reading_grid re-organize columns (make a separate results file)
 x 2016-11-26 @README update data structure
+x 2016-11-26 @reading_grid Complete myers2005 to fit with new grid
+x 2016-11-26 @reading_grid Complete vangessel1995 to fit with new grid
+x 2016-11-27 @reading_grid Complete silva2011 to fit with new grid
+x 2016-11-27 @report make a detailed plan
+x 2016-11-27 @read effect of postemergence glyphosate application timing on weed control and grain yield in glyphosate-resistant corn: results of a 2-yr multistate study
+x 2016-11-27 @read reduced row spacing for improved wheat yields in weed-free and weed-infested fields
+x 2016-11-27 @reproducibility Start writing a notebook to describe how datas have been extracted from articles

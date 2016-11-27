@@ -1,17 +1,10 @@
-x 2016-11-26 @reading_grid Complete myers2005 to fit with new grid
-x 2016-11-26 @reading_grid Complete vangessel1995 to fit with new grid
-x 2016-11-27 @reading_grid Complete silva2011 to fit with new grid
-(A) @report make a detailed plan
-(C) @find tillage and weed management affects winter-wheat yield in an integrated pest-management system
-x 2016-11-27 @read effect of postemergence glyphosate application timing on weed control and grain yield in glyphosate-resistant corn: results of a 2-yr multistate study
-(C) @find time of weed removal with glyphosate affects corn growth and yield components
-x 2016-11-27 @read reduced row spacing for improved wheat yields in weed-free and weed-infested fields
+(C) @read tillage and weed management affects winter-wheat yield in an integrated pest-management system
+(C) @read time of weed removal with glyphosate affects corn growth and yield components
 (C) @reading_grid Calculate percentage of yield loss when quantitative data is available
 (B) @stats Start to make a R script to load and visualize data
 (C) @stats @bibliometry Make R script to analyze bibliometry data
 (C) @bibliometry Organize bibliometry data
-(C) @reproducibility Complete notebook for the already read articles
-x 2016-11-27 @reproducibility Start writing a notebook to describe how datas have been extracted from articles
+(B) @reproducibility Complete notebook for the already read articles
 (A) @read the influence of post-emergence weed harrowing on selectivity, crop recovery and crop yield in different growth stages of winter wheat
 (A) @read effect of ac 263,222, imazethapyr, and nicosulfuron on weed control and imidazolinone-tolerant corn (zea mays) yield
 (A) @read corn yield after 10 years of different cropping sequences and weed management practices
