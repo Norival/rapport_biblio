@@ -2,58 +2,59 @@ x 2016-11-26 @reading_grid Complete myers2005 to fit with new grid
 x 2016-11-26 @reading_grid Complete vangessel1995 to fit with new grid
 x 2016-11-27 @reading_grid Complete silva2011 to fit with new grid
 (A) @report make a detailed plan
-(A) @find tillage and weed management affects winter-wheat yield in an integrated pest-management system
+(C) @find tillage and weed management affects winter-wheat yield in an integrated pest-management system
 x 2016-11-27 @read effect of postemergence glyphosate application timing on weed control and grain yield in glyphosate-resistant corn: results of a 2-yr multistate study
-(A) @find time of weed removal with glyphosate affects corn growth and yield components
+(C) @find time of weed removal with glyphosate affects corn growth and yield components
 x 2016-11-27 @read reduced row spacing for improved wheat yields in weed-free and weed-infested fields
-(A) @reading_grid Calculate percentage of yield loss when quantitative data is available
+(C) @reading_grid Calculate percentage of yield loss when quantitative data is available
 (B) @stats Start to make a R script to load and visualize data
 (C) @stats @bibliometry Make R script to analyze bibliometry data
 (C) @bibliometry Organize bibliometry data
-(A) @reproducibility Start writing a notebook to describe how datas have been extracted from articles
-(B) @read the influence of post-emergence weed harrowing on selectivity, crop recovery and crop yield in different growth stages of winter wheat
-(B) @read effect of ac 263,222, imazethapyr, and nicosulfuron on weed control and imidazolinone-tolerant corn (zea mays) yield
-(B) @read corn yield after 10 years of different cropping sequences and weed management practices
-(B) @read weed control and yield response to foramsulfuron in corn
-(B) @read impact of spring wheat planting density, row spacing, and mechanical weed control on yield, grain protein, and economic return in maine
-(C) @read interactions of irrigation, weed and nitrogen on corn yield, nitrogen use efficiency and nitrate leaching
-(C) @read effect of six problematic weeds on growth and yield of wheat
-(C) @read impact of sulfonylurea herbicides on rhizoctonia root-rot, growth, and yield of winter-wheat
-(C) @read application method: impacts on atrazine and alachlor movement, weed control, and corn yield in three tillage systems
-(C) @read effect of weeds and nitrogen fertiliser on yield and grain protein concentration of wheat
-(D) @read winter-wheat (triticum-aestivum) yield response to winter annual broadleaf weed-control
-(D) @read reintroduction of a rare arable weed: competition effects on weed fitness and crop yield
-(D) @read fertilisation and weed control effects on yield and weeds in durum wheat grown under rain-fed conditions in a mediterranean climate
-(D) @read weed interference and glyphosate timing affect corn forage yield and quality
-(D) @read effects of weed competition on flag leaf photosynthesis and grain yield of spring wheat
-(E) @read influence of tillage and weed control practices on growth and yield of wheat
-(E) @read improvement of the growth, grain-yield, and nitrogen, phosphorus, and potassium nutrition of grain corn through weed-control
-(E) @read interrelationships between oilseed rape yield and weeds population under herbicides application
-(E) @read weed growth and crop yield loss in wheat as influenced by row spacing and weed emergence times
-(E) @read effect of trifluralin, pronamide, haloxyfop-p methyl, propaquizafop, and isoxaben on weed control and oilseed rape yield in iran
-(F) @read effect of seed-furrow mulching, nitrogen rates and weed management practices on growth and yield of late-sown wheat (triticum aestivum)
-(F) @read weeds - friend or foe? increasing forage yield and decreasing nitrate leaching on a corn forage farm infested by redroot pigweed
-(F) @read impact of site-specific weed management on herbicide savings and winter wheat yield
-(F) @read corn yield response to weed and fall armyworm controls
-(F) @read demonstration and evaluation of effect of weedicides on broad leaved weeds on wheat yield
-(G) @read effects of soil tillage and herbicides on weeds and winter wheat yields
-(G) @read yield and quality of wheat (triticum aestivum) as influenced by sulphur nutrition and weed management
-(G) @read winter annual weed management and nitrogen rate effects on corn yield
-(G) @read influence of herbicides on yield stability of winter wheat cultivars under different sowing rates
-(G) @read seed rate and weed management on yield and nutrient uptake of wheat (triticum aestivum)
-(H) @read effect of different herbicides on mixed weed flora, yield and economics of wheat (triticum aestivum) under irrigated conditions of jammu
-(H) @read effect of isoproturon tank mix with metsulfuron and 2,4-d on weeds and yield of wheat (triticum aestivum)
-(H) @read effect of atrazine, metribuzin, sulfosulfuron and tralkoxydim on weeds and yield of wheat (triticum aestivum)
-(H) @read herbicides do not ensure for higher wheat yield, but eliminate rare plant species
-(H) @read durum wheat grain yield and quality influenced by some mixtures of foliar fertilizers and combined herbicides
-(I) @read quality of sweet corn yield depending on winter catch crops and weed control method
-(I) @read physiological traits and yield of wheat cultivars as influenced by establishment methods and weed management practices
-(I) @read effect of different herbicides and plant extracts on yield and yield components of wheat (triticum aestivum l.)
-(I) @read influence of plant density, planting pattern and weed control on yield and yield components of grain corn
-(I) @read corn growth and yield in competition with weeds
-(J) @read effect of separate and tank-mix treatments of herbicides on weed control and yield of corn (zea mays l.)
-(J) @read influence of new broadleaf herbicides on weed control, seed yield and quality of some wheat (triticum aestivum) cultivars
-(J) @read effects of different herbicides and application times on the apical development and grain yield of wheat (triticum aestivum l.)
-(J) @read the effects of timing of control of weeds on the yield of winter oilseed rape (brassica napus), in the context of the potential commercialization of herbicide-tolerant winter rape
-(J) @read response of corn hybrids differing in canopy architecture to chemical and mechanical (rotary hoeing) weed control: morphology and yield
-(J) @read applications of the herbicide sethoxydim increase wheat yields in the absence of weeds
+(C) @reproducibility Complete notebook for the already read articles
+x 2016-11-27 @reproducibility Start writing a notebook to describe how datas have been extracted from articles
+(A) @read the influence of post-emergence weed harrowing on selectivity, crop recovery and crop yield in different growth stages of winter wheat
+(A) @read effect of ac 263,222, imazethapyr, and nicosulfuron on weed control and imidazolinone-tolerant corn (zea mays) yield
+(A) @read corn yield after 10 years of different cropping sequences and weed management practices
+(A) @read weed control and yield response to foramsulfuron in corn
+(A) @read impact of spring wheat planting density, row spacing, and mechanical weed control on yield, grain protein, and economic return in maine
+(B) @read interactions of irrigation, weed and nitrogen on corn yield, nitrogen use efficiency and nitrate leaching
+(B) @read effect of six problematic weeds on growth and yield of wheat
+(B) @read impact of sulfonylurea herbicides on rhizoctonia root-rot, growth, and yield of winter-wheat
+(B) @read application method: impacts on atrazine and alachlor movement, weed control, and corn yield in three tillage systems
+(B) @read effect of weeds and nitrogen fertiliser on yield and grain protein concentration of wheat
+(C) @read winter-wheat (triticum-aestivum) yield response to winter annual broadleaf weed-control
+(C) @read reintroduction of a rare arable weed: competition effects on weed fitness and crop yield
+(C) @read fertilisation and weed control effects on yield and weeds in durum wheat grown under rain-fed conditions in a mediterranean climate
+(C) @read weed interference and glyphosate timing affect corn forage yield and quality
+(C) @read effects of weed competition on flag leaf photosynthesis and grain yield of spring wheat
+(D) @read influence of tillage and weed control practices on growth and yield of wheat
+(D) @read improvement of the growth, grain-yield, and nitrogen, phosphorus, and potassium nutrition of grain corn through weed-control
+(D) @read interrelationships between oilseed rape yield and weeds population under herbicides application
+(D) @read weed growth and crop yield loss in wheat as influenced by row spacing and weed emergence times
+(D) @read effect of trifluralin, pronamide, haloxyfop-p methyl, propaquizafop, and isoxaben on weed control and oilseed rape yield in iran
+(E) @read effect of seed-furrow mulching, nitrogen rates and weed management practices on growth and yield of late-sown wheat (triticum aestivum)
+(E) @read weeds - friend or foe? increasing forage yield and decreasing nitrate leaching on a corn forage farm infested by redroot pigweed
+(E) @read impact of site-specific weed management on herbicide savings and winter wheat yield
+(E) @read corn yield response to weed and fall armyworm controls
+(E) @read demonstration and evaluation of effect of weedicides on broad leaved weeds on wheat yield
+(F) @read effects of soil tillage and herbicides on weeds and winter wheat yields
+(F) @read yield and quality of wheat (triticum aestivum) as influenced by sulphur nutrition and weed management
+(F) @read winter annual weed management and nitrogen rate effects on corn yield
+(F) @read influence of herbicides on yield stability of winter wheat cultivars under different sowing rates
+(F) @read seed rate and weed management on yield and nutrient uptake of wheat (triticum aestivum)
+(G) @read effect of different herbicides on mixed weed flora, yield and economics of wheat (triticum aestivum) under irrigated conditions of jammu
+(G) @read effect of isoproturon tank mix with metsulfuron and 2,4-d on weeds and yield of wheat (triticum aestivum)
+(G) @read effect of atrazine, metribuzin, sulfosulfuron and tralkoxydim on weeds and yield of wheat (triticum aestivum)
+(G) @read herbicides do not ensure for higher wheat yield, but eliminate rare plant species
+(G) @read durum wheat grain yield and quality influenced by some mixtures of foliar fertilizers and combined herbicides
+(H) @read quality of sweet corn yield depending on winter catch crops and weed control method
+(H) @read physiological traits and yield of wheat cultivars as influenced by establishment methods and weed management practices
+(H) @read effect of different herbicides and plant extracts on yield and yield components of wheat (triticum aestivum l.)
+(H) @read influence of plant density, planting pattern and weed control on yield and yield components of grain corn
+(H) @read corn growth and yield in competition with weeds
+(I) @read effect of separate and tank-mix treatments of herbicides on weed control and yield of corn (zea mays l.)
+(I) @read influence of new broadleaf herbicides on weed control, seed yield and quality of some wheat (triticum aestivum) cultivars
+(I) @read effects of different herbicides and application times on the apical development and grain yield of wheat (triticum aestivum l.)
+(I) @read the effects of timing of control of weeds on the yield of winter oilseed rape (brassica napus), in the context of the potential commercialization of herbicide-tolerant winter rape
+(I) @read response of corn hybrids differing in canopy architecture to chemical and mechanical (rotary hoeing) weed control: morphology and yield
+(I) @read applications of the herbicide sethoxydim increase wheat yields in the absence of weeds
