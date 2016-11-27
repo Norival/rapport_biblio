@@ -3,11 +3,11 @@ myers2005,2001,1,corn,TRUE,glyph_resistant,69000,TRUE,ploughing,chemical,POST,gl
 myers2005,2002,1,corn,TRUE,glyph_resistant,69000,TRUE,ploughing,chemical,POST,glyphosate,1,yield,15.5_moisture
 vangessel1995,1991,1,corn,FALSE,NA,86100,TRUE,NA,manual,POST,no,1,yield,15.5_moisture
 vangessel1995,1992,1,corn,FALSE,NA,86100,TRUE,NA,manual,POST,no,1,yield,15.5_moisture
-silva2011,2006,1,corn,FALSE,NA,50000,TRUE,hoeing,mechanic,NA,,2,leaf_surface,NA
-silva2011,2006,1,corn,FALSE,NA,50000,TRUE,hoeing,mechanic,NA,,2,aboveground_biomass,NA
-silva2011,2006,1,corn,FALSE,NA,50000,TRUE,hoeing,mechanic,NA,,2,root_biomass,NA
-silva2011,2006,1,corn,FALSE,NA,50000,TRUE,hoeing,mechanic,NA,,2,green_corn_yield,NA
-silva2011,2006,1,corn,FALSE,NA,50000,TRUE,hoeing,mechanic,NA,,2,ripe_corn_yield,NA
+silva2011,2006,1,corn,FALSE,NA,50000,TRUE,hoeing,mechanic,NA,no,2,leaf_surface,NA
+silva2011,2006,1,corn,FALSE,NA,50000,TRUE,hoeing,mechanic,NA,no,2,aboveground_biomass,NA
+silva2011,2006,1,corn,FALSE,NA,50000,TRUE,hoeing,mechanic,NA,no,2,root_biomass,NA
+silva2011,2006,1,corn,FALSE,NA,50000,TRUE,hoeing,mechanic,NA,no,2,green_corn_yield,NA
+silva2011,2006,1,corn,FALSE,NA,50000,TRUE,hoeing,mechanic,NA,no,2,ripe_corn_yield,NA
 tharp1999,1996,1,corn,TRUE,glyph_resistant,54340,TRUE,ploughing,,EPOST,glyphosate,,yield,15.5_moisture
 tharp1999,1996,1,corn,TRUE,gluf_resistant,61750,TRUE,ploughing,,EPOST,glufosinate,,yield,15.5_moisture
 tharp1999,1996,1,corn,TRUE,glyph_resistant,54340,TRUE,ploughing,,LPOST,glyphosate,,yield,15.5_moisture
