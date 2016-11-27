@@ -20,3 +20,5 @@ gower2003,1998,1,ZEAMX,TRUE,glyph_resistant,73197,NA,ploughing,chemical,POST,gly
 gower2003,1999,1,ZEAMX,TRUE,glyph_resistant,70633,NA,ploughing,chemical,POST,glyphosate,1,yield,15.5_moisture
 gower2003,1998,1,ZEAMX,TRUE,glyph_resistant,73197,NA,ploughing,chemical,POST,glyphosate,2,yield,15.5_moisture
 gower2003,1999,1,ZEAMX,TRUE,glyph_resistant,70633,NA,ploughing,chemical,POST,glyphosate,2,yield,15.5_moisture
+solie1991,1989,1,TRZAW,FALSE,NA,1807391,TRUE,ploughing,,,,,yield,13.5_moisture
+solie1991,1990,1,TRZAW,FALSE,NA,1807391,TRUE,ploughing,,,,,yield,13.5_moisture
