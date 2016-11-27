@@ -1,6 +1,6 @@
 x 2016-11-26 @reading_grid Complete myers2005 to fit with new grid
 x 2016-11-26 @reading_grid Complete vangessel1995 to fit with new grid
-(A) @reading_grid Complete silva2011 to fit with new grid
+x 2016-11-27 @reading_grid Complete silva2011 to fit with new grid
 (A) @report make a detailed plan
 (A) @find tillage and weed management affects winter-wheat yield in an integrated pest-management system
 (A) @read effect of postemergence glyphosate application timing on weed control and grain yield in glyphosate-resistant corn: results of a 2-yr multistate study
