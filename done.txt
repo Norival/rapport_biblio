@@ -11,3 +11,4 @@ x 2016-11-27 @report make a detailed plan
 x 2016-11-27 @read effect of postemergence glyphosate application timing on weed control and grain yield in glyphosate-resistant corn: results of a 2-yr multistate study
 x 2016-11-27 @read reduced row spacing for improved wheat yields in weed-free and weed-infested fields
 x 2016-11-27 @reproducibility Start writing a notebook to describe how datas have been extracted from articles
+x 2016-11-28 @read time of weed removal with glyphosate affects corn growth and yield components
