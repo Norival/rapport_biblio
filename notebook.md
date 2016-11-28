@@ -25,3 +25,22 @@ faite des trois locations.
 
 Les autres résultats présentés ne sont pas en rapport directement avec le
 sujet, ils sont ignorés pour le moment.
+
+### cox2006
+
+L'origine du financement n'a pas été trouvée pour cet article.
+
+Il y a trois traitements herbicides différents : EPOST (stades V3-V4), MPOST
+(mid-postemergence, stades V5-V6) et LPOST (stades V7-V8).
+
+Le poids moyen des grains est donné en mg et le rendement est donné en Mg/ha.
+
+Les résultats sont poolés sur les deux années de culture, les données pour
+chaque année ne sont fournies.
+
+La surface foliare et l'accumulation de matière sèche du maïs ont été regroupé
+entre les 2 stages de croissance V8 et R1 (tableau 3).
+
+Je n'ai pas récupéré les résultats sur les hauteurs des adventices car ils ne
+sont pas donnés complètement. Seuls les hauteurs au moment du traitement sont
+donnés et il n'y a pas de donnée sur la réduction due aux herbicides.

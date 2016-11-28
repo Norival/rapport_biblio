@@ -1,7 +1,8 @@
 (A) @stats Try to find CI95 in articles' results
 (A) @stats Report effect size index if present
+(A) @stats Try to add a column with statistical tests used
 (C) @read tillage and weed management affects winter-wheat yield in an integrated pest-management system
-(C) @read time of weed removal with glyphosate affects corn growth and yield components
+x 2016-11-28 x 2016-11-28 @read time of weed removal with glyphosate affects corn growth and yield components
 (C) @reading_grid Calculate percentage of yield loss when quantitative data is available
 (B) @stats Start to make a R script to load and visualize data
 (C) @stats @bibliometry Make R script to analyze bibliometry data
@@ -53,3 +54,4 @@
 (I) @read the effects of timing of control of weeds on the yield of winter oilseed rape (brassica napus), in the context of the potential commercialization of herbicide-tolerant winter rape
 (I) @read response of corn hybrids differing in canopy architecture to chemical and mechanical (rotary hoeing) weed control: morphology and yield
 (I) @read applications of the herbicide sethoxydim increase wheat yields in the absence of weeds
+(A) @reading_grid homogeneize units of yield for first articles (and maybe other metrics)
