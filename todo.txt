@@ -1,3 +1,5 @@
+(A) @stats Try to find CI95 in articles' results
+(A) @stats Report effect size index if present
 (C) @read tillage and weed management affects winter-wheat yield in an integrated pest-management system
 (C) @read time of weed removal with glyphosate affects corn growth and yield components
 (C) @reading_grid Calculate percentage of yield loss when quantitative data is available
