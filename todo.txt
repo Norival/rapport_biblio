@@ -1,6 +1,4 @@
 (A) @find 43 tillage and weed management affects winter-wheat yield in an integrated pest-management system
-x 2016-11-29 @read 14 the influence of post-emergence weed harrowing on selectivity, crop recovery and crop yield in different growth stages of winter wheat
-(A) @read 13 effect of ac 263,222, imazethapyr, and nicosulfuron on weed control and imidazolinone-tolerant corn (zea mays) yield
 (A) @read 13 corn yield after 10 years of different cropping sequences and weed management practices
 (A) @read 11 weed control and yield response to foramsulfuron in corn
 (A) @read 10 impact of spring wheat planting density, row spacing, and mechanical weed control on yield, grain protein, and economic return in maine

@@ -63,3 +63,7 @@ Il y a trois traitements herbicides différents : EPOST (2 WAP), MPOST
 (4 WAP) et LPOST (6 WAP). WAP = Weeks After Planting.
 
 Les taux d'application sont exprimés en g/ha.
+
+Les résultats concernant les pourcentages de contrôle des 3 espèces
+d'adventices et du rendment sont extraits des tableaux. Les résultats pour 1993
+sont regroupés entre les 2 locations.

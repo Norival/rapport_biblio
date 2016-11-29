@@ -12,3 +12,5 @@ x 2016-11-27 @read effect of postemergence glyphosate application timing on weed
 x 2016-11-27 @read reduced row spacing for improved wheat yields in weed-free and weed-infested fields
 x 2016-11-27 @reproducibility Start writing a notebook to describe how datas have been extracted from articles
 x 2016-11-28 @read time of weed removal with glyphosate affects corn growth and yield components
+x 2016-11-29 @read 14 the influence of post-emergence weed harrowing on selectivity, crop recovery and crop yield in different growth stages of winter wheat
+x 2016-11-29 @read 13 effect of ac 263,222, imazethapyr, and nicosulfuron on weed control and imidazolinone-tolerant corn (zea mays) yield
