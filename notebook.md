@@ -14,7 +14,7 @@ l'article à partir de l'identifiant.
 
 ### solie1991
 
-Conversion du taux de semis de kg/ha à graines/ha : utilisation du pods moyen
+Conversion du taux de semis de kg/ha à graines/ha : utilisation du poids moyen
 d'une graine (37.07 g/1000 graines, depuis http://data.kew.org).
 67000 * 1000 / 37.07 = 1 807 391 graines/ha.
 
@@ -44,3 +44,15 @@ entre les 2 stages de croissance V8 et R1 (tableau 3).
 Je n'ai pas récupéré les résultats sur les hauteurs des adventices car ils ne
 sont pas donnés complètement. Seuls les hauteurs au moment du traitement sont
 donnés et il n'y a pas de donnée sur la réduction due aux herbicides.
+
+### rueda2011
+
+Conversion du taux de semis de kg/ha à graines/ha : utilisation du poids moyen
+d'une graine (37.07 g/1000 graines, depuis http://data.kew.org) et du taux
+médian de 155-165 kg/ha indiqué dans l'article (160 kg/ha).
+160 000 * 1000 / 37.07 =  4 316 159 graines/ha. 
+
+L'ajustement d'humidité pour le rendement du blé est 12-13%. J'ai choisi 12.5%
+pour remplir la grille.
+
+crop_soil_cover

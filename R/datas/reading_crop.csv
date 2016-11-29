@@ -64,3 +64,6 @@ cox2006,2004,1,ZEAMX,TRUE,glyph_resistant,88000,TRUE,ploughing,chemical,LPOST,gl
 cox2006,2004,1,ZEAMX,TRUE,glyph_resistant,88000,TRUE,ploughing,chemical,EPOST,glyphosate,1,kernel_weight,NA
 cox2006,2004,1,ZEAMX,TRUE,glyph_resistant,88000,TRUE,ploughing,chemical,MPOST,glyphosate,1,kernel_weight,NA
 cox2006,2004,1,ZEAMX,TRUE,glyph_resistant,88000,TRUE,ploughing,chemical,LPOST,glyphosate,1,kernel_weight,NA
+rueda2011,2008,1,TRZAW,FALSE,NA,4316159,TRUE,ploughing,chemical,NA,NA,NA,crop_leaf_cover,NA
+rueda2011,2008,1,TRZAW,FALSE,NA,4316159,TRUE,ploughing,chemical,NA,NA,NA,yield,12.5_moisture
+rueda2011,2008,1,TRZAW,FALSE,NA,4316159,TRUE,ploughing,harrowing,NA,NA,NA,weed_density,NA
