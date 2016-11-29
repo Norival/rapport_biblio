@@ -56,3 +56,10 @@ L'ajustement d'humidité pour le rendement du blé est 12-13%. J'ai choisi 12.5%
 pour remplir la grille.
 
 crop_soil_cover
+
+### monks1996
+
+Il y a trois traitements herbicides différents : EPOST (2 WAP), MPOST
+(4 WAP) et LPOST (6 WAP). WAP = Weeks After Planting.
+
+Les taux d'application sont exprimés en g/ha.
