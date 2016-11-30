@@ -52,3 +52,6 @@ monks1996,1993,3,PANTE,plants,percent_control
 monks1996,1993,3,CASOB,plants,percent_control
 monks1996,1993,3,IPOSS,plants,percent_control
 zhang1996,1992,NA,NA,plants,NA
+nurse2007,,3,CHEAL,plants,aboveground_biomass
+nurse2007,,3,SETVI,plants,aboveground_biomass
+nurse2007,,3,AMBEL,plants,aboveground_biomass

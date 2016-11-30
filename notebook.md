@@ -11,6 +11,8 @@ Lecture des articles
 
 Se référer au fichier latex/biblio.bib pour connaître les références de
 l'article à partir de l'identifiant.
+Les codes utilisés pour identifier les espèces d'adventices sont les codes EPPO
+([EPPO Global Database](https://gd.eppo.int/)).
 
 ### solie1991
 
@@ -74,3 +76,15 @@ Il y a très peu de résultats quantitatifs dans cette étude.
 Les résultats principaux portent sur l'effet des successions culturales et non
 sur l'effet des adventices.
 Les résultats concernant le rendement du maïs sont extraits de la figure 1b.
+
+### nurse2007
+
+Les taux d'application d'herbicide sont en g ai/ha.
+
+J'ai considéré les trois adventices principales mentionnées dans l'étude
+(CHEAL, SETVI et AMBEL).
+Le pourcentage de contrôle est calculé à partir de la figure 1.
+
+Concernant le rendement, étant donné que seule la moyenne pour la dose 35 était
+donnée, j'ai pris la moyenne des 4 locations dans le tableau 3 pour le
+contrôle. Pour le traitement, j'ai pris la valeur dans le tableau 4.

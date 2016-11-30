@@ -101,3 +101,15 @@ zhang1996,1992,1,ZEAMX,FALSE,NA,55000,TRUE,ploughing,no_control,NA,NA,,1,yield,1
 zhang1996,1992,1,ZEAMX,FALSE,NA,55000,TRUE,ploughing,interrow_cultivation,NA,NA,,1,yield,15.5_moisture
 zhang1996,1992,1,ZEAMX,FALSE,NA,55000,TRUE,ploughing,chemical,PRE,atrazine,,1,yield,15.5_moisture
 zhang1996,1992,1,ZEAMX,FALSE,NA,55000,TRUE,ploughing,chemical,PRE,metolachlor,,1,yield,15.5_moisture
+nurse2007,2001,1,ZEAMX,FALSE,NA,76000,,ploughing,chemical,POST,foramsulfuron,8.75,1,crop_injury,
+nurse2007,2001,1,ZEAMX,FALSE,NA,76000,,ploughing,chemical,POST,foramsulfuron,8.75,1,yield,15.5_moisture
+nurse2007,2001,1,ZEAMX,FALSE,NA,76000,,ploughing,chemical,POST,foramsulfuron,17.5,1,crop_injury,
+nurse2007,2001,1,ZEAMX,FALSE,NA,76000,,ploughing,chemical,POST,foramsulfuron,17.5,1,yield,15.5_moisture
+nurse2007,2001,1,ZEAMX,FALSE,NA,76000,,ploughing,chemical,POST,foramsulfuron,35,1,crop_injury,
+nurse2007,2001,1,ZEAMX,FALSE,NA,76000,,ploughing,chemical,POST,foramsulfuron,35,1,yield,15.5_moisture
+nurse2007,2001,1,ZEAMX,FALSE,NA,76000,,ploughing,chemical,POST,foramsulfuron,70,1,crop_injury,
+nurse2007,2001,1,ZEAMX,FALSE,NA,76000,,ploughing,chemical,POST,foramsulfuron,70,1,yield,15.5_moisture
+nurse2007,2001,1,ZEAMX,FALSE,NA,76000,,ploughing,chemical,POST,foramsulfuron,105,1,crop_injury,
+nurse2007,2001,1,ZEAMX,FALSE,NA,76000,,ploughing,chemical,POST,foramsulfuron,105,1,yield,15.5_moisture
+nurse2007,2001,1,ZEAMX,FALSE,NA,76000,,ploughing,chemical,POST,foramsulfuron,140,1,crop_injury,
+nurse2007,2001,1,ZEAMX,FALSE,NA,76000,,ploughing,chemical,POST,foramsulfuron,140,1,yield,15.5_moisture
