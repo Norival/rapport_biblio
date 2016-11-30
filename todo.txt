@@ -1,5 +1,4 @@
 (A) @find 43 tillage and weed management affects winter-wheat yield in an integrated pest-management system
-(A) @read 13 corn yield after 10 years of different cropping sequences and weed management practices
 (A) @read 11 weed control and yield response to foramsulfuron in corn
 (A) @read 10 impact of spring wheat planting density, row spacing, and mechanical weed control on yield, grain protein, and economic return in maine
 (B) @read 09 interactions of irrigation, weed and nitrogen on corn yield, nitrogen use efficiency and nitrate leaching

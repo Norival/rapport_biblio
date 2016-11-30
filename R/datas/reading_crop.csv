@@ -97,3 +97,7 @@ monks1996,1993,1,ZEAMX,TRUE,imidazolinone_resistant,NA,NA,NA,chemical,LPOST,imaz
 monks1996,1993,1,ZEAMX,TRUE,imidazolinone_resistant,NA,NA,NA,chemical,EPOST,nicosulfron,35,1,yield,15_moisture
 monks1996,1993,1,ZEAMX,TRUE,imidazolinone_resistant,NA,NA,NA,chemical,MPOST,nicosulfron,35,1,yield,15_moisture
 monks1996,1993,1,ZEAMX,TRUE,imidazolinone_resistant,NA,NA,NA,chemical,LPOST,nicosulfron,35,1,yield,15_moisture
+zhang1996,1992,1,ZEAMX,FALSE,NA,55000,TRUE,ploughing,no_control,NA,NA,,1,yield,15.5_moisture
+zhang1996,1992,1,ZEAMX,FALSE,NA,55000,TRUE,ploughing,interrow_cultivation,NA,NA,,1,yield,15.5_moisture
+zhang1996,1992,1,ZEAMX,FALSE,NA,55000,TRUE,ploughing,chemical,PRE,atrazine,,1,yield,15.5_moisture
+zhang1996,1992,1,ZEAMX,FALSE,NA,55000,TRUE,ploughing,chemical,PRE,metolachlor,,1,yield,15.5_moisture

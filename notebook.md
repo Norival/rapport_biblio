@@ -67,3 +67,10 @@ Les taux d'application sont exprimés en g/ha.
 Les résultats concernant les pourcentages de contrôle des 3 espèces
 d'adventices et du rendment sont extraits des tableaux. Les résultats pour 1993
 sont regroupés entre les 2 locations.
+
+### zhang1996
+
+Il y a très peu de résultats quantitatifs dans cette étude.
+Les résultats principaux portent sur l'effet des successions culturales et non
+sur l'effet des adventices.
+Les résultats concernant le rendement du maïs sont extraits de la figure 1b.
