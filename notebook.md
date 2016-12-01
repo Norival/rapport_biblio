@@ -18,6 +18,7 @@ Les codes utilisés pour identifier les espèces d'adventices sont les codes EPP
 
 Conversion du taux de semis de kg/ha à graines/ha : utilisation du poids moyen
 d'une graine (37.07 g/1000 graines, depuis http://data.kew.org).
+
 67000 * 1000 / 37.07 = 1 807 391 graines/ha.
 
 Le rendement en grain du blé a été pris dans le tableau 3 (1989), colonne
@@ -52,6 +53,7 @@ donnés et il n'y a pas de donnée sur la réduction due aux herbicides.
 Conversion du taux de semis de kg/ha à graines/ha : utilisation du poids moyen
 d'une graine (37.07 g/1000 graines, depuis http://data.kew.org) et du taux
 médian de 155-165 kg/ha indiqué dans l'article (160 kg/ha).
+
 160 000 * 1000 / 37.07 =  4 316 159 graines/ha. 
 
 L'ajustement d'humidité pour le rendement du blé est 12-13%. J'ai choisi 12.5%
@@ -88,3 +90,8 @@ Le pourcentage de contrôle est calculé à partir de la figure 1.
 Concernant le rendement, étant donné que seule la moyenne pour la dose 35 était
 donnée, j'ai pris la moyenne des 4 locations dans le tableau 3 pour le
 contrôle. Pour le traitement, j'ai pris la valeur dans le tableau 4.
+
+### kolb2012
+
+Le taux de semis est donné en graines par m^2, je l'ai converti en graines par
+hectare.
