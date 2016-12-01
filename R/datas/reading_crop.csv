@@ -113,3 +113,6 @@ nurse2007,2001,1,ZEAMX,FALSE,NA,76000,,ploughing,chemical,POST,foramsulfuron,105
 nurse2007,2001,1,ZEAMX,FALSE,NA,76000,,ploughing,chemical,POST,foramsulfuron,105,1,yield,15.5_moisture
 nurse2007,2001,1,ZEAMX,FALSE,NA,76000,,ploughing,chemical,POST,foramsulfuron,140,1,crop_injury,
 nurse2007,2001,1,ZEAMX,FALSE,NA,76000,,ploughing,chemical,POST,foramsulfuron,140,1,yield,15.5_moisture
+kolb2012,,1,TRZAW,FALSE,NA,4000000,TRUE,ploughing,mechanic,PRE,no,NA,1,yield,NA
+kolb2012,,1,TRZAW,FALSE,NA,6000000,TRUE,ploughing,mechanic,PRE,no,NA,1,yield,NA
+kolb2012,,1,TRZAW,FALSE,NA,6000000,TRUE,ploughing,mechanic,PRE,no,NA,1,net_income,NA
