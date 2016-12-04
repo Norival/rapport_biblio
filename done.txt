@@ -17,3 +17,4 @@ x 2016-11-29 @read 13 effect of ac 263,222, imazethapyr, and nicosulfuron on wee
 x 2016-11-30 @read 13 corn yield after 10 years of different cropping sequences and weed management practices
 x 2016-11-30 @read 11 weed control and yield response to foramsulfuron in corn
 x 2016-12-01 @read 10 impact of spring wheat planting density, row spacing, and mechanical weed control on yield, grain protein, and economic return in maine
+x 2016-12-04 @read 09 interactions of irrigation, weed and nitrogen on corn yield, nitrogen use efficiency and nitrate leaching

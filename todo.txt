@@ -1,5 +1,4 @@
 (A) @find 43 tillage and weed management affects winter-wheat yield in an integrated pest-management system
-(A) @read 09 interactions of irrigation, weed and nitrogen on corn yield, nitrogen use efficiency and nitrate leaching
 (A) @read 09 effect of six problematic weeds on growth and yield of wheat
 (A) @read 09 impact of sulfonylurea herbicides on rhizoctonia root-rot, growth, and yield of winter-wheat
 (A) @read 07 application method: impacts on atrazine and alachlor movement, weed control, and corn yield in three tillage systems
@@ -50,3 +49,4 @@
 (C) @reading_grid Calculate percentage of yield loss when quantitative data is available
 (C) @stats @bibliometry Make R script to analyze bibliometry data
 (B) @stats @read Find a way to clearly summarize results of rueda2011
+(C) @reading_grid Figure a way to complete grids for gholamhoseini2013 (quantitative results)

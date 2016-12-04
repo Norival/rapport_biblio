@@ -54,7 +54,7 @@ Conversion du taux de semis de kg/ha à graines/ha : utilisation du poids moyen
 d'une graine (37.07 g/1000 graines, depuis http://data.kew.org) et du taux
 médian de 155-165 kg/ha indiqué dans l'article (160 kg/ha).
 
-160 000 * 1000 / 37.07 =  4 316 159 graines/ha. 
+160 000 * 1000 / 37.07 =  4 316 159 graines/ha.
 
 L'ajustement d'humidité pour le rendement du blé est 12-13%. J'ai choisi 12.5%
 pour remplir la grille.
@@ -95,3 +95,13 @@ contrôle. Pour le traitement, j'ai pris la valeur dans le tableau 4.
 
 Le taux de semis est donné en graines par m^2, je l'ai converti en graines par
 hectare.
+
+### gholamhoseini2013
+
+La densité de semis d'adventices est de 8 plants par mètre dans chaque
+interrang.
+Sachant que les rangs sont séparés de 0.75 m, cela fait une densité de
+10.7 plants/m^2.
+
+Le rendement moyen est extrait du tableau 4, j'ai fait la moyenne entre les
+deux traitements d'irrigation pour chaque année.
