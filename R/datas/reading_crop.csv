@@ -116,5 +116,8 @@ nurse2007,2001,1,ZEAMX,FALSE,NA,76000,,ploughing,chemical,POST,foramsulfuron,140
 kolb2012,,1,TRZAW,FALSE,NA,4000000,TRUE,ploughing,mechanic,PRE,no_herbicide,NA,1,yield,NA
 kolb2012,,1,TRZAW,FALSE,NA,6000000,TRUE,ploughing,mechanic,PRE,no_herbicide,NA,1,yield,NA
 kolb2012,,1,TRZAW,FALSE,NA,6000000,TRUE,ploughing,mechanic,PRE,no_herbicide,NA,1,net_income,NA
-gholamhoseini2013,,1,ZEAMX,FALSE,NA,78000,TRUE,ploughing,no_control,NA,no_herbicide,NA,NA,aboveground_biomass,
+gholamhoseini2013,,1,ZEAMX,FALSE,NA,78000,TRUE,ploughing,no_control,NA,no_herbicide,NA,NA,aboveground_biomass,NA
 gholamhoseini2013,,1,ZEAMX,FALSE,NA,78000,TRUE,ploughing,no_control,NA,no_herbicide,NA,NA,yield,10_moisture
+iffat2010,2005,1,TRZAW,FALSE,NA,,TRUE,NA,no_control,,no_herbicide,NA,NA,aboveground_biomass,NA
+iffat2010,2005,1,TRZAW,FALSE,NA,,TRUE,NA,no_control,,no_herbicide,NA,NA,underground_biomass,NA
+iffat2010,2005,1,TRZAW,FALSE,NA,,TRUE,NA,no_control,,no_herbicide,NA,NA,yield,NA

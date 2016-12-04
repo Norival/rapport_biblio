@@ -105,3 +105,12 @@ Sachant que les rangs sont séparés de 0.75 m, cela fait une densité de
 
 Le rendement moyen est extrait du tableau 4, j'ai fait la moyenne entre les
 deux traitements d'irrigation pour chaque année.
+
+### iffat2010
+
+Les densités de semis de la culture et des adventices ne osnt pas indiquées
+mais le rapport entre les 2 est de 1:1.
+
+Les pourcentages de diminution sont extraits du tableau 2.
+J'ai fait la moyenne entre les deux variétés et entre les deux stades de
+croissance.
