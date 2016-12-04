@@ -1,6 +1,6 @@
 (A) @find 43 tillage and weed management affects winter-wheat yield in an integrated pest-management system
 (A) @read 09 effect of six problematic weeds on growth and yield of wheat
-(A) @read 09 impact of sulfonylurea herbicides on rhizoctonia root-rot, growth, and yield of winter-wheat
+(A) @find 09 impact of sulfonylurea herbicides on rhizoctonia root-rot, growth, and yield of winter-wheat
 (A) @read 07 application method: impacts on atrazine and alachlor movement, weed control, and corn yield in three tillage systems
 (A) @read 08 effect of weeds and nitrogen fertiliser on yield and grain protein concentration of wheat
 (B) @read 07 winter-wheat (triticum-aestivum) yield response to winter annual broadleaf weed-control
