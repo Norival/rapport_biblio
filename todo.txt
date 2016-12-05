@@ -1,7 +1,6 @@
 (A) @find 43 tillage and weed management affects winter-wheat yield in an integrated pest-management system
 (A) @find 09 impact of sulfonylurea herbicides on rhizoctonia root-rot, growth, and yield of winter-wheat
 (A) @find 08 effect of weeds and nitrogen fertiliser on yield and grain protein concentration of wheat
-(A) @read 07 winter-wheat (triticum-aestivum) yield response to winter annual broadleaf weed-control
 (A) @read 06 reintroduction of a rare arable weed: competition effects on weed fitness and crop yield
 (A) @read 06 fertilisation and weed control effects on yield and weeds in durum wheat grown under rain-fed conditions in a mediterranean climate
 (A) @read 06 weed interference and glyphosate timing affect corn forage yield and quality
@@ -37,14 +36,14 @@
 (G) @read 00 the effects of timing of control of weeds on the yield of winter oilseed rape (brassica napus), in the context of the potential commercialization of herbicide-tolerant winter rape
 (G) @read 00 response of corn hybrids differing in canopy architecture to chemical and mechanical (rotary hoeing) weed control: morphology and yield
 (G) @read 00 applications of the herbicide sethoxydim increase wheat yields in the absence of weeds
-(A) @reading_grid homogeneize units of yield for first articles (and maybe other metrics)
+(A) @grid homogeneize units of yield for first articles (and maybe other metrics)
 (A) @stats Report effect size index if present
 (A) @stats Try to add a column with type of statistical tests used
 (A) @stats Try to find CI95 in articles' results
 (B) @reproducibility Complete notebook for the already read articles
 (B) @stats Start to make a R script to load and visualize data
 (C) @bibliometry Organize bibliometry data
-(C) @reading_grid Calculate percentage of yield loss when quantitative data is available
+(C) @grid Calculate percentage of yield loss when quantitative data is available
 (C) @stats @bibliometry Make R script to analyze bibliometry data
 (B) @stats @read Find a way to clearly summarize results of rueda2011
-(C) @reading_grid Figure a way to complete grids for gholamhoseini2013 (quantitative results)
+(C) @grid Figure a way to complete grids for gholamhoseini2013 (quantitative results)

@@ -133,3 +133,6 @@ clay1998,1994,1,ZEAMX,FALSE,NA,63700,TRUE,mixed,chemical,POST,atrazine,0.6,1,yie
 clay1998,1992,1,ZEAMX,FALSE,NA,61750,TRUE,mixed,chemical,POST,alachlor,0.6,1,yield,15.5_moisture
 clay1998,1993,1,ZEAMX,FALSE,NA,63700,TRUE,mixed,chemical,POST,alachlor,0.9,1,yield,15.5_moisture
 clay1998,1994,1,ZEAMX,FALSE,NA,63700,TRUE,mixed,chemical,POST,alachlor,0.9,1,yield,15.5_moisture
+scott1995,,1,TRZAW,FALSE,NA,NA,NA,NA,chemical,POST,chlorsulfuron,0.009,1,yield,NA
+scott1995,,1,TRZAW,FALSE,NA,NA,NA,NA,chemical,POST,chlorsulfuron,0.018,1,yield,NA
+scott1995,,1,TRZAW,FALSE,NA,NA,NA,NA,chemical,POST,24d,0.420,1,yield,NA

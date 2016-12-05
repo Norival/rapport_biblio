@@ -123,3 +123,11 @@ deux cultivars pour l'année 1992.
 Les résultats sur la densité d'adventices sont extraits du tableau 5 et les
 résultats sur le rendement du tableau 6.
 La moyenne a été faite sur les deux locations.
+
+### scott1995
+
+La taille de plots indiquée est la taille moyenne sur tous les traitements.
+
+Les taux d'application des herbicides sont donnés en g/ha, il est converti en
+kg/ha.
+Ils sont convertis en kg/ha.

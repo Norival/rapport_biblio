@@ -20,3 +20,4 @@ x 2016-12-01 @read 10 impact of spring wheat planting density, row spacing, and 
 x 2016-12-04 @read 09 interactions of irrigation, weed and nitrogen on corn yield, nitrogen use efficiency and nitrate leaching
 x 2016-12-04 @read 09 effect of six problematic weeds on growth and yield of wheat
 x 2016-12-05 @read 07 application method: impacts on atrazine and alachlor movement, weed control, and corn yield in three tillage systems
+x 2016-12-05 @read 07 winter-wheat (triticum-aestivum) yield response to winter annual broadleaf weed-control
