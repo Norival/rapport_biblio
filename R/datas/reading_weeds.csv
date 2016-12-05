@@ -56,10 +56,10 @@ nurse2007,,3,CHEAL,plants,,,aboveground_biomass
 nurse2007,,3,SETVI,plants,,,aboveground_biomass
 nurse2007,,3,AMBEL,plants,,,aboveground_biomass
 kolb2012,,NA,NA,plants,,,density
-gholamhoseini2013,,1,AMARE,plants,planted,8,NA
-iffat2010,2005,6,RUMDE,plants,planted,,NA
-iffat2010,2005,6,COPDI,plants,planted,,NA
-iffat2010,2005,6,MEDPO,plants,planted,,NA
-iffat2010,2005,6,CHEAL,plants,planted,,NA
-iffat2010,2005,6,POAAN,plants,planted,,NA
-iffat2010,2005,6,PHAMI,plants,planted,,NA
+gholamhoseini2013,,1,AMARE,plants,planted,8,density
+iffat2010,2005,6,RUMDE,plants,planted,,density
+iffat2010,2005,6,COPDI,plants,planted,,density
+iffat2010,2005,6,MEDPO,plants,planted,,density
+iffat2010,2005,6,CHEAL,plants,planted,,density
+iffat2010,2005,6,POAAN,plants,planted,,density
+iffat2010,2005,6,PHAMI,plants,planted,,density

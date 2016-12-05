@@ -121,3 +121,15 @@ gholamhoseini2013,,1,ZEAMX,FALSE,NA,78000,TRUE,ploughing,no_control,NA,no_herbic
 iffat2010,2005,1,TRZAW,FALSE,NA,,TRUE,NA,no_control,,no_herbicide,NA,NA,aboveground_biomass,NA
 iffat2010,2005,1,TRZAW,FALSE,NA,,TRUE,NA,no_control,,no_herbicide,NA,NA,underground_biomass,NA
 iffat2010,2005,1,TRZAW,FALSE,NA,,TRUE,NA,no_control,,no_herbicide,NA,NA,yield,NA
+clay1998,1992,1,ZEAMX,FALSE,NA,61750,TRUE,mixed,chemical,PRE,atrazine,1.1,1,yield,15.5_moisture
+clay1998,1993,1,ZEAMX,FALSE,NA,63700,TRUE,mixed,chemical,PRE,atrazine,1.1,1,yield,15.5_moisture
+clay1998,1994,1,ZEAMX,FALSE,NA,63700,TRUE,mixed,chemical,PRE,atrazine,1.1,1,yield,15.5_moisture
+clay1998,1992,1,ZEAMX,FALSE,NA,61750,TRUE,mixed,chemical,PRE,alachlor,1.7,1,yield,15.5_moisture
+clay1998,1993,1,ZEAMX,FALSE,NA,63700,TRUE,mixed,chemical,PRE,alachlor,1.7,1,yield,15.5_moisture
+clay1998,1994,1,ZEAMX,FALSE,NA,63700,TRUE,mixed,chemical,PRE,alachlor,1.7,1,yield,15.5_moisture
+clay1998,1992,1,ZEAMX,FALSE,NA,61750,TRUE,mixed,chemical,POST,atrazine,0.4,1,yield,15.5_moisture
+clay1998,1993,1,ZEAMX,FALSE,NA,63700,TRUE,mixed,chemical,POST,atrazine,0.6,1,yield,15.5_moisture
+clay1998,1994,1,ZEAMX,FALSE,NA,63700,TRUE,mixed,chemical,POST,atrazine,0.6,1,yield,15.5_moisture
+clay1998,1992,1,ZEAMX,FALSE,NA,61750,TRUE,mixed,chemical,POST,alachlor,0.6,1,yield,15.5_moisture
+clay1998,1993,1,ZEAMX,FALSE,NA,63700,TRUE,mixed,chemical,POST,alachlor,0.9,1,yield,15.5_moisture
+clay1998,1994,1,ZEAMX,FALSE,NA,63700,TRUE,mixed,chemical,POST,alachlor,0.9,1,yield,15.5_moisture

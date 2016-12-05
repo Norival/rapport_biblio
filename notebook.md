@@ -114,3 +114,12 @@ mais le rapport entre les 2 est de 1:1.
 Les pourcentages de diminution sont extraits du tableau 2.
 J'ai fait la moyenne entre les deux variétés et entre les deux stades de
 croissance.
+
+### clay1998
+
+Le taux de semis du maïs est extrait du tableau 2, j'ai fait la moyenne des
+deux cultivars pour l'année 1992.
+
+Les résultats sur la densité d'adventices sont extraits du tableau 5 et les
+résultats sur le rendement du tableau 6.
+La moyenne a été faite sur les deux locations.
