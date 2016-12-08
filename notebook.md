@@ -131,3 +131,11 @@ La taille de plots indiquée est la taille moyenne sur tous les traitements.
 Les taux d'application des herbicides sont donnés en g/ha, il est converti en
 kg/ha.
 Ils sont convertis en kg/ha.
+
+### epperlein2014
+
+La densité de semis du blé est convertie de 350 plants/m^2 en plants/ha.
+
+Il y a peu de résultats dans cet article qui s'intéresse surtout au
+développement d'une adventice rare (LEGSV), en présence de blé, dans un but de
+conservation.

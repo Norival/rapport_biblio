@@ -21,3 +21,4 @@ x 2016-12-04 @read 09 interactions of irrigation, weed and nitrogen on corn yiel
 x 2016-12-04 @read 09 effect of six problematic weeds on growth and yield of wheat
 x 2016-12-05 @read 07 application method: impacts on atrazine and alachlor movement, weed control, and corn yield in three tillage systems
 x 2016-12-05 @read 07 winter-wheat (triticum-aestivum) yield response to winter annual broadleaf weed-control
+x 2016-12-08 @read 06 reintroduction of a rare arable weed: competition effects on weed fitness and crop yield

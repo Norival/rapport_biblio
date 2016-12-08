@@ -1,7 +1,6 @@
 (A) @find 43 tillage and weed management affects winter-wheat yield in an integrated pest-management system
 (A) @find 09 impact of sulfonylurea herbicides on rhizoctonia root-rot, growth, and yield of winter-wheat
 (A) @find 08 effect of weeds and nitrogen fertiliser on yield and grain protein concentration of wheat
-(A) @read 06 reintroduction of a rare arable weed: competition effects on weed fitness and crop yield
 (A) @read 06 fertilisation and weed control effects on yield and weeds in durum wheat grown under rain-fed conditions in a mediterranean climate
 (A) @read 06 weed interference and glyphosate timing affect corn forage yield and quality
 (A) @read 06 effects of weed competition on flag leaf photosynthesis and grain yield of spring wheat
