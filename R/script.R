@@ -93,3 +93,17 @@ ggsave("weeds_species.png", path = graphs_dir)
 
 
 # -- RESULTS ------------------------------------------------------------------
+
+rg_results$percent_decrease_yield
+rg_results$grain_yield_quant
+rg_results$grain_yield_qual
+
+aggregate(rg_results$grain_yield_qual[!is.na(rg_results$grain_yield_qual)],
+          by  = list(id = rg_results$article, n_species = rg_results$n_species,
+                     treatment = rg_results$density),
+          FUN = "length")[,2:3] %>%
+print()
+aggregate(data = rg_results,
+          grain_yield_quant ~ article + type,
+          FUN = "mean", na.rm = TRUE)
+warnings()
