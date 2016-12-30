@@ -163,7 +163,7 @@ Les résultats principaux portent sur l'effet des successions culturales et non
 sur l'effet des adventices.
 Les résultats concernant le rendement du maïs sont extraits de la figure 1b.
 
-### nurse2007
+### nurse2007
 
 Les taux d'application d'herbicide sont en g ai/ha.
 
@@ -175,7 +175,7 @@ Concernant le rendement, étant donné que seule la moyenne pour la dose 35 éta
 donnée, j'ai pris la moyenne des 4 locations dans le tableau 3 pour le
 contrôle. Pour le traitement, j'ai pris la valeur dans le tableau 4.
 
-### kolb2012
+### kolb2012
 
 Le taux de semis est donné en graines par m^2, je l'ai converti en graines par
 hectare.
@@ -208,7 +208,7 @@ Les résultats sur la densité d'adventices sont extraits du tableau 5 et les
 résultats sur le rendement du tableau 6.
 La moyenne a été faite sur les deux locations.
 
-### scott1995
+### scott1995
 
 La taille de plots indiquée est la taille moyenne sur tous les traitements.
 
@@ -223,3 +223,17 @@ La densité de semis du blé est convertie de 350 plants/m^2 en plants/ha.
 Il y a peu de résultats dans cet article qui s'intéresse surtout au
 développement d'une adventice rare (LEGSV), en présence de blé, dans un but de
 conservation.
+
+### garcia2007
+
+Conversion du taux de semis de kg/ha à graines/ha : utilisation du poids moyen
+d'une graine (depuis http://data.kew.org).
+
+TRZTU (41.41 g/100 graines) :
+180 000 * 1000 / 41.41 = 4 346 776 graines/ha.
+
+VICSA (31.8 g/100 graines) :
+90 000 * 1000 / 31.8 = 4 346 776 graines/ha.
+
+HORVX (31.8 g/100 graines) :
+150 000 * 1000 / 41.9 = 3 579 952 graines/ha.
