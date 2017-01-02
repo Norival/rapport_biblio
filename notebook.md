@@ -235,5 +235,5 @@ TRZTU (41.41 g/100 graines) :
 VICSA (31.8 g/100 graines) :
 90 000 * 1000 / 31.8 = 4 346 776 graines/ha.
 
-HORVX (31.8 g/100 graines) :
+HORVX (41.9 g/100 graines) :
 150 000 * 1000 / 41.9 = 3 579 952 graines/ha.
