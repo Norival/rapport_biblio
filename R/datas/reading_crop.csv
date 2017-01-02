@@ -137,6 +137,12 @@ scott1995,,1,TRZAW,FALSE,NA,NA,NA,NA,chemical,POST,chlorsulfuron,0.009,1,yield,N
 scott1995,,1,TRZAW,FALSE,NA,NA,NA,NA,chemical,POST,chlorsulfuron,0.018,1,yield,NA
 scott1995,,1,TRZAW,FALSE,NA,NA,NA,NA,chemical,POST,24d,0.420,1,yield,NA
 epperlein2014,,,TRZAW,FALSE,NA,3500000,TRUE,NA,no,NA,NA,NA,0,yield,14_moisture
-garcia2007,,,TRZTU,FALSE,NA,4346776,TRUE,,,,,,,,
-garcia2007,,,VICSA,FALSE,NA,2830189,TRUE,,,,,,,,
-garcia2007,,,HORVX,FALSE,NA,3579952,TRUE,,,,,,,,
+garcia2007,,,TRZTU,FALSE,NA,4346776,TRUE,ploughing,no_control,POST,NA,,NA,yield,NA
+garcia2007,,,TRZTU,FALSE,NA,4346776,TRUE,ploughing,chemical,PRE,mix,,NA,yield,NA
+garcia2007,,,TRZTU,FALSE,NA,4346776,TRUE,ploughing,mechanic,POST,NA,,NA,yield,NA
+garcia2007,,,VICSA,FALSE,NA,2830189,TRUE,ploughing,no_control,POST,NA,,NA,yield,NA
+garcia2007,,,VICSA,FALSE,NA,2830189,TRUE,ploughing,chemical,PRE,mix,,NA,yield,NA
+garcia2007,,,VICSA,FALSE,NA,2830189,TRUE,ploughing,mechanic,POST,NA,,NA,yield,NA
+garcia2007,,,HORVX,FALSE,NA,3579952,TRUE,ploughing,no_control,POST,NA,,NA,yield,NA
+garcia2007,,,HORVX,FALSE,NA,3579952,TRUE,ploughing,chemical,PRE,mix,,NA,yield,NA
+garcia2007,,,HORVX,FALSE,NA,3579952,TRUE,ploughing,mechanic,POST,NA,,NA,yield,NA
