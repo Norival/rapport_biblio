@@ -237,3 +237,7 @@ VICSA (31.8 g/100 graines) :
 
 HORVX (41.9 g/100 graines) :
 150 000 * 1000 / 41.9 = 3 579 952 graines/ha.
+
+### iqbal1999
+
+Conversion du taux de semis de graines/m^2 en graines/hectare (x10000).
