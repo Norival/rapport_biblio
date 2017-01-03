@@ -89,8 +89,8 @@ garcia2007,,22,ANTAR,plants,natural,,
 garcia2007,,22,AVEST,plants,natural,,
 garcia2007,,22,CICIN,plants,natural,,
 garcia2007,,22,SONAS,plants,natural,,
-iqbal1999,1993,3,PHAMI,plants,planted,0,
-iqbal1999,1993,3,PHAMI,plants,planted,75,
+iqbal1999,1993,3,PHAMI,plants,planted,0,weed_height
+iqbal1999,1993,3,PHAMI,plants,planted,75,weed_n_uptake
 iqbal1999,1993,3,PHAMI,plants,planted,150,
 iqbal1999,1993,3,PHAMI,plants,planted,300,
 iqbal1999,1993,3,PHAMI,plants,planted,600,
