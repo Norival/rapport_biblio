@@ -251,3 +251,7 @@ Conversion de graines/épi en graines/plante (tableau 2) :
 grains/ear * ears/plant
 
 ### ponce1995
+
+L'herbicide utilisé (Primextra) est un mélange de metholachlor (30%) et
+d'atrazine (15%).
+4 L/ha
