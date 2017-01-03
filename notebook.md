@@ -249,3 +249,5 @@ La masse de graines est en g/plantes.
 
 Conversion de graines/épi en graines/plante (tableau 2) :
 grains/ear * ears/plant
+
+### ponce1995
