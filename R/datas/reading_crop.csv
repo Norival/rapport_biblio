@@ -147,3 +147,5 @@ garcia2007,,1,HORVX,FALSE,NA,3579952,TRUE,ploughing,no_control,POST,NA,,NA,yield
 garcia2007,,1,HORVX,FALSE,NA,3579952,TRUE,ploughing,chemical,PRE,mix,,NA,yield,NA
 garcia2007,,1,HORVX,FALSE,NA,3579952,TRUE,ploughing,mechanic,POST,NA,,NA,yield,NA
 iqbal1999,1993,1,TRZAS,FALSE,NA,3160000,TRUE,NA,no_control,NA,no_herbicide,NA,NA,gas_exchange,
+iqbal1999,1993,1,TRZAS,FALSE,NA,3160000,TRUE,NA,no_control,NA,no_herbicide,NA,NA,flag_leaf_growth,
+iqbal1999,1993,1,TRZAS,FALSE,NA,3160000,TRUE,NA,no_control,NA,no_herbicide,NA,NA,yield,

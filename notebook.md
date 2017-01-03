@@ -241,3 +241,11 @@ HORVX (41.9 g/100 graines) :
 ### iqbal1999
 
 Conversion du taux de semis de graines/m^2 en graines/hectare (x10000).
+
+Ajout des colonnes crop/weed_n_uptake (mg/plante).
+Ajout des colonnes crop/weed_height (cm).
+
+La masse de graines est en g/plantes.
+
+Conversion de graines/épi en graines/plante (tableau 2) :
+grains/ear * ears/plant
