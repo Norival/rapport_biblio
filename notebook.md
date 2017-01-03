@@ -238,7 +238,7 @@ VICSA (31.8 g/100 graines) :
 HORVX (41.9 g/100 graines) :
 150 000 * 1000 / 41.9 = 3 579 952 graines/ha.
 
-### iqbal1999
+### iqbal1999
 
 Conversion du taux de semis de graines/m^2 en graines/hectare (x10000).
 
@@ -248,10 +248,31 @@ Ajout des colonnes crop/weed_height (cm).
 La masse de graines est en g/plantes.
 
 Conversion de graines/épi en graines/plante (tableau 2) :
-grains/ear * ears/plant
+  `grains/ear * ears/plant`
 
-### ponce1995
+### ponce1995
 
 L'herbicide utilisé (Primextra) est un mélange de metholachlor (30%) et
 d'atrazine (15%).
-4 L/ha
+
+Ajout de la colonne crop_ag_biomass dans reading_results.csv
+
+Conversion de la masse aérienne de g/m^2 en g/plante :
+  `* 1/8`
+
+Conversion du rendement de g/m^2 en Mg/ha :
+  `(*10000/1000000 = * 1/100)`
+
+Conversion du nombre d'épis par m^2 en nombre d'épis par plante (8 plantes par
+m^2) :
+  `n_ears / 8`
+
+Conversion de graines/épi en graines/plante (tableau 2) :
+  `grains/ear * ears/plant`
+
+Conversion du poids de 1000 graines en poids d'une graine (en mg) :
+  `* 1000/1000 = * 1`
+
+Ajout des colonnes crop_[pk]_uptake dans reading_results.csv.
+Conversion de crop_[npk]_uptake de g/m^2 en mg/plante :
+  `* 1000/8`

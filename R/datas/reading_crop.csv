@@ -155,3 +155,12 @@ iqbal1999,1993,1,TRZAS,FALSE,NA,3160000,TRUE,NA,no_control,NA,no_herbicide,NA,NA
 iqbal1999,1993,1,TRZAS,FALSE,NA,3160000,TRUE,NA,no_control,NA,no_herbicide,NA,NA,kernel_weight,
 iqbal1999,1993,1,TRZAS,FALSE,NA,3160000,TRUE,NA,no_control,NA,no_herbicide,NA,NA,kernel_per_plant,
 iqbal1999,1993,1,TRZAS,FALSE,NA,3160000,TRUE,NA,no_control,NA,no_herbicide,NA,NA,n_ears,
+ponce1995,1992,1,ZEAMX,FALSE,NA,80000,TRUE,ploughing,chemical,POST,primextra,NA,1,yield,14_moisture
+ponce1995,1992,1,ZEAMX,FALSE,NA,80000,TRUE,ploughing,chemical,POST,primextra,NA,1,plant_height,
+ponce1995,1992,1,ZEAMX,FALSE,NA,80000,TRUE,ploughing,chemical,POST,primextra,NA,1,n_ears,
+ponce1995,1992,1,ZEAMX,FALSE,NA,80000,TRUE,ploughing,chemical,POST,primextra,NA,1,crop_ag_biomass,
+ponce1995,1992,1,ZEAMX,FALSE,NA,80000,TRUE,ploughing,chemical,POST,primextra,NA,1,kernels_per_plant,
+ponce1995,1992,1,ZEAMX,FALSE,NA,80000,TRUE,ploughing,chemical,POST,primextra,NA,1,kernel_weight,
+ponce1995,1992,1,ZEAMX,FALSE,NA,80000,TRUE,ploughing,chemical,POST,primextra,NA,1,crop_n_uptake,
+ponce1995,1992,1,ZEAMX,FALSE,NA,80000,TRUE,ploughing,chemical,POST,primextra,NA,1,crop_p_uptake,
+ponce1995,1992,1,ZEAMX,FALSE,NA,80000,TRUE,ploughing,chemical,POST,primextra,NA,1,crop_k_uptake,
