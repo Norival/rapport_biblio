@@ -276,3 +276,9 @@ Conversion du poids de 1000 graines en poids d'une graine (en mg) :
 Ajout des colonnes crop_[pk]_uptake dans reading_results.csv.
 Conversion de crop_[npk]_uptake de g/m^2 en mg/plante :
   `* 1000/8`
+
+### khaliq2013
+
+Conversion du taux de semis de kg/ha à graines/ha : utilisation du poids moyen
+d'une graine (depuis http://data.kew.org).
+  `125 000 * 1000 / 37.07 = 3 371 998  graines/ha`
