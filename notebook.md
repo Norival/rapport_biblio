@@ -79,6 +79,9 @@ Résultats trouvés sur les adventices et les cultures.
 - crop_density [num] : densité de la culture (graines/ha)
 - type [string] : type de résultat (treatment/control)
 - row_spacing [num] : espacement des rangs de la culture
+- days_after_sowing [num] : nombre de jours après le semis où les mesures ont
+  été effectuées (jours)
+- soil_work [string] : vail du sol effectué pour ce traitement
 - herbicide [string] : herbicide analysé
 - treatment_timing [string] : timing du traitement herbicide 
 - n_treatments [num] : nombre de traitements effectués
@@ -337,3 +340,5 @@ Conversion de crop_[npk]_uptake de g/m^2 en mg/plante :
 Conversion du taux de semis de kg/ha à graines/ha : utilisation du poids moyen
 d'une graine (depuis http://data.kew.org).
   `125 000 * 1000 / 37.07 = 3 371 998  graines/ha`
+
+Ajout des colonnes soil_work et days_after_sowing à reading_results.csv.
