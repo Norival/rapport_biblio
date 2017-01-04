@@ -24,3 +24,4 @@ x 2016-12-05 @read 07 winter-wheat (triticum-aestivum) yield response to winter 
 x 2016-12-08 @read 06 reintroduction of a rare arable weed: competition effects on weed fitness and crop yield
 x 2017-01-03 @read 06 effects of weed competition on flag leaf photosynthesis and grain yield of spring wheat
 x 2017-01-03 @read 05 improvement of the growth, grain-yield, and nitrogen, phosphorus, and potassium nutrition of grain corn through weed-control
+x 2017-01-04 @read 05 influence of tillage and weed control practices on growth and yield of wheat

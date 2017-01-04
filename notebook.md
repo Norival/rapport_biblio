@@ -122,7 +122,7 @@ Résultats trouvés sur les adventices et les cultures.
 - weed_density_qual [string] : variation de la densité d'adventices par rapport
   au contrôle quand les valeurs quantitatives ne sont pas données
   (stable/decrease/increase)
-- weed_ag_biomass_quant [num] : masse aérienne des adventices
+- weed_ag_biomass_quant [num] : masse aérienne des adventices (g/m^2)
 - weed_ag_biomass_qual [string] : variation qualitative de la masse aérienne
   des adventices quand la valeur quantitative n'est pas donnée
   (stable/decrease/increase)
@@ -342,3 +342,9 @@ d'une graine (depuis http://data.kew.org).
   `125 000 * 1000 / 37.07 = 3 371 998  graines/ha`
 
 Ajout des colonnes soil_work et days_after_sowing à reading_results.csv.
+
+weed_density et weed_ag_biomass_quant sont extraits de la figure 2.
+
+kernels_per_plant, kernel_weight et crop_yield sont extraits de la figure 4.
+
+net_income est extrait du tableau 1.
