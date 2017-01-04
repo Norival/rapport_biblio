@@ -1,4 +1,4 @@
-article,year,n,species,gmo,gmo_type,density,fertilizer,soil_work,weed_control,treatment_timing,herbicide,application_rate,n_treatments,metric,adjustment
+article,year,n_species,species,gmo,gmo_type,density,fertilizer,soil_work,weed_control,treatment_timing,herbicide,application_rate,n_treatments,metric,adjustment
 myers2005,2001,1,ZEAMX,TRUE,glyph_resistant,69000,TRUE,ploughing,chemical,POST,glyphosate,,1,crop_yield,15.5_moisture
 myers2005,2002,1,ZEAMX,TRUE,glyph_resistant,69000,TRUE,ploughing,chemical,POST,glyphosate,,1,crop_yield,15.5_moisture
 vangessel1995,1991,1,ZEAMX,FALSE,NA,86100,TRUE,NA,manual,POST,no_herbicide,,1,crop_yield,15.5_moisture
