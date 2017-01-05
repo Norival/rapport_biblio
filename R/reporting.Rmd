@@ -1,0 +1,101 @@
+---
+title: "Rapport bibliographique"
+author: "Xavier Laviron"
+date: \today
+lang: fr
+fontsize: 12pt
+output: pdf_document
+---
+
+Résumé des données
+==================
+
+### Informations générales
+
+```{r load_pkgs_and_datas, echo=FALSE, eval=TRUE}
+library(magrittr)
+library(ggplot2)
+
+rg_general  <- read.csv("datas/reading_general.csv", stringsAsFactors = FALSE)
+rg_protocol <- read.csv("datas/reading_protocol.csv", stringsAsFactors = FALSE)
+rg_crops    <- read.csv("datas/reading_crop.csv", stringsAsFactors = FALSE)
+rg_weeds    <- read.csv("datas/reading_weeds.csv", stringsAsFactors = FALSE)
+rg_results  <- read.csv("datas/reading_results.csv", stringsAsFactors = FALSE)
+
+rg_general$article <- as.factor(rg_general$article)
+```
+
+Il y a `r unique(rg_general$article) %>% length()` articles complétés.
+Au total, les études ont été portées dans `r unique(rg_general$country) %>%
+length()` pays différents.
+
+```{r countries, echo=FALSE}
+aggregate(rg_general$country,
+          by  = list(id = rg_general$article, country = rg_general$country),
+          FUN = "length")[,2:3] %>%
+  ggplot(., aes(x = country)) +
+  geom_bar() +
+  theme_bw() +
+  xlab("Pays") +
+  ylab("n") +
+  theme(axis.title = element_text(size = 15),
+        axis.text = element_text(size = 12),
+        axis.text.x = element_text(angle = 90, hjust = 1, vjust = .5))
+```
+
+### Informations sur les cultures
+
+```{r crop_species, echo=FALSE}
+aggregate(rg_crops$species,
+          by  = list(id = rg_crops$article, species = rg_crops$species),
+          FUN = "length")[,2:3] %>%
+  ggplot(., aes(x = species)) +
+  geom_bar() +
+  xlab("Espèce cultivée") +
+  ylab("n") +
+  theme_bw() +
+  theme(axis.title = element_text(size = 15),
+        axis.text = element_text(size = 12))
+```
+```{r crop_metrics, echo=FALSE}
+aggregate(rg_crops$metric,
+          by  = list(id = rg_crops$article, metric = rg_crops$metric),
+          FUN = "length")[,2:3] %>%
+  .[.$metric != "", ] %>%
+  ggplot(., aes(x = metric)) +
+  geom_bar() +
+  xlab("Métrique") +
+  ylab("n") +
+  theme_bw() +
+  theme(axis.title  = element_text(size = 15),
+        axis.text   = element_text(size = 12),
+        axis.text.x = element_text(angle = 90, hjust = 1, vjust = .5))
+```
+
+### Informations sur les adventices
+
+```{r weeds_metrics, echo=FALSE}
+aggregate(rg_weeds$metric,
+          by  = list(id = rg_weeds$article, metric = rg_weeds$metric),
+          FUN = "length")[,2:3] %>%
+  .[.$metric != "", ] %>%
+  ggplot(., aes(x = metric)) +
+  geom_bar() +
+  xlab("Métrique") +
+  ylab("n") +
+  theme_bw() +
+  theme(axis.title  = element_text(size = 15),
+        axis.text   = element_text(size = 12),
+        axis.text.x = element_text(angle = 90))
+```
+```{r weeds_species, echo=FALSE}
+aggregate(rg_weeds$n_species,
+          by  = list(id = rg_weeds$article, n_species = rg_weeds$n_species),
+          FUN = "length")[,2:3] %>%
+  ggplot(., aes(x = n_species)) +
+  geom_bar() +
+  theme_bw() +
+  theme(axis.title  = element_text(size = 15),
+        axis.text   = element_text(size = 12)) +
+  scale_x_continuous(breaks = seq(1, 18))
+```

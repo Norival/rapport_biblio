@@ -24,9 +24,7 @@
 
 # specific files
 R/reading_grid.ods
-R/names.txt
-R/tables.R
-R/datas/pflname.txt
+R/reporting.pdf
 report.txt
 todo.txt.bak
 
