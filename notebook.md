@@ -114,6 +114,7 @@ Résultats trouvés sur les adventices et les cultures.
 - grain_yield_qual [string] : variation qualitative du rendement par rapport au
   contrôle, quand les valeurs quantitatives ne sont pas données
   (stable/decrease/increase)
+- oil_yield [num] : rendement en huile de la culture (T/ha)
 - crop_n_uptake [num] : contenu en azote de la culture (mg/plante)
 - crop_p_uptake [num] : contenu en phosphore de la culture (mg/plante)
 - crop_k_uptake [num] : contenu en potassium de la culture (mg/plante)
@@ -348,3 +349,7 @@ weed_density et weed_ag_biomass_quant sont extraits de la figure 2.
 kernels_per_plant, kernel_weight et crop_yield sont extraits de la figure 4.
 
 net_income est extrait du tableau 1.
+
+### bijanzadeh2010
+
+Ajout de la colonne oil_yield en tonnes/ha.

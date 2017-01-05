@@ -176,3 +176,13 @@ khaliq2013,,1,ZEAMX,FALSE,NA,3371998,TRUE,reduced_tillage,organic,POST,sorgaab,N
 khaliq2013,,1,ZEAMX,FALSE,NA,3371998,TRUE,conventional_tillage,mixed,POST,iodo+mesosulfuron+sorgaab,7.2,1,,
 khaliq2013,,1,ZEAMX,FALSE,NA,3371998,TRUE,no_tillage,mixed,POST,iodo+mesosulfuron+sorgaab,7.2,1,,
 khaliq2013,,1,ZEAMX,FALSE,NA,3371998,TRUE,reduced_tillage,mixed,POST,iodo+mesosulfuron+sorgaab,7.2,1,,
+bijanzadeh2010,,1,BRSNN,FALSE,NA,NA,TRUE,NA,chemical,PRE,trifluralin,1200,,crop_yield,NA
+bijanzadeh2010,,1,BRSNN,FALSE,NA,NA,TRUE,NA,chemical,PRE,trifluralin,1400,,oil_yield,NA
+bijanzadeh2010,,1,BRSNN,FALSE,NA,NA,TRUE,NA,chemical,POST,trifluralin+propaquizafop+pronamide,1200+100+2000,,,
+bijanzadeh2010,,1,BRSNN,FALSE,NA,NA,TRUE,NA,chemical,POST,trifluralin+propaquizafop+pronamide,1200+200+1500,,,
+bijanzadeh2010,,1,BRSNN,FALSE,NA,NA,TRUE,NA,chemical,POST,trifluralin+propaquizafop+isoxaben,1200+100+500,,,
+bijanzadeh2010,,1,BRSNN,FALSE,NA,NA,TRUE,NA,chemical,POST,trifluralin+propaquizafop+isoxaben,1200+200+250,,,
+bijanzadeh2010,,1,BRSNN,FALSE,NA,NA,TRUE,NA,chemical,POST,trifluralin+hadoxyfo+pronamide,1200+100+2000,,,
+bijanzadeh2010,,1,BRSNN,FALSE,NA,NA,TRUE,NA,chemical,POST,trifluralin+hadoxyfo+pronamide,1200+200+1500,,,
+bijanzadeh2010,,1,BRSNN,FALSE,NA,NA,TRUE,NA,chemical,POST,trifluralin+hadoxyfo+isoxaben,1200+100+500,,,
+bijanzadeh2010,,1,BRSNN,FALSE,NA,NA,TRUE,NA,chemical,POST,trifluralin+hadoxyfo+isoxaben,1200+200+250,,,
