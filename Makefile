@@ -1,6 +1,6 @@
 RDIR=./R
 REPORTING=$(RDIR)/reporting
-DATAS=$(wildcard $(RDIR)/datas/*)
+DATA=$(wildcard $(RDIR)/data/*)
 RFILES=$(wildcard $(RDIR)/*.R)
 OUT_FILES=$(RFILES:.R=.Rout)
 
@@ -11,7 +11,7 @@ all: reporting
 
 reporting: $(REPORTING).pdf
 
-$(REPORTING).pdf: $(REPORTING).Rmd $(DATAS)
+$(REPORTING).pdf: $(REPORTING).Rmd $(DATA)
 	$(R) "rmarkdown::render('$<')"
 
 view: $(REPORTING).pdf

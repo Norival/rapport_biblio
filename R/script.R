@@ -14,11 +14,11 @@ graphs_dir <- "~/desktop/r_graphs"
 
 # --- LOAD DATA FILES ---------------------------------------------------------
 
-rg_general  <- read.csv("datas/reading_general.csv", stringsAsFactors = FALSE)
-rg_protocol <- read.csv("datas/reading_protocol.csv", stringsAsFactors = FALSE)
-rg_crops    <- read.csv("datas/reading_crop.csv", stringsAsFactors = FALSE)
-rg_weeds    <- read.csv("datas/reading_weeds.csv", stringsAsFactors = FALSE)
-rg_results  <- read.csv("datas/reading_results.csv", stringsAsFactors = FALSE)
+rg_general  <- read.csv("data/reading_general.csv", stringsAsFactors = FALSE)
+rg_protocol <- read.csv("data/reading_protocol.csv", stringsAsFactors = FALSE)
+rg_crops    <- read.csv("data/reading_crop.csv", stringsAsFactors = FALSE)
+rg_weeds    <- read.csv("data/reading_weeds.csv", stringsAsFactors = FALSE)
+rg_results  <- read.csv("data/reading_results.csv", stringsAsFactors = FALSE)
 
 rg_general$article <- as.factor(rg_general$article)
 
