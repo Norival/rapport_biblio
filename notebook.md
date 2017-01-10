@@ -104,7 +104,7 @@ Résultats trouvés sur les adventices et les cultures.
 - n_obs [num] : nombre d'observations
 - p [num] : p-value pour le test considéré
 - grain_yield_quant [num] : valeur quantitative du rendement de la culture
-  (T/ha)
+  (kg/ha)
 - percent_decrease_yield [num] : pourcentage de diminution du rendement par
   rapport au contrôle
 - percent_decrease_ag_biomass [num] : pourcentage de diminution de la biomasse
@@ -156,6 +156,11 @@ Se référer au fichier biblio.bib pour connaître les références de l'article
 partir de l'identifiant.
 Les codes utilisés pour identifier les espèces d'adventices sont les codes EPPO
 ([EPPO Global Database](https://gd.eppo.int/)).
+
+### tharp1999
+
+Les taux d'herbicides sont en kg/ha, ils sont convertis en g/ha:
+  `* 1000`
 
 ### solie1991
 
@@ -271,10 +276,6 @@ La moyenne a été faite sur les deux locations.
 
 La taille de plots indiquée est la taille moyenne sur tous les traitements.
 
-Les taux d'application des herbicides sont donnés en g/ha, il est converti en
-kg/ha.
-Ils sont convertis en kg/ha.
-
 ### epperlein2014
 
 La densité de semis du blé est convertie de 350 plants/m^2 en plants/ha.
@@ -319,8 +320,8 @@ Ajout de la colonne crop_ag_biomass dans reading_results.csv
 Conversion de la masse aérienne de g/m^2 en g/plante :
   `* 1/8`
 
-Conversion du rendement de g/m^2 en Mg/ha :
-  `(*10000/1000000 = * 1/100)`
+Conversion du rendement de g/m^2 en kg/ha :
+  `(*10000/1000 = * 10)`
 
 Conversion du nombre d'épis par m^2 en nombre d'épis par plante (8 plantes par
 m^2) :
@@ -348,8 +349,12 @@ weed_density et weed_ag_biomass_quant sont extraits de la figure 2.
 
 kernels_per_plant, kernel_weight et crop_yield sont extraits de la figure 4.
 
+crop_grain_yield est en t/ha et est converti en kg/ha.
+
 net_income est extrait du tableau 1.
 
 ### bijanzadeh2010
 
 Ajout de la colonne oil_yield en tonnes/ha.
+
+
