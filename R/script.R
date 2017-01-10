@@ -8,6 +8,7 @@
 
 library(magrittr)
 library(ggplot2)
+library(plyr)
 
 
 graphs_dir <- "~/desktop/r_graphs"
@@ -21,6 +22,12 @@ rg_weeds    <- read.csv("data/reading_weeds.csv", stringsAsFactors = FALSE)
 rg_results  <- read.csv("data/reading_results.csv", stringsAsFactors = FALSE)
 
 rg_general$article <- as.factor(rg_general$article)
+
+# get crop species from rg_crops dataframe
+for (i in 1:nrow(rg_results)) {
+  rg_results$crop_species[i] <-
+    rg_crops$species[rg_crops$article == rg_results$article[i]][1]
+}
 
 
 # --- GENERAL INFORMATIONS ABOUT ARTICLES -------------------------------------
@@ -66,6 +73,45 @@ aggregate(rg_crops$metric,
         axis.text.x = element_text(angle = 90))
 ggsave("metrics_crops.png", path = graphs_dir)
 
+## Various tests
+#
+# rg_protocol[!(is.na(rg_protocol$farmer)) & rg_protocol$farmer, ] %>%
+#   unique() %>%
+#   nrow()
+# rg_crops
+#
+# unique(rg_protocol$article)
+# rg_protocol[!duplicated(rg_protocol$article),]
+# 
+# rg_protocol[!(is.na(rg_protocol$experiment_type)) &
+#             !(duplicated(rg_protocol$article)), ] %>%
+#   ddply(., c("experiment_type", "farmer"), summarise,
+#         n = length(article))
+# 
+# rg_crops[!(duplicated(rg_crops$article)), ] %>%
+#   ddply(., c("species", "gmo"), summarise,
+#         n = length(gmo))
+# 
+# 
+# nrow(rg_protocol[rg_protocol$farmer,])
+# 
+# rg_weeds[!(is.na(rg_weeds$n_species)) &
+#          !(duplicated(rg_weeds$article)), ] %>%
+#   .$n_species %>%
+#   mean()
+#   ddply(., c("article"), summarise,
+#         n = n_species)
+# 
+# rg_results[!(is.na(rg_results$grain_yield_quant)) &
+#            !(duplicated(rg_results$article)), ] %>%
+#   nrow()
+# rg_results[is.na(rg_results$grain_yield_quant) &
+#            !(duplicated(rg_results$article)), ] %>%
+#   nrow()
+# 
+# rg_results[!(is.na(rg_results$weed_density_quant)) &
+#            !(duplicated(rg_results$article)), ] %>%
+#   nrow()
 
 # --- GENERAL INFORMATIONS ABOUT WEEDS ----------------------------------------
 
@@ -94,12 +140,6 @@ ggsave("weeds_species.png", path = graphs_dir)
 
 # -- RESULTS ------------------------------------------------------------------
 
-# get crop species from rg_crops dataframe
-for (i in 1:nrow(rg_results)) {
-  rg_results$crop_species[i] <-
-    rg_crops$species[rg_crops$article == rg_results$article[i]][1]
-}
-
 # mean grain yield by treatment and crop species
 aggregate(data = rg_results,
           grain_yield_quant ~ article + type + crop_species,
@@ -117,11 +157,12 @@ rg_results[nchar(rg_results$grain_yield_qual) != 0, ] %>%
         grain_yield_qual = grain_yield_qual)
 
 # weed_percent_control
+# I need to compute percent of decrease when quantitative data is available
+
 rg_results[!(is.na(rg_results$weed_percent_control)) &
            !(is.na(rg_results$application_rate)), ] %>%
   ddply(., c('article', 'crop_species'), summarise,
         weed_control = mean(weed_percent_control),
         rate = mean(application_rate, na.rm = TRUE)) %>%
-print()
-  ggplot(., aes(x = article, y = weed_control
-
+  ggplot(., aes(x = rate, y = weed_control, colour = crop_species)) +
+    geom_point()
