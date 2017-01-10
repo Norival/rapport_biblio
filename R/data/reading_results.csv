@@ -328,7 +328,7 @@ bijanzadeh2010,2004,,,,treatment,,,112,,trifluralin+hadoxyfo+pronamide,1200+200+
 bijanzadeh2010,2004,,,,treatment,,,112,,trifluralin+hadoxyfo+isoxaben,1200+100+500,,,,,,,,,,,,,,,,,3284,,,,,1.498,,,,,,,48.6,,,,
 bijanzadeh2010,2004,,,,treatment,,,112,,trifluralin+hadoxyfo+isoxaben,1200+200+250,,,,,,,,,,,,,,,,,3105,,,,,1.425,,,,,,,62.2,,,,
 bijanzadeh2010,2005,,,,weedy_control,,,56,,no_herbicide,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,141.3,,,,
-bijanzadeh2010,2005,,,,weedy_control,,,56,,no_weed,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,,,,
+bijanzadeh2010,2005,,,,weedfree_control,,,56,,no_weed,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,,,,
 bijanzadeh2010,2005,,,,treatment,,,56,,trifluralin,1200,,,,,,,,,,,,,,,,,,,,,,,,,,,,,60.2,,,,
 bijanzadeh2010,2005,,,,treatment,,,56,,trifluralin,1400,,,,,,,,,,,,,,,,,,,,,,,,,,,,,67.6,,,,
 bijanzadeh2010,2005,,,,treatment,,,56,,trifluralin+propaquizafop+pronamide,1200+100+2000,,,,,,,,,,,,,,,,,,,,,,,,,,,,,35.4,,,,
