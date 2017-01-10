@@ -94,16 +94,18 @@ ggsave("weeds_species.png", path = graphs_dir)
 
 # -- RESULTS ------------------------------------------------------------------
 
-rg_results$percent_decrease_yield
-rg_results$grain_yield_quant
-rg_results$grain_yield_qual
+# get crop species from rg_crops dataframe
+for (i in 1:nrow(rg_results)) {
+  rg_results$crop_species[i] <- 
+    rg_crops$species[rg_crops$article == rg_results$article[i]][1]
+}
 
-aggregate(rg_results$grain_yield_qual[!is.na(rg_results$grain_yield_qual)],
-          by  = list(id = rg_results$article, n_species = rg_results$n_species,
-                     treatment = rg_results$density),
-          FUN = "length")[,2:3] %>%
-print()
+# mean grain yield by treatment and crop species
 aggregate(data = rg_results,
-          grain_yield_quant ~ article + type,
-          FUN = "mean", na.rm = TRUE)
-warnings()
+          grain_yield_quant ~ article + type + crop_species,
+          FUN = "mean", na.rm = TRUE) %>%
+  aggregate(data = .,
+            grain_yield_quant ~ type + crop_species,
+            FUN = "mean", na.rm = TRUE) %>%
+  ggplot(., aes(x = type, y = grain_yield_quant, fill = crop_species)) +
+  geom_bar(stat = "identity", position = "dodge")

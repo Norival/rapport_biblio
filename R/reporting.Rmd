@@ -16,11 +16,11 @@ Résumé des données
 library(magrittr)
 library(ggplot2)
 
-rg_general  <- read.csv("datas/reading_general.csv", stringsAsFactors = FALSE)
-rg_protocol <- read.csv("datas/reading_protocol.csv", stringsAsFactors = FALSE)
-rg_crops    <- read.csv("datas/reading_crop.csv", stringsAsFactors = FALSE)
-rg_weeds    <- read.csv("datas/reading_weeds.csv", stringsAsFactors = FALSE)
-rg_results  <- read.csv("datas/reading_results.csv", stringsAsFactors = FALSE)
+rg_general  <- read.csv("data/reading_general.csv", stringsAsFactors = FALSE)
+rg_protocol <- read.csv("data/reading_protocol.csv", stringsAsFactors = FALSE)
+rg_crops    <- read.csv("data/reading_crop.csv", stringsAsFactors = FALSE)
+rg_weeds    <- read.csv("data/reading_weeds.csv", stringsAsFactors = FALSE)
+rg_results  <- read.csv("data/reading_results.csv", stringsAsFactors = FALSE)
 
 rg_general$article <- as.factor(rg_general$article)
 ```
@@ -95,7 +95,34 @@ aggregate(rg_weeds$n_species,
   ggplot(., aes(x = n_species)) +
   geom_bar() +
   theme_bw() +
-  theme(axis.title  = element_text(size = 15),
-        axis.text   = element_text(size = 12)) +
-  scale_x_continuous(breaks = seq(1, 18))
+  theme(axis.title  = element_text(size = 15)) +
+  theme(axis.text   = element_text(size = 12)) +
+  theme(panel.grid  = element_blank()) +
+  scale_x_continuous(breaks = seq(1, 22))
+```
+
+### Résultats
+
+```{r grain_yield, echo=FALSE}
+# get species from rg_crops dataframe
+for (i in 1:nrow(rg_results)) {
+  rg_results$crop_species[i] <- 
+    rg_crops$species[rg_crops$article == rg_results$article[i]][1]
+}
+
+# mean grain yield by treatment and crop species
+aggregate(data = rg_results,
+          grain_yield_quant ~ article + type + crop_species,
+          FUN = "mean", na.rm = TRUE) %>%
+  aggregate(data = .,
+            grain_yield_quant ~ type + crop_species,
+            FUN = "mean", na.rm = TRUE) %>%
+  ggplot(., aes(x = type, y = grain_yield_quant, fill = crop_species)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  xlab("Traitement") +
+  ylab("Rendement en grains (kg/ha)") +
+  theme_bw() +
+  theme(axis.title  = element_text(size = 15)) +
+  theme(axis.text   = element_text(size = 12)) +
+  theme(panel.grid  = element_blank())
 ```
