@@ -133,9 +133,9 @@ clay1998,1994,1,ZEAMX,FALSE,NA,63700,TRUE,mixed,chemical,POST,atrazine,0.6,1,cro
 clay1998,1992,1,ZEAMX,FALSE,NA,61750,TRUE,mixed,chemical,POST,alachlor,0.6,1,crop_yield,15.5_moisture
 clay1998,1993,1,ZEAMX,FALSE,NA,63700,TRUE,mixed,chemical,POST,alachlor,0.9,1,crop_yield,15.5_moisture
 clay1998,1994,1,ZEAMX,FALSE,NA,63700,TRUE,mixed,chemical,POST,alachlor,0.9,1,crop_yield,15.5_moisture
-scott1995,,1,TRZAW,FALSE,NA,NA,NA,NA,chemical,POST,chlorsulfuron,0.009,1,crop_yield,NA
-scott1995,,1,TRZAW,FALSE,NA,NA,NA,NA,chemical,POST,chlorsulfuron,0.018,1,crop_yield,NA
-scott1995,,1,TRZAW,FALSE,NA,NA,NA,NA,chemical,POST,24d,0.420,1,crop_yield,NA
+scott1995,,1,TRZAW,FALSE,NA,NA,NA,NA,chemical,POST,chlorsulfuron,009,1,crop_yield,NA
+scott1995,,1,TRZAW,FALSE,NA,NA,NA,NA,chemical,POST,chlorsulfuron,018,1,crop_yield,NA
+scott1995,,1,TRZAW,FALSE,NA,NA,NA,NA,chemical,POST,24d,420,1,crop_yield,NA
 epperlein2014,,1,TRZAW,FALSE,NA,3500000,TRUE,NA,no,NA,NA,NA,0,crop_yield,14_moisture
 garcia2007,,1,TRZTU,FALSE,NA,4346776,TRUE,ploughing,no_control,POST,NA,,NA,crop_yield,NA
 garcia2007,,1,TRZTU,FALSE,NA,4346776,TRUE,ploughing,chemical,PRE,mix,,NA,crop_yield,NA
