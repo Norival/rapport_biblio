@@ -96,7 +96,7 @@ ggsave("weeds_species.png", path = graphs_dir)
 
 # get crop species from rg_crops dataframe
 for (i in 1:nrow(rg_results)) {
-  rg_results$crop_species[i] <- 
+  rg_results$crop_species[i] <-
     rg_crops$species[rg_crops$article == rg_results$article[i]][1]
 }
 
@@ -109,3 +109,19 @@ aggregate(data = rg_results,
             FUN = "mean", na.rm = TRUE) %>%
   ggplot(., aes(x = type, y = grain_yield_quant, fill = crop_species)) +
   geom_bar(stat = "identity", position = "dodge")
+
+# grain_yield_qual
+
+rg_results[nchar(rg_results$grain_yield_qual) != 0, ] %>%
+  ddply(., c('article'), summarise,
+        grain_yield_qual = grain_yield_qual)
+
+# weed_percent_control
+rg_results[!(is.na(rg_results$weed_percent_control)) &
+           !(is.na(rg_results$application_rate)), ] %>%
+  ddply(., c('article', 'crop_species'), summarise,
+        weed_control = mean(weed_percent_control),
+        rate = mean(application_rate, na.rm = TRUE)) %>%
+print()
+  ggplot(., aes(x = article, y = weed_control
+
