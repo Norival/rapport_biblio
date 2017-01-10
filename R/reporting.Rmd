@@ -23,6 +23,12 @@ rg_weeds    <- read.csv("data/reading_weeds.csv", stringsAsFactors = FALSE)
 rg_results  <- read.csv("data/reading_results.csv", stringsAsFactors = FALSE)
 
 rg_general$article <- as.factor(rg_general$article)
+
+# get species from rg_crops dataframe
+for (i in 1:nrow(rg_results)) {
+  rg_results$crop_species[i] <- 
+    rg_crops$species[rg_crops$article == rg_results$article[i]][1]
+}
 ```
 
 Il y a `r unique(rg_general$article) %>% length()` articles complétés.
@@ -104,12 +110,6 @@ aggregate(rg_weeds$n_species,
 ### Résultats
 
 ```{r grain_yield, echo=FALSE}
-# get species from rg_crops dataframe
-for (i in 1:nrow(rg_results)) {
-  rg_results$crop_species[i] <- 
-    rg_crops$species[rg_crops$article == rg_results$article[i]][1]
-}
-
 # mean grain yield by treatment and crop species
 aggregate(data = rg_results,
           grain_yield_quant ~ article + type + crop_species,
