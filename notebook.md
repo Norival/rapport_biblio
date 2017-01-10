@@ -157,6 +157,11 @@ partir de l'identifiant.
 Les codes utilisés pour identifier les espèces d'adventices sont les codes EPPO
 ([EPPO Global Database](https://gd.eppo.int/)).
 
+### tharp1999
+
+Les taux d'herbicides sont en kg/ha, ils sont convertis en g/ha:
+  `* 1000`
+
 ### solie1991
 
 Conversion du taux de semis de kg/ha à graines/ha : utilisation du poids moyen
