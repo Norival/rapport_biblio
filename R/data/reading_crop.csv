@@ -191,3 +191,4 @@ hamouz2013,,1,TRZAW,FALSE,NA,NA,NA,NA,chemical,POST,metsulfuron_methyl+tribenuro
 hamouz2013,,1,TRZAW,FALSE,NA,NA,NA,NA,chemical,POST,clopyralid,120,1,crop_yield,NA
 hamouz2013,,1,TRZAW,FALSE,NA,NA,NA,NA,chemical,POST,fluroxypyr,125,1,crop_yield,NA
 hamouz2013,,1,TRZAW,FALSE,NA,NA,NA,NA,chemical,PRE,glyphosate_ipa,1440,1,crop_yield,NA
+fahad2015,,1,TRZAW,FALSE,NA,3371998,TRUE,ploughing,no_control,NA,NA,NA,NA,crop_yield,14_moisture

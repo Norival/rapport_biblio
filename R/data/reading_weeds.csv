@@ -119,3 +119,9 @@ hamouz2013,,,CIRAR,plants,natural,NA,weed_coverage
 hamouz2013,,,MATIN,plants,natural,NA,weed_patchiness_index
 hamouz2013,,,other_dicot,plants,natural,NA,
 hamouz2013,,,other_monocot,plants,natural,NA,
+fahad2015,,2,GALAP,plants,planted,45,weed_seed_production
+fahad2015,,2,GALAP,plants,planted,45,weed_height
+fahad2015,,2,GALAP,plants,planted,45,weed_ag_biomass
+fahad2015,,2,LEPSA,plants,planted,45,weed_seed_production
+fahad2015,,2,LEPSA,plants,planted,45,weed_height
+fahad2015,,2,LEPSA,plants,planted,45,weed_ag_biomass

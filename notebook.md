@@ -376,3 +376,11 @@ Ajout de deux nouvelles métriques pour les adventices :
 Cet article est un doublons de bijanzadeh2010interrelationships, les mêmes
 données sont présentées.
 Il n'est donc pas étudié.
+
+### fahad2015
+
+Conversion du taux de semis de kg/ha à graines/ha : utilisation du poids moyen
+d'une graine (37.07 g/1000 graines, depuis http://data.kew.org).
+
+125000 * 1000 / 37.07 = 3 371 998 graines/ha.
+

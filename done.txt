@@ -27,3 +27,4 @@ x 2017-01-03 @read 05 improvement of the growth, grain-yield, and nitrogen, phos
 x 2017-01-04 @read 05 influence of tillage and weed control practices on growth and yield of wheat
 x 2017-01-05 @read 04 interrelationships between oilseed rape yield and weeds population under herbicides application
 x 2017-01-16 @read @general_info hamouz2009 02 impact of site-specific weed management on herbicide savings and winter wheat yield
+x 2017-01-16 @read @general_info fahad2015 03 weed growth and crop yield loss in wheat as influenced by row spacing and weed emergence times
