@@ -357,4 +357,16 @@ net_income est extrait du tableau 1.
 
 Ajout de la colonne oil_yield en tonnes/ha.
 
+### hamouz2013
 
+Il faut rechercher les codes EPPO des espèces adventices.
+`other_dicot` et `other_monocot` correspondent à l'ensemble des adventices de la
+parcelle autre que les trois nommées.
+
+Conversion du taux d'application du taux d'herbicides en g/Ha.
+
+Ajout de deux nouvelles métriques pour les adventices :
+
+- `weed_patchiness_index`: indice défini par Lloyd (1976), s'il est plus grand
+  que 1, cela signifie que la population est agrégée
+- `weed_coverage`: représente le pourcentage de sol recouvert par l'espèce.

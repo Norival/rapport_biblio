@@ -186,3 +186,8 @@ bijanzadeh2010,,1,BRSNN,FALSE,NA,NA,TRUE,NA,chemical,POST,trifluralin+hadoxyfo+p
 bijanzadeh2010,,1,BRSNN,FALSE,NA,NA,TRUE,NA,chemical,POST,trifluralin+hadoxyfo+pronamide,1200+200+1500,,,
 bijanzadeh2010,,1,BRSNN,FALSE,NA,NA,TRUE,NA,chemical,POST,trifluralin+hadoxyfo+isoxaben,1200+100+500,,,
 bijanzadeh2010,,1,BRSNN,FALSE,NA,NA,TRUE,NA,chemical,POST,trifluralin+hadoxyfo+isoxaben,1200+200+250,,,
+hamouz2013,,1,TRZAW,FALSE,NA,NA,NA,NA,chemical,POST,pinoxaden+rape_oil_methyl_ester,40+792,1,crop_yield,NA
+hamouz2013,,1,TRZAW,FALSE,NA,NA,NA,NA,chemical,POST,metsulfuron_methyl+tribenuron_methyl,40+40,1,crop_yield,NA
+hamouz2013,,1,TRZAW,FALSE,NA,NA,NA,NA,chemical,POST,clopyralid,120,1,crop_yield,NA
+hamouz2013,,1,TRZAW,FALSE,NA,NA,NA,NA,chemical,POST,fluroxypyr,125,1,crop_yield,NA
+hamouz2013,,1,TRZAW,FALSE,NA,NA,NA,NA,chemical,PRE,glyphosate_ipa,1440,1,crop_yield,NA

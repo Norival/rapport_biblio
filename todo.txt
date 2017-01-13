@@ -6,7 +6,7 @@
 (A) @stats Report effect size index if present
 (A) @stats Try to add a column with type of statistical tests used
 (A) @stats Try to find CI95 in articles' results
-(B) @read @general_info hamouz2009 02 impact of site-specific weed management on herbicide savings and winter wheat yield
+(H) @read @results hamouz2009 02 impact of site-specific weed management on herbicide savings and winter wheat yield
 (B) @read @general_info lima2010 02 corn yield response to weed and fall armyworm controls
 (B) @read @general_info malik2009 02 demonstration and evaluation of effect of weedicides on broad leaved weeds on wheat yield
 (B) @reproducibility Complete notebook for the already read articles
