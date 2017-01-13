@@ -353,7 +353,7 @@ crop_grain_yield est en t/ha et est converti en kg/ha.
 
 net_income est extrait du tableau 1.
 
-### bijanzadeh2010
+### bijanzadeh2010interrelationships
 
 Ajout de la colonne oil_yield en tonnes/ha.
 
@@ -370,3 +370,9 @@ Ajout de deux nouvelles métriques pour les adventices :
 - `weed_patchiness_index`: indice défini par Lloyd (1976), s'il est plus grand
   que 1, cela signifie que la population est agrégée
 - `weed_coverage`: représente le pourcentage de sol recouvert par l'espèce.
+
+### bijanzadeh2010effect
+
+Cet article est un doublons de bijanzadeh2010interrelationships, les mêmes
+données sont présentées.
+Il n'est donc pas étudié.

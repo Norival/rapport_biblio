@@ -1,6 +1,5 @@
 (A) @grid Verify results of scott1995 (some results are missing, may also happen in other articles)
 (A) @grid homogeneize units of yield for first articles (and maybe other metrics)
-(A) @read @general_info bijanzadeh2010effet 03 effect of trifluralin, pronamide, haloxyfop-p methyl, propaquizafop, and isoxaben on weed control and oilseed rape yield in iran
 (A) @read @general_info fahad2015 03 weed growth and crop yield loss in wheat as influenced by row spacing and weed emergence times
 (A) @read @results Finish reading of garcia2007 fertilisation and weed control effects on yield and weeds in durum wheat grown under rain-fed conditions in a mediterranean climate
 (A) @stats Report effect size index if present
