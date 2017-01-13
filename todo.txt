@@ -26,7 +26,6 @@
 (D) @find @general_info pandey2004 01 effect of isoproturon tank mix with metsulfuron and 2,4-d on weeds and yield of wheat (triticum aestivum)
 (D) @read @general_info delchev2015durum 00 durum wheat grain yield and quality influenced by some mixtures of foliar fertilizers and combined herbicides
 (D) @read @general_info gaba2016herbicides 00 herbicides do not ensure for higher wheat yield, but eliminate rare plant species
-(E) !DUPLICATE! @read @general_info 00 corn growth and yield in competition with weeds
 (E) @find @general_info ahmed2013 00 physiological traits and yield of wheat cultivars as influenced by establishment methods and weed management practices
 (E) @find @general_info tahmasvand2012 00 influence of plant density, planting pattern and weed control on yield and yield components of grain corn
 (E) @read @general_info khan2013 00 effect of different herbicides and plant extracts on yield and yield components of wheat (triticum aestivum l.)
