@@ -6,8 +6,8 @@
 (A) @stats Try to add a column with type of statistical tests used
 (A) @stats Try to find CI95 in articles' results
 (H) @read @results hamouz2009 02 impact of site-specific weed management on herbicide savings and winter wheat yield
-(B) @read @general_info lima2010 02 corn yield response to weed and fall armyworm controls
-(B) @read @general_info malik2009 02 demonstration and evaluation of effect of weedicides on broad leaved weeds on wheat yield
+(B) @read @results lima2010 02 corn yield response to weed and fall armyworm controls
+(B) @read @results malik2009 02 demonstration and evaluation of effect of weedicides on broad leaved weeds on wheat yield
 (B) @reproducibility Complete notebook for the already read articles
 (B) @stats @read Find a way to clearly summarize results of rueda2011
 (B) @stats Start to make a R script to load and visualize data

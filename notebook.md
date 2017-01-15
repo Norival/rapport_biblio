@@ -384,3 +384,18 @@ d'une graine (37.07 g/1000 graines, depuis http://data.kew.org).
 
 125000 * 1000 / 37.07 = 3 371 998 graines/ha.
 
+### lima2010
+
+Calcul de la taille des plots : les rangs sont espacés de 1 m et un plot
+consisteen 6 rangs sur une longueur de 0.6 m. Les plots font donc `6 * 0.6 = 36
+m^2`.
+
+### malik2009
+
+Conversion du taux de semis de kg/ha à graines/ha : utilisation du poids moyen
+d'une graine (37.07 g/1000 graines, depuis http://data.kew.org), et de la
+moyenne entre 125 et 175 kg/ha (125-175 kg/ha est ndiqué dans l'article).
+
+150000 * 1000 / 37.07 = 4 046 398 graines/ha.
+
+Aucune donnée sur les adventices n'est donnée dans cet article.

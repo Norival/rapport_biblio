@@ -192,3 +192,16 @@ hamouz2013,,1,TRZAW,FALSE,NA,NA,NA,NA,chemical,POST,clopyralid,120,1,crop_yield,
 hamouz2013,,1,TRZAW,FALSE,NA,NA,NA,NA,chemical,POST,fluroxypyr,125,1,crop_yield,NA
 hamouz2013,,1,TRZAW,FALSE,NA,NA,NA,NA,chemical,PRE,glyphosate_ipa,1440,1,crop_yield,NA
 fahad2015,,1,TRZAW,FALSE,NA,3371998,TRUE,ploughing,no_control,NA,NA,NA,NA,crop_yield,14_moisture
+lima2010,,1,ZEAMX,FALSE,NA,50000,TRUE,ploughing,manual,POST,NA,NA,1,green_corn_yield,
+lima2010,,1,ZEAMX,FALSE,NA,50000,TRUE,ploughing,manual,POST,NA,NA,1,crop_yield,15.5_moisture
+lima2010,,1,ZEAMX,FALSE,NA,50000,TRUE,ploughing,manual,POST,NA,NA,1,crop_ag_biomass,
+lima2010,,1,ZEAMX,FALSE,NA,50000,TRUE,ploughing,manual,POST,NA,NA,1,crop_ug_biomass,
+lima2010,,1,ZEAMX,FALSE,NA,50000,TRUE,ploughing,manual,POST,NA,NA,1,crop_leaf_area,
+lima2010,,1,ZEAMX,FALSE,NA,50000,TRUE,ploughing,manual,POST,NA,NA,1,crop_internode_length,
+lima2010,,1,ZEAMX,FALSE,NA,50000,TRUE,ploughing,manual,POST,NA,NA,1,kernels_per_ear,
+lima2010,,1,ZEAMX,FALSE,NA,50000,TRUE,ploughing,manual,POST,NA,NA,1,kernels_per_ha,
+malik2009,,1,TRZAW,FALSE,NA,4046398,TRUE,ploughing,chemical,PRE,pendimethalin,NA,1,crop_yield,
+malik2009,,1,TRZAW,FALSE,NA,4046398,TRUE,ploughing,chemical,POST,buctil_m,NA,1,kernels_per_ear,
+malik2009,,1,TRZAW,FALSE,NA,4046398,TRUE,ploughing,chemical,POST,logran,NA,1,crop_1000grain_weight,
+malik2009,,1,TRZAW,FALSE,NA,4046398,TRUE,ploughing,chemical,POST,mcpa,NA,1,,
+malik2009,,1,TRZAW,FALSE,NA,4046398,TRUE,ploughing,chemical,POST,bromoxonil,NA,1,,
