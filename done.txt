@@ -30,3 +30,4 @@ x 2017-01-16 @read @general_info hamouz2009 02 impact of site-specific weed mana
 x 2017-01-16 @read @general_info fahad2015 03 weed growth and crop yield loss in wheat as influenced by row spacing and weed emergence times
 x 2017-01-16 @read @general_info lima2010 02 corn yield response to weed and fall armyworm controls
 x 2017-01-16 @read @general_info malik2009 02 demonstration and evaluation of effect of weedicides on broad leaved weeds on wheat yield
+x 2017-01-16 @read @general_info knevzevic2008effects 02 effects of soil tillage and herbicides on weeds and winter wheat yields

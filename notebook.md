@@ -399,3 +399,7 @@ moyenne entre 125 et 175 kg/ha (125-175 kg/ha est ndiqué dans l'article).
 150000 * 1000 / 37.07 = 4 046 398 graines/ha.
 
 Aucune donnée sur les adventices n'est donnée dans cet article.
+
+### knevzevic2008effects
+
+Nombre de plots : 3 traitements * 4 répétitions = 12 plots.
