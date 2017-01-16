@@ -413,3 +413,9 @@ d'une graine (37.07 g/1000 graines, depuis http://data.kew.org).
 100000 * 1000 / 37.07 = 2 697 599 graines/ha.
 125000 * 1000 / 37.07 = 3 371 998 graines/ha.
 150000 * 1000 / 37.07 = 4 046 398 graines/ha.
+
+### weber2013influence
+
+Conversion du taux de semis de graines par m^2 en graines/hectare : `* 10000`.
+
+Il n'y acune informations sur les adventices dans cet article.
