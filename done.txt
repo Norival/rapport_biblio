@@ -31,3 +31,4 @@ x 2017-01-16 @read @general_info fahad2015 03 weed growth and crop yield loss in
 x 2017-01-16 @read @general_info lima2010 02 corn yield response to weed and fall armyworm controls
 x 2017-01-16 @read @general_info malik2009 02 demonstration and evaluation of effect of weedicides on broad leaved weeds on wheat yield
 x 2017-01-16 @read @general_info knevzevic2008effects 02 effects of soil tillage and herbicides on weeds and winter wheat yields
+x 2017-01-16 @read @general_info sharma2011seed 01 seed rate and weed management on yield and nutrient uptake of wheat (triticum aestivum)

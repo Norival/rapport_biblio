@@ -17,7 +17,7 @@
 (C) @grid Calculate percentage of yield loss when quantitative data is available
 (C) @grid Figure a way to complete grids for gholamhoseini2013interactions (quantitative results)
 (C) @read @results knevzevic2008effects 02 effects of soil tillage and herbicides on weeds and winter wheat yields
-(C) @read @general_info sharma2011seed 01 seed rate and weed management on yield and nutrient uptake of wheat (triticum aestivum)
+(C) @read @results sharma2011seed 01 seed rate and weed management on yield and nutrient uptake of wheat (triticum aestivum)
 (C) @read @general_info weber2013influence 01 influence of herbicides on yield stability of winter wheat cultivars under different sowing rates
 (C) @stats @bibliometry Make R script to analyze bibliometry data
 (D) @find @general_info bharat2007 01 effect of different herbicides on mixed weed flora, yield and economics of wheat (triticum aestivum) under irrigated conditions of jammu

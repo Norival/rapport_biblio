@@ -403,3 +403,13 @@ Aucune donnée sur les adventices n'est donnée dans cet article.
 ### knevzevic2008effects
 
 Nombre de plots : 3 traitements * 4 répétitions = 12 plots.
+
+### sharma2011seed
+
+Conversion du taux de semis de kg/ha à graines/ha : utilisation du poids moyen
+d'une graine (37.07 g/1000 graines, depuis http://data.kew.org).
+
+75000 * 1000 / 37.07 =  2 023 199 graines/ha.
+100000 * 1000 / 37.07 = 2 697 599 graines/ha.
+125000 * 1000 / 37.07 = 3 371 998 graines/ha.
+150000 * 1000 / 37.07 = 4 046 398 graines/ha.

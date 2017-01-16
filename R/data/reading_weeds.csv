@@ -162,3 +162,9 @@ knevzevic2008effects,,9,CONAR,plants,natural,NA,
 knevzevic2008effects,,9,EQUAR,plants,natural,NA,
 knevzevic2008effects,,9,CAGSE,plants,natural,NA,
 knevzevic2008effects,,9,CIRAR,plants,natural,NA,
+sharma2011seed,,5,PHAMI,plants,natural,NA,weed_ag_biomass
+sharma2011seed,,5,CYPRO,plants,natural,NA,weed_n_uptake
+sharma2011seed,,5,RUMDE,plants,natural,NA,weed_p_uptake
+sharma2011seed,,5,ANGAR,plants,natural,NA,weed_k_uptake
+sharma2011seed,,5,CHEAL,plants,natural,NA,weed_density
+sharma2011seed,,5,,plants,natural,NA,weed_percent_control
