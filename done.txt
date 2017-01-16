@@ -33,3 +33,4 @@ x 2017-01-16 @read @general_info malik2009 02 demonstration and evaluation of ef
 x 2017-01-16 @read @general_info knevzevic2008effects 02 effects of soil tillage and herbicides on weeds and winter wheat yields
 x 2017-01-16 @read @general_info sharma2011seed 01 seed rate and weed management on yield and nutrient uptake of wheat (triticum aestivum)
 x 2017-01-16 @read @general_info weber2013influence 01 influence of herbicides on yield stability of winter wheat cultivars under different sowing rates
+x 2017-01-16 @read @general_info delchev2015durum 00 durum wheat grain yield and quality influenced by some mixtures of foliar fertilizers and combined herbicides

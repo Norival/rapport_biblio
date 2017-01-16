@@ -419,3 +419,10 @@ d'une graine (37.07 g/1000 graines, depuis http://data.kew.org).
 Conversion du taux de semis de graines par m^2 en graines/hectare : `* 10000`.
 
 Il n'y acune informations sur les adventices dans cet article.
+
+### delchev2015durum
+
+Renomage de la colonne `fertilizer` en `fertilization` et ajout de la colonne
+`fertilizer` pour rentrer le fertilisant utilisé dans `reading_crop`
+
+Il n'y acune informations sur les adventices dans cet article.
