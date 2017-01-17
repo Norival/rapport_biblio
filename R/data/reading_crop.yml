@@ -1,0 +1,78 @@
+name: reading_crop
+description: informations about the crops used in the study
+fields:
+  - name: article
+    title: article
+    type: string
+    description: article's unique id, it refers to the bibtex database
+  - name: year
+    title: year
+    type: integer
+    description: the year considered
+  - name: n_species
+    title: n species
+    type: integer
+    description: number of crops used in the experiment
+  - name: species
+    title: species
+    type: string
+    description: crop species used in the experiment
+  - name: gmo
+    title: gmo crop
+    type: boolean
+    description: whether or not the crop is a genetically modified crop
+  - name: gmo_type
+    title: gmo type
+    type: string
+    description: what type of gmo is the crop (eg. herbicide resistant, pest resistant)
+  - name: density
+    title: crop density
+    type: number
+    unit: grains/ha
+    description: sowing density of the crop or resulting density after thinning
+  - name: fertilization
+    title: fertilization
+    type: boolean
+    description: whether or not a fertilizer has been applied to the field
+  - name: fertilizer
+    title: fertilizer
+    type: string
+    description: > the fertilizer used on the crop, used when different
+      fertilizers are combined with different herbicides.
+  - name: soil_work
+    title: soil work
+    type: string
+    description: > what kind of practice has been applied to the soil before
+      sowing (eg.  ploughing, hoeing, ...)
+  - name: weed_control
+    title: weed control
+    type: string
+    description: > what kind of weed control has been applied to the file (eg.
+      chemical, mechanic, ...)
+  - name: treatment_timing
+    title: treatment timing
+    type: string
+    description: > the timing of herbicide treatment, it can ben one of POST
+      (Post emergence,EPOST (Early Post emergence), LPOST (Late Post emergence)
+      or PRE (Pre emergence)
+  - name: herbicide
+    title: herbicide
+    type: string
+    description: the active ingredient used for weed control
+  - name: application_rate
+    title: application rate
+    type: num
+    unit: g a.i./ha
+    description: the application rate of the herbicide
+  - name: n_treatments
+    title: n treatments
+    type: integer
+    description: the number of treatments applied to the crop during the growing season
+  - name: metric
+    title: crop metric
+    type: string
+    description: what metric has been measured on the crop
+  - name: adjustment
+    title: metric adjustment
+    type: string
+    description: the adjustment made on the metric (eg. moisture adjustment)

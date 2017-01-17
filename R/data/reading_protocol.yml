@@ -1,0 +1,51 @@
+name: reading_protocol
+description: informations about the methods used in the study
+fields:
+  - name: article
+    title: article
+    type: string
+    description: article's unique id, it refers to the bibtex database
+  - name: year
+    title: year
+    type: integer
+    description: the year considered
+  - name: country
+    title: country
+    type: string
+    description: the country or countries where the study took place
+  - name: experiment_type
+    title: experiment type
+    type: string
+    description: the type of experiment (e.g. field, greenhouse, ...)
+  - name: farmer
+    title: actual farm
+    type: boolean
+    description: whether or not the experiment took place in an actual farm
+  - name: n_farms
+    title: number of farms
+    type: integer
+    description: the number of farms (experimental or not) considered in the study
+  - name: n_plots
+    title: number of plots
+    type: integer
+    description: the number of plots used in the study
+  - name: size_plots
+    title: size of plots
+    type: number
+    description: the size of plots
+  - name: organic
+    title: organic
+    type: boolean
+    description: whether or not the experiment took place in an organic farm
+  - name: weedfree_control
+    title: weedfree control
+    type: boolean
+    description: whether or not there is a weed free check
+  - name: weedy_control
+    title: weedy control
+    type: boolean
+    description: whether or not there is an untreated check
+  - name: cropfree_control
+    title: crop free control
+    type: boolean
+    description: whether or not there is a crop free check

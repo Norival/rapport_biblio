@@ -1,0 +1,36 @@
+name: reading_weeds
+description: informations about the weeds reported in the study
+fields:
+  - name: article
+    title: article
+    type: string
+    description: article's unique id, it refers to the bibtex database
+  - name: year
+    title: year
+    type: integer
+    description: the year considered
+  - name: n_species
+    title: n species
+    type: integer
+    description: number of weed species considered in the experiment
+  - name: species
+    title: species
+    type: string
+    description: weed species considered in the experiment
+  - name: type
+    title: type of weeds
+    type: string
+    description: how weeds are sampled (e.g. from the seedbank, plants)
+  - name: origin
+    title: origin of weeds
+    type: string
+    description: whether the weeds considered are planted or naturally occurring
+  - name: sowing_density
+    title: weeds sowing density
+    type: number
+    unit: grains/ha
+    description: the rate at which weeds were sowed, if they were sowed
+  - name: metric
+    title: crop metric
+    type: string
+    description: what metric has been measured on weeds

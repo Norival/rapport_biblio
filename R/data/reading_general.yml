@@ -1,0 +1,23 @@
+name: reading_general
+description: general informations about articles
+fields:
+  - name: article
+    title: article
+    type: string
+    description: article's unique id, it refers to the bibtex database
+  - name: country
+    title: country
+    type: string
+    description: the country or countries where the study took place
+  - name: year_start
+    title: starting year
+    type: integer
+    description: the starting year of the study
+  - name: year_end
+    title: ending year
+    type: integer
+    description: the ending year of the study
+  - name: financing
+    title: financing
+    type: string
+    description: financing of the study (e.g. public, private, ...)
