@@ -283,3 +283,12 @@ gaba2016herbicides,2007,1,TRZAW,FALSE,NA,NA,NA,various,various,chemical,various,
 gaba2016herbicides,2007,1,TRZAW,FALSE,NA,NA,NA,various,various,chemical,various,mecoprop,various,various,crop_yield,NA
 gaba2016herbicides,2007,1,TRZAW,FALSE,NA,NA,NA,various,various,chemical,various,mesosulfuron_methyl,various,various,crop_yield,NA
 gaba2016herbicides,2007,1,TRZAW,FALSE,NA,NA,NA,various,various,chemical,various,clodinafop_propargyl,various,various,crop_yield,NA
+khan2013,2008,1,TRZAW,FALSE,NA,NA,NA,NA,NA,no_control,NA,NA,NA,NA,crop_tillers_per_ha,none
+khan2013,2008,1,TRZAW,FALSE,NA,NA,NA,NA,NA,chemical,POST,isoproturon+carfentrazone_ethyl,1600,1,crop_spike_length,
+khan2013,2008,1,TRZAW,FALSE,NA,NA,NA,NA,NA,chemical,POST,isoproturon+carfentrazone_ethyl,800,1,crop_spikelets_per_spike,
+khan2013,2008,1,TRZAW,FALSE,NA,NA,NA,NA,NA,chemical,POST,fenoxaprop_p_ethyl,full_dose,1,crop_grains_per_spike,
+khan2013,2008,1,TRZAW,FALSE,NA,NA,NA,NA,NA,chemical,POST,fenoxaprop_p_ethyl,half_dose,1,crop_yield,
+khan2013,2008,1,TRZAW,FALSE,NA,NA,NA,NA,NA,chemical,POST,extract_SORHA,full_dose,1,crop_biological_yield,
+khan2013,2008,1,TRZAW,FALSE,NA,NA,NA,NA,NA,chemical,POST,extract_SORHA,half_dose,1,crop_harvest_index,
+khan2013,2008,1,TRZAW,FALSE,NA,NA,NA,NA,NA,chemical,POST,extract_PTNHY,full_dose,1,,
+khan2013,2008,1,TRZAW,FALSE,NA,NA,NA,NA,NA,chemical,POST,extract_PTNHY,half_dose,1,,

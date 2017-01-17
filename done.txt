@@ -35,3 +35,4 @@ x 2017-01-16 @read @general_info sharma2011seed 01 seed rate and weed management
 x 2017-01-16 @read @general_info weber2013influence 01 influence of herbicides on yield stability of winter wheat cultivars under different sowing rates
 x 2017-01-16 @read @general_info delchev2015durum 00 durum wheat grain yield and quality influenced by some mixtures of foliar fertilizers and combined herbicides
 x 2017-01-17 @read @general_info gaba2016herbicides 00 herbicides do not ensure for higher wheat yield, but eliminate rare plant species
+x 2017-01-17 @read @general_info khan2013 00 effect of different herbicides and plant extracts on yield and yield components of wheat (triticum aestivum l.)

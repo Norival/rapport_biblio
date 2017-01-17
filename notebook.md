@@ -431,3 +431,14 @@ Il n'y acune informations sur les adventices dans cet article.
 
 Les résultats de cet article sont tirés d'un questionnaire auprès
 d'agriculteurs.
+
+### khan2013
+
+Ajout de trois nouvelles métriques :
+
+- `crop_tillers_per_ha` : nombre de pousses par hectare
+- `crop_biological_yield` : rendement en biomasse totale (t/ha)
+- `crop_harvest_index` : `(crop_yield / crop_biological_yield) * 100` (%)
+
+Ils ont mesuré la densité d'adventices avant et après le traitement herbicide,
+j'utilise ces mesures pour calculer le pourcentage de contrôle des adventices.

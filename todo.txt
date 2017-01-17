@@ -27,7 +27,7 @@
 (D) @read @results gaba2016herbicides 00 herbicides do not ensure for higher wheat yield, but eliminate rare plant species
 (E) @find @general_info ahmed2013 00 physiological traits and yield of wheat cultivars as influenced by establishment methods and weed management practices
 (E) @find @general_info tahmasvand2012 00 influence of plant density, planting pattern and weed control on yield and yield components of grain corn
-(E) @read @general_info khan2013 00 effect of different herbicides and plant extracts on yield and yield components of wheat (triticum aestivum l.)
+(E) @read @results khan2013 00 effect of different herbicides and plant extracts on yield and yield components of wheat (triticum aestivum l.)
 (E) @read @general_info rosa2015 00 quality of sweet corn yield depending on winter catch crops and weed control method
 (F) @find @general_info chopra2008 00 influence of new broadleaf herbicides on weed control, seed yield and quality of some wheat (triticum aestivum) cultivars
 (F) @find @general_info moshaver2011 00 effect of separate and tank-mix treatments of herbicides on weed control and yield of corn (zea mays l.)
