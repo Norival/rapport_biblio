@@ -170,3 +170,9 @@ sharma2011seed,,5,CHEAL,plants,natural,NA,weed_density
 sharma2011seed,,5,,plants,natural,NA,weed_percent_control
 weber2013influence,,NA,NA,NA,NA,NA,NA
 delchev2015durum,,NA,NA,NA,NA,NA,NA
+gaba2016herbicides,2007,108,POLAV,plants,natural,NA,weed_richness
+gaba2016herbicides,2007,108,VERPE,plants,natural,NA,weed_abundance
+gaba2016herbicides,2007,108,MERAN,plants,natural,NA,
+gaba2016herbicides,2007,108,POLCO,plants,natural,NA,
+gaba2016herbicides,2007,108,GALAP,plants,natural,NA,
+gaba2016herbicides,2007,108,POASS,plants,natural,NA,

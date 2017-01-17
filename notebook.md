@@ -426,3 +426,8 @@ Renomage de la colonne `fertilizer` en `fertilization` et ajout de la colonne
 `fertilizer` pour rentrer le fertilisant utilisé dans `reading_crop`
 
 Il n'y acune informations sur les adventices dans cet article.
+
+### gaba2016herbicides
+
+Les résultats de cet article sont tirés d'un questionnaire auprès
+d'agriculteurs.
