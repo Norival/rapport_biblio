@@ -442,3 +442,23 @@ Ajout de trois nouvelles métriques :
 
 Ils ont mesuré la densité d'adventices avant et après le traitement herbicide,
 j'utilise ces mesures pour calculer le pourcentage de contrôle des adventices.
+
+### rosa2015
+
+Conversion du taux de semis de kg/ha à graines/ha : utilisation du poids moyen
+d'une graine (depuis http://data.kew.org).
+La densité indiquée dans l'article est de 12 kg/ha, ce doit être une erreur car
+cela donne un densité de semis de 47 graines/ha.
+Pour que le résultat soit cohérent avec les résultats des autres études, je
+suppose que la densité est donnée en tonnes/ha.
+
+  `12000 * 1000 / 252 = 47 000 graines/ha`
+
+Aucune métrique n'est mesurée sur les adventices.
+
+Ajout de nouvelles métriques :
+
+- `crop_ear_length`
+- `crop_ear_diameter`
+- `crop_ascorbic_acid_content`
+- `kernels_row_per_ear`
