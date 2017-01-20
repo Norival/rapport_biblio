@@ -38,4 +38,4 @@
 (H) @find @general_info cox2005weed 06 weed interference and glyphosate timing affect corn forage yield and quality
 (H) @find @general_info mason1996effect 08 effect of weeds and nitrogen fertiliser on yield and grain protein concentration of wheat
 (H) @find @general_info smiley1992 09 impact of sulfonylurea herbicides on rhizoctonia root-rot, growth, and yield of winter-wheat
-(H) @find @general_info young1994tillage 43 tillage and weed management affects winter-wheat yield in an integrated pest-management system
+(H) @read @general_info young1994tillage 43 tillage and weed management affects winter-wheat yield in an integrated pest-management system
