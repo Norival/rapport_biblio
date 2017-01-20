@@ -496,3 +496,7 @@ Conversion des taux de semis de graines/m^2 à graines/ha.
 
 Ajout d'une nouvelle métrique pour les adventices : `crop_pod_per_plant` pour le
 nombre de cosses par pante.
+
+### unay2006
+
+Il n'y a aucune information sur les adventices dans cet article.

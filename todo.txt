@@ -34,7 +34,7 @@
 (F) @read @results begna2001 00 response of corn hybrids differing in canopy architecture to chemical and mechanical (rotary hoeing) weed control: morphology and yield
 (F) @read @results black1996 00 applications of the herbicide sethoxydim increase wheat yields in the absence of weeds
 (F) @read @results freeman2004 00 the effects of timing of control of weeds on the yield of winter oilseed rape (brassica napus), in the context of the potential commercialization of herbicide-tolerant winter rape
-(F) @read @general_info unay2006 00 effects of different herbicides and application times on the apical development and grain yield of wheat (triticum aestivum l.)
+(F) @read @results unay2006 00 effects of different herbicides and application times on the apical development and grain yield of wheat (triticum aestivum l.)
 (H) @find @general_info cox2005weed 06 weed interference and glyphosate timing affect corn forage yield and quality
 (H) @find @general_info mason1996effect 08 effect of weeds and nitrogen fertiliser on yield and grain protein concentration of wheat
 (H) @find @general_info smiley1992 09 impact of sulfonylurea herbicides on rhizoctonia root-rot, growth, and yield of winter-wheat
