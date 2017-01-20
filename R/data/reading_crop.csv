@@ -305,3 +305,4 @@ begna2001,,1,ZEAMX+LRS2,FALSE,NA,120000,TRUE,NA,NA,chemical,POST,metolachlor+atr
 begna2001,,1,ZEAMX+LRS2,FALSE,NA,120000,TRUE,NA,NA,mechanic,POST,NA,NA,1,crop_leaf_weight,
 begna2001,,1,ZEAMX+P3979,FALSE,NA,80000,TRUE,NA,NA,chemical,POST,metolachlor+atrazine,3850,1,crop_yield,15.5_moisture
 begna2001,,1,ZEAMX+P3979,FALSE,NA,80000,TRUE,NA,NA,mechanic,POST,NA,NA,1,crop_harvest_index,
+black1996,,1,TRZAW,FALSE,NA,NA,NA,NA,NA,NA,,,,,,

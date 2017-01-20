@@ -482,3 +482,10 @@ Ajout de trois nouvelles métriques sur les cultures :
 - `crop_leaf_weight`
 
 Cet article ne fournit aucune information sur les adventices.
+
+### black1996
+
+Cet article ne teste pas l'effet des adventices sur le rendement, ni l'effet des
+herbicides sur le contrôle.
+Il traite de l'augmentation du rendement par les herbicides en absence
+d'adventices dans la culture.

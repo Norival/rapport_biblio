@@ -38,3 +38,4 @@ x 2017-01-17 @read @general_info gaba2016herbicides 00 herbicides do not ensure 
 x 2017-01-17 @read @general_info khan2013 00 effect of different herbicides and plant extracts on yield and yield components of wheat (triticum aestivum l.)
 x 2017-01-17 @read @general_info rosa2015 00 quality of sweet corn yield depending on winter catch crops and weed control method
 x 2017-01-20 @read @general_info begna2001 00 response of corn hybrids differing in canopy architecture to chemical and mechanical (rotary hoeing) weed control: morphology and yield
+x 2017-01-20 @read @general_info black1996 00 applications of the herbicide sethoxydim increase wheat yields in the absence of weeds
