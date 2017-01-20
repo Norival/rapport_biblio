@@ -31,7 +31,7 @@
 (E) @read @results rosa2015 00 quality of sweet corn yield depending on winter catch crops and weed control method
 (F) @find @general_info chopra2008 00 influence of new broadleaf herbicides on weed control, seed yield and quality of some wheat (triticum aestivum) cultivars
 (F) @find @general_info moshaver2011 00 effect of separate and tank-mix treatments of herbicides on weed control and yield of corn (zea mays l.)
-(F) @read @general_info begna2001 00 response of corn hybrids differing in canopy architecture to chemical and mechanical (rotary hoeing) weed control: morphology and yield
+(F) @read @results begna2001 00 response of corn hybrids differing in canopy architecture to chemical and mechanical (rotary hoeing) weed control: morphology and yield
 (F) @read @general_info black1996 00 applications of the herbicide sethoxydim increase wheat yields in the absence of weeds
 (F) @read @general_info freeman2004 00 the effects of timing of control of weeds on the yield of winter oilseed rape (brassica napus), in the context of the potential commercialization of herbicide-tolerant winter rape
 (F) @read @general_info unay2006 00 effects of different herbicides and application times on the apical development and grain yield of wheat (triticum aestivum l.)

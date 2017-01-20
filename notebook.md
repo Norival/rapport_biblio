@@ -462,3 +462,23 @@ Ajout de nouvelles métriques :
 - `crop_ear_diameter`
 - `crop_ascorbic_acid_content`
 - `kernels_row_per_ear`
+
+### begna2001
+
+Ajout d'une nouvelle syntaxe pour l'espèce de culture : `EPPO_CODE+INFO`.
+Le champ info permet d'avoir une info supplémentaire sur l'espèce, ici des
+hybrides différents.
+Besoin d'ajouter de quoi les séparer dans R.
+
+Calcul de la dose d'herbicides. Herbicide appliqué à 7.7 l/ha à une
+concentration de 500 g/L.
+
+`7.7*500 = 3850 g/ha
+
+Ajout de trois nouvelles métriques sur les cultures :
+
+- `crop_height`
+- `crop_stem_weight`
+- `crop_leaf_weight`
+
+Cet article ne fournit aucune information sur les adventices.
