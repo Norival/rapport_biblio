@@ -180,3 +180,9 @@ khan2013,,NA,NA,plants,natural,NA,weed_percent_control
 rosa2015,,NA,NA,plants,natural,NA,NA
 begna2001,,NA,NA,plants,natural,NA,NA
 black1996,,NA,NA,NA,NA,NA,NA
+freeman2004,1999,1,GALAP,plants,planted,8,weed_ag_biomass
+freeman2004,1999,1,GALAP,plants,planted,16,weed_ag_biomass
+freeman2004,1999,1,GALAP,plants,planted,32,weed_ag_biomass
+freeman2004,2000,3,GALAP,plants,planted,16,weed_ag_biomass
+freeman2004,2000,3,STEME,plants,planted,600,weed_ag_biomass
+freeman2004,2000,3,HORVX,plants,planted,400,weed_ag_biomass

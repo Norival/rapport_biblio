@@ -473,7 +473,7 @@ Besoin d'ajouter de quoi les séparer dans R.
 Calcul de la dose d'herbicides. Herbicide appliqué à 7.7 l/ha à une
 concentration de 500 g/L.
 
-`7.7*500 = 3850 g/ha
+`7.7*500 = 3850 g/ha`
 
 Ajout de trois nouvelles métriques sur les cultures :
 
@@ -489,3 +489,10 @@ Cet article ne teste pas l'effet des adventices sur le rendement, ni l'effet des
 herbicides sur le contrôle.
 Il traite de l'augmentation du rendement par les herbicides en absence
 d'adventices dans la culture.
+
+### freeman2004
+
+Conversion des taux de semis de graines/m^2 à graines/ha.
+
+Ajout d'une nouvelle métrique pour les adventices : `crop_pod_per_plant` pour le
+nombre de cosses par pante.
