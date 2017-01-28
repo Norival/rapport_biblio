@@ -1,11 +1,13 @@
 (A) @grid Verify results of scott1995 (some results are missing, may also happen in other articles)
 (A) @grid homogeneize units of yield for first articles (and maybe other metrics)
-(A) @read @results fahad2015 03 weed growth and crop yield loss in wheat as influenced by row spacing and weed emergence times
+(A) @read @general_info cox2005weed 06 weed interference and glyphosate timing affect corn forage yield and quality
+(A) @read @general_info mueller2013winter 01 winter annual weed management and nitrogen rate effects on corn yield
+(A) @read @general_info smiley1992 09 impact of sulfonylurea herbicides on rhizoctonia root-rot, growth, and yield of winter-wheat
 (A) @read @results Finish reading of garcia2007 fertilisation and weed control effects on yield and weeds in durum wheat grown under rain-fed conditions in a mediterranean climate
+(A) @read @results fahad2015 03 weed growth and crop yield loss in wheat as influenced by row spacing and weed emergence times
 (A) @stats Report effect size index if present
 (A) @stats Try to add a column with type of statistical tests used
 (A) @stats Try to find CI95 in articles' results
-(H) @read @results hamouz2009 02 impact of site-specific weed management on herbicide savings and winter wheat yield
 (B) @read @results lima2010 02 corn yield response to weed and fall armyworm controls
 (B) @read @results malik2009 02 demonstration and evaluation of effect of weedicides on broad leaved weeds on wheat yield
 (B) @reproducibility Complete notebook for the already read articles
@@ -13,7 +15,6 @@
 (B) @stats Start to make a R script to load and visualize data
 (C) @bibliometry Organize bibliometry data
 (C) @find @general_info gupta2004 yield 02 yield and quality of wheat (triticum aestivum) as influenced by sulphur nutrition and weed management
-(C) @find @general_info mueller2013winter 01 winter annual weed management and nitrogen rate effects on corn yield
 (C) @grid Calculate percentage of yield loss when quantitative data is available
 (C) @grid Figure a way to complete grids for gholamhoseini2013interactions (quantitative results)
 (C) @read @results knevzevic2008effects 02 effects of soil tillage and herbicides on weeds and winter wheat yields
@@ -35,7 +36,6 @@
 (F) @read @results black1996 00 applications of the herbicide sethoxydim increase wheat yields in the absence of weeds
 (F) @read @results freeman2004 00 the effects of timing of control of weeds on the yield of winter oilseed rape (brassica napus), in the context of the potential commercialization of herbicide-tolerant winter rape
 (F) @read @results unay2006 00 effects of different herbicides and application times on the apical development and grain yield of wheat (triticum aestivum l.)
-(H) @find @general_info cox2005weed 06 weed interference and glyphosate timing affect corn forage yield and quality
 (H) @find @general_info mason1996effect 08 effect of weeds and nitrogen fertiliser on yield and grain protein concentration of wheat
-(H) @find @general_info smiley1992 09 impact of sulfonylurea herbicides on rhizoctonia root-rot, growth, and yield of winter-wheat
+(H) @read @results hamouz2009 02 impact of site-specific weed management on herbicide savings and winter wheat yield
 (H) @read @results young1994tillage 43 tillage and weed management affects winter-wheat yield in an integrated pest-management system
