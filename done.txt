@@ -46,3 +46,4 @@ x 2017-01-28 @find @general_info mueller2013winter 01 winter annual weed managem
 x 2017-01-28 @find @general_info cox2005weed 06 weed interference and glyphosate timing affect corn forage yield and quality
 x 2017-01-28 @find @general_info smiley1992 09 impact of sulfonylurea herbicides on rhizoctonia root-rot, growth, and yield of winter-wheat
 x 2017-01-29 @read @general_info smiley1992 09 impact of sulfonylurea herbicides on rhizoctonia root-rot, growth, and yield of winter-wheat
+x 2017-01-29 @read @general_info cox2005weed 06 weed interference and glyphosate timing affect corn forage yield and quality

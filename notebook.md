@@ -548,3 +548,11 @@ Cette article ne concerne pas directement l'effet des herbicides sur le
 rendement des cultures mais l'effet du traitement au chlorsulfuron sur le
 développement d'une maladie racinaire : Rhizoctonia root rot.
 Je garde cet article pour la discussion.
+
+### cox2005weed
+
+Ajout de métriques:
+
+- `crop_ndf` : neutral detergent fiber
+- `crop_starch_content` : contenu en amidon
+- `crop_potential_milk` : rendement en lait potentiel du fourrage
