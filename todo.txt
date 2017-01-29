@@ -2,7 +2,6 @@
 (A) @grid homogeneize units of yield for first articles (and maybe other metrics)
 (A) @read @general_info cox2005weed 06 weed interference and glyphosate timing affect corn forage yield and quality
 (A) @read @general_info mueller2013winter 01 winter annual weed management and nitrogen rate effects on corn yield
-(A) @read @general_info smiley1992 09 impact of sulfonylurea herbicides on rhizoctonia root-rot, growth, and yield of winter-wheat
 (A) @read @results Finish reading of garcia2007 fertilisation and weed control effects on yield and weeds in durum wheat grown under rain-fed conditions in a mediterranean climate
 (A) @read @results fahad2015 03 weed growth and crop yield loss in wheat as influenced by row spacing and weed emergence times
 (A) @stats Report effect size index if present

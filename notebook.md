@@ -5,6 +5,43 @@ Ce notebook reprend les méthodes utilisées pour la lecture des articles, le
 remplissage des grilles de lecture et les analyses statistiques afin qu'ils
 puissent être facilement reproduits.
 
+Articles introuvables
+---------------------
+
+[X] Gupta et al 2004: Yield and quality of wheat (triticum aestivum) as
+    influenced by sulphur nutrition and weed management
+    -> It does not even exist on the journal website
+[X] Barrat et Kachroo 2011: Effect of different herbicides on mixed weed flora,
+    yield and economics of wheat (triticum aestivum) under irrigated conditions
+    of jammu
+    -> It exists on the journal website but I cannot find the address of the
+       authors
+[X] Pandey et Verma 2002: Effect of atrazine, metribuzin, sulfosulfuron and
+    tralkoxydim on weeds and yield of wheat (triticum aestivum)
+    -> I cannot find any email to contact the author
+[X] Pandey et Verma 2004: Effect of isoproturon tank mix with metsulfuron and
+    2,4-d on weeds and yield of wheat (triticum aestivum)
+    -> I cannot find any email to contact the author
+[C] Ahmed et al 2013: Physiological traits and yield of wheat cultivars as
+    influenced by establishment methods and weed management practices
+    -> Contact Ashok Kumar via researchgate
+    -> message sent
+[X] Tahmasvand et al 2012: Influence of plant density, planting pattern and weed
+    control on yield and yield components of grain corn
+    -> Contact Hamid Reza Tohidi-Moghadam via researchgate
+    -> There is no way to contact him
+[X] Chopra et al 2008: Influence of new broadleaf herbicides on weed control,
+    seed yield and quality of some wheat (triticum aestivum) cultivars
+    -> Contact NK Chopra via researchgate
+    -> There is no way to contact him
+[X] Moshaver et al 2011: Effect of separate and tank-mix treatments of
+    herbicides on weed control and yield of corn (zea mays l.)
+    -> Contact Elham Moshaver via researchgate
+    -> There is no way to contact him
+[X] Mason et al 1996: Effect of weeds and nitrogen fertiliser on yield and grain
+    protein concentration of wheat
+    -> I cannot find any email to contact the author
+
 
 Description des données
 -----------------------
@@ -504,3 +541,10 @@ Il n'y a aucune information sur les adventices dans cet article.
 ### young1994
 
 Il n'y a acune informations sur les adventices dans cet article.
+
+### smiley1992
+
+Cette article ne concerne pas directement l'effet des herbicides sur le
+rendement des cultures mais l'effet du traitement au chlorsulfuron sur le
+développement d'une maladie racinaire : Rhizoctonia root rot.
+Je garde cet article pour la discussion.
