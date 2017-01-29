@@ -194,6 +194,11 @@ partir de l'identifiant.
 Les codes utilisés pour identifier les espèces d'adventices sont les codes EPPO
 ([EPPO Global Database](https://gd.eppo.int/)).
 
+### vangessel1995
+
+Les adventices sont issues de la population naturelle mais leur densité est
+contrée manuellement.
+
 ### tharp1999
 
 Les taux d'herbicides sont en kg/ha, ils sont convertis en g/ha:
