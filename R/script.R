@@ -8,7 +8,8 @@
 
 library(magrittr)
 library(ggplot2)
-library(plyr)
+library(dplyr)
+library(stringi)
 
 
 graphs_dir <- "~/desktop/r_graphs"
@@ -39,6 +40,37 @@ unique(rg_general$article) %>%
 unique(rg_general$country) %>%
   length()
 
+# group coountries by continent
+for (i in 1:nrow(rg_general)) {
+  rg_general$continent[i] <-
+    rg_general$country[i] %>%
+    switch(.,
+           australia  = "oceania",
+           bohemia    = "europe",
+           brazil     = "south_america",
+           bulgaria   = "europe",
+           canada     = "north_america",
+           croatia    = "europe",
+           denmark    = "europe",
+           france     = "europe",
+           germany    = "europe",
+           india      = "asia",
+           iran       = "asia",
+           pakistan   = "asia",
+           poland     = "europe",
+           spain      = "europe",
+           turkey     = "asia",
+           uk         = "europe",
+           usa        = "north_america",
+           "unknown")
+}
+
+# number of articles per continent
+rg_general[!(duplicated(rg_general$article)),] %>%
+  group_by(continent) %>%
+  summarise(count = length(continent)) %>%
+  mutate(percent = count / sum(count) * 100)
+
 # representation of different countries
 aggregate(rg_general$country,
           by  = list(id = rg_general$article, country = rg_general$country),
@@ -52,117 +84,111 @@ ggsave("countries.png", path = graphs_dir)
 
 # --- GENERAL INFORMATIONS ABOUT CROPS ----------------------------------------
 
-# representation of different crops
-aggregate(rg_crops$species,
-          by  = list(id = rg_crops$article, species = rg_crops$species),
-          FUN = "length")[,2:3] %>%
-  ggplot(., aes(x = species)) +
-  geom_bar() +
+# get the percentage of each crops, grouped by genus
+rg_crops$species %>%
+  gsub(pattern = "..\\>", replacement = "XX") %>%
+  gsub(pattern = "ZEA[\\+[:upper:][:digit:]]*", replacement = "ZEAXX") %>%
+  cbind.data.frame(article = rg_crops$article, genus = .) %>%
+  .[.$genus != "",] %>%
+  group_by(genus) %>%
+  summarise(count = length(unique(article))) %>%
+  mutate(percent = count / sum(count) * 100) %>%
+  print()
+  ggplot(., aes(x = genus, y = count)) +
+  geom_bar(stat = 'identity') +
   theme(axis.title = element_text(size = 15),
         axis.text = element_text(size = 12))
-ggsave("crops.png", path = graphs_dir)
 
-# metrics used on crop
-aggregate(rg_crops$metric,
-          by  = list(id = rg_crops$article, metric = rg_crops$metric),
-          FUN = "length")[,2:3] %>%
-  ggplot(., aes(x = metric)) +
-  geom_bar() +
-  theme(axis.title  = element_text(size = 15),
-        axis.text   = element_text(size = 12),
-        axis.text.x = element_text(angle = 90))
-ggsave("metrics_crops.png", path = graphs_dir)
+# percent of greenhouse experiments
+rg_protocol %>%
+  group_by(experiment_type) %>%
+  summarise(count = length(unique(article))) %>%
+  mutate(percent = count / sum(count) * 100)
 
-## Various tests
-#
-# rg_protocol[!(is.na(rg_protocol$farmer)) & rg_protocol$farmer, ] %>%
-#   unique() %>%
-#   nrow()
-# rg_crops
-#
-# unique(rg_protocol$article)
-# rg_protocol[!duplicated(rg_protocol$article),]
-# 
-# rg_protocol[!(is.na(rg_protocol$experiment_type)) &
-#             !(duplicated(rg_protocol$article)), ] %>%
-#   ddply(., c("experiment_type", "farmer"), summarise,
-#         n = length(article))
-# 
-# rg_crops[!(duplicated(rg_crops$article)), ] %>%
-#   ddply(., c("species", "gmo"), summarise,
-#         n = length(gmo))
-# 
-# 
-# nrow(rg_protocol[rg_protocol$farmer,])
-# 
-# rg_weeds[!(is.na(rg_weeds$n_species)) &
-#          !(duplicated(rg_weeds$article)), ] %>%
-#   .$n_species %>%
-#   mean()
-#   ddply(., c("article"), summarise,
-#         n = n_species)
-# 
-# rg_results[!(is.na(rg_results$grain_yield_quant)) &
-#            !(duplicated(rg_results$article)), ] %>%
-#   nrow()
-# rg_results[is.na(rg_results$grain_yield_quant) &
-#            !(duplicated(rg_results$article)), ] %>%
-#   nrow()
-# 
-# rg_results[!(is.na(rg_results$weed_density_quant)) &
-#            !(duplicated(rg_results$article)), ] %>%
-#   nrow()
+# percent of experimental farms vs actual farms
+rg_protocol[rg_protocol$experiment_type != "greenhouse", ] %>%
+  .[!is.na(.$farmer), ] %>%
+  group_by(farmer) %>%
+  summarise(count = length(unique(article))) %>%
+  mutate(percent = count / sum(count) * 100)
 
-# --- GENERAL INFORMATIONS ABOUT WEEDS ----------------------------------------
+# get the number of herbicide used
+n_herb <- numeric(nrow(rg_crops))
+for (i in 1:nrow(rg_crops)) {
+  n_herb[i] <- length(stri_split(rg_crops$herbicide[i], fixed = "+", simplify = TRUE))
+}
 
-# metrics used on weeds
-aggregate(rg_weeds$metric,
-          by  = list(id = rg_weeds$article, metric = rg_weeds$metric),
-          FUN = "length")[,2:3] %>%
-  ggplot(., aes(x = metric)) +
-  geom_bar() +
-  theme(axis.title  = element_text(size = 15),
-        axis.text   = element_text(size = 12),
-        axis.text.x = element_text(angle = 90))
-ggsave("metrics_weeds.png", path = graphs_dir)
+cbind(rg_crops, n_herb) %>%
+  group_by(n_herb) %>%
+  summarise(count = length(unique(article))) %>%
+  mutate(percent = count / sum(count) * 100)
 
-# number of weed speies
-aggregate(rg_weeds$n_species,
-          by  = list(id = rg_weeds$article, n_species = rg_weeds$n_species),
-          FUN = "length")[,2:3] %>%
-  ggplot(., aes(x = n_species)) +
-  geom_bar() +
-  theme(axis.title  = element_text(size = 15),
-        axis.text   = element_text(size = 12)) +
-  scale_x_continuous(breaks = seq(1, 18))
-ggsave("weeds_species.png", path = graphs_dir)
+# single dose or multiple doses tested ?
+rg_crops %>%
+  .[!is.na(.$application_rate), ] %>%
+  group_by(article, herbicide)  %>%
+  summarise(n_dose = length(unique(application_rate))) %>%
+  group_by(n_dose) %>%
+  summarise(count = length(unique(article))) %>%
+  mutate(percent = count / sum(count) * 100)
 
+# mean number of weeds
+rg_weeds %>%
+  # .[!is.na(.$n_species), ] %>%
+  group_by(n_species) %>%
+  summarise(count = length(unique(article))) %>%
+  mutate(percent = count / sum(count) * 100,
+         mean = mean(n_species, na.rm = TRUE))
 
-# -- RESULTS ------------------------------------------------------------------
+# percent of studies considering "natural" weeds
+rg_weeds %>%
+  group_by(origin) %>%
+  summarise(count = length(unique(article))) %>%
+  mutate(percent = count / sum(count) * 100)
 
-# mean grain yield by treatment and crop species
-aggregate(data = rg_results,
-          grain_yield_quant ~ article + type + crop_species,
-          FUN = "mean", na.rm = TRUE) %>%
-  aggregate(data = .,
-            grain_yield_quant ~ type + crop_species,
-            FUN = "mean", na.rm = TRUE) %>%
-  ggplot(., aes(x = type, y = grain_yield_quant, fill = crop_species)) +
-  geom_bar(stat = "identity", position = "dodge")
+# metrics used to quantify the impact of weeds
+rg_crops %>%
+  .[.$metric != "", ] %>%
+  group_by(metric) %>%
+  summarise(count = length(unique(article))) %>%
+  mutate(percent = count / sum(count) * 100) %>%
+  arrange(desc(count))
 
-# grain_yield_qual
+# -- results -------------------------------------------------------------------
 
-rg_results[nchar(rg_results$grain_yield_qual) != 0, ] %>%
-  ddply(., c('article'), summarise,
-        grain_yield_qual = grain_yield_qual)
+# results on grain yield
+summary_yield_quant <-
+  rg_results %>%
+  .[!is.na(.$grain_yield_quant), ] %>%
+  group_by(article, type) %>%
+  summarise(yield = mean(grain_yield_quant))
+summary_yield_qual <-
+  rg_results %>%
+  .[.$grain_yield_qual != "", ] %>%
+  group_by(grain_yield_qual) %>%
+  summarise(count = length(unique(article)))
 
-# weed_percent_control
-# I need to compute percent of decrease when quantitative data is available
+results_yield <-
+  data.frame(article     = levels(factor(summary_yield$article)),
+             percent_dec = numeric(length(levels(factor(summary_yield$article)))))
 
-rg_results[!(is.na(rg_results$weed_percent_control)) &
-           !(is.na(rg_results$application_rate)), ] %>%
-  ddply(., c('article', 'crop_species'), summarise,
-        weed_control = mean(weed_percent_control),
-        rate = mean(application_rate, na.rm = TRUE)) %>%
-  ggplot(., aes(x = rate, y = weed_control, colour = crop_species)) +
-    geom_point()
+for (art in levels(as.factor(summary_yield$article))) {
+  ttt <-
+    summary_yield %>%
+    filter(article == art, type == 'treatment') %>%
+    .$yield
+  control <-
+    summary_yield %>%
+    filter(article == art, grepl(x = type, pattern = "weedy_control")) %>%
+    .$yield
+
+  if (length(ttt) + length(control) == 2) {
+    results_yield$percent_dec[results_yield$article == art] <-
+      (ttt - control) / ttt * 100
+  }
+}
+
+results_yield <-
+  results_yield %>%
+  filter(percent_dec != 0)
+mean(results_yield$percent_dec)
