@@ -556,3 +556,7 @@ Ajout de métriques:
 - `crop_ndf` : neutral detergent fiber
 - `crop_starch_content` : contenu en amidon
 - `crop_potential_milk` : rendement en lait potentiel du fourrage
+
+### mueller2013winter
+
+Ajout de la métrique `weed_c_uptake`.

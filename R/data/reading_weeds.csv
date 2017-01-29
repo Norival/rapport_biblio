@@ -189,3 +189,9 @@ freeman2004,2000,3,HORVX,plants,planted,400,weed_ag_biomass
 unay2006,,NA,NA,plants,natural,NA,NA
 young1994,,NA,NA,plants,natural,NA,NA
 cox2005weed,,NA,,plants,natural,NA,weed_density
+mueller2013winter,,,,plants,natural,NA,weed_percent_control
+mueller2013winter,,,,plants,natural,NA,weed_density
+mueller2013winter,,,,plants,natural,NA,weed_richness
+mueller2013winter,,,,plants,natural,NA,weed_ag_biomass
+mueller2013winter,,,,plants,natural,NA,weed_n_uptake
+mueller2013winter,,,,plants,natural,NA,weed_c_uptake

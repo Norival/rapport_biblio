@@ -364,3 +364,12 @@ cox2005weed,,1,ZEAMX,TRUE,glyph_resistant,,88000,TRUE,,ploughing,chemical,LPOST,
 cox2005weed,,1,ZEAMX,TRUE,glyph_resistant,,88000,TRUE,,ploughing,chemical,LPOST,glyphosate,1.14,,crop_ndf,
 cox2005weed,,1,ZEAMX,TRUE,glyph_resistant,,88000,TRUE,,ploughing,chemical,LPOST,glyphosate,1.14,,crop_starch_content,
 cox2005weed,,1,ZEAMX,TRUE,glyph_resistant,,88000,TRUE,,ploughing,chemical,LPOST,glyphosate,1.14,,crop_potential_milk,
+mueller2013winter,2010,,ZEAMX,FALSE,NA,soybean,,,,no_tillage,chemical,EPOST,glyphosate,0.86,,crop_ag_biomass,
+mueller2013winter,2010,,ZEAMX,FALSE,NA,soybean,,,,no_tillage,chemical,EPOST,glyphosate+24d,0.86+0.53,,crop_n_uptake,
+mueller2013winter,2010,,ZEAMX,FALSE,NA,soybean,,,,no_tillage,chemical,EPOST,glyphosate+24d+acetochlor+flumetsulam+clopyralid,0.86+0.53+1.05+0.03+0.11,,crop_yield,15.5_moisture
+mueller2013winter,2010,,ZEAMX,FALSE,NA,soybean,,,,no_tillage,chemical,MPOST,glyphosate,0.86,,crop_ag_biomass,
+mueller2013winter,2010,,ZEAMX,FALSE,NA,soybean,,,,no_tillage,chemical,MPOST,glyphosate+24d,0.86+0.53,,crop_n_uptake,
+mueller2013winter,2010,,ZEAMX,FALSE,NA,soybean,,,,no_tillage,chemical,MPOST,glyphosate+24d+acetochlor+flumetsulam+clopyralid,0.86+0.53+1.05+0.03+0.11,,crop_yield,15.5_moisture
+mueller2013winter,2010,,ZEAMX,FALSE,NA,soybean,,,,no_tillage,chemical,LPOST,glyphosate,0.86,,crop_ag_biomass,
+mueller2013winter,2010,,ZEAMX,FALSE,NA,soybean,,,,no_tillage,chemical,LPOST,glyphosate+24d,0.86+0.53,,crop_n_uptake,
+mueller2013winter,2010,,ZEAMX,FALSE,NA,soybean,,,,no_tillage,chemical,LPOST,glyphosate+24d+acetochlor+flumetsulam+clopyralid,0.86+0.53+1.05+0.03+0.11,,crop_yield,15.5_moisture
