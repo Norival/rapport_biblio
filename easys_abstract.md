@@ -1,18 +1,20 @@
-Widely accepted negative effect of weeds on crop yield may lack the scientific background to support the use of herbicides
-==========================================================================================================================
+A lack of standardization among studies may temper the negatice effects of weeds-crop competition
+=================================================================================================
+
 
 Based on the assumption that weeds negatively impact crop yield, aggressive
 management practices have been conducted since the 1950's through herbicide use,
 leading to air, water and soil pollution.
-Growers around the world are now facing a trade-off between crop productivity
-and environmental preservation.
-That is why the efficacy of herbicides for crop protection need to be assessed.
+Growers are now facing a trade-off between crop productivity and environmental
+preservation, making it of paramount importance to assess the benefical effects
+of herbicides.
+
 We then wanted to analyse how this question had been tackled in the scientific
 community and how their results could be compared.
 A query to Web of Science surprisingly showed a mere number of 54 articles
 addressing this matter.
-We reported data about the crops, the weeds, the sampling methods and teh
-variety of metrics used for weeds or crops.
+We reported data about the crops, the weeds, the sampling methods and the
+variety of metrics used on weeds and crops.
 First, what appears most relevant is a huge lack of standardization among these
 papers, which did not allow for a proper quantitative summary of the results.
 
@@ -32,25 +34,15 @@ species and 10 % consider more than 10 species.
 desired densities.
 48 different metrics are used to quantify the impact of weeds, grain yield
 (biomass/ha) being the most widely used (28 %).
-Very few studies consider grain quality.
+Very few studies consider grain quality and even less included an economic
+analysis, which should be an important variable to support policy making.
 
 55 % of studies reported a negative impact of weeds on grain yield, with a mean
 decrease of 54 %.
-
-
-<!-- These two were the only studies including economic analysis, which should be an
-important variable to support policy making.
-
-The dominant crop species is corn, with 13 studies (5 being herbicide-resistant
-GMO).
-
-While a simple descriptive analysis showed that weeds seem to have a negative
-impact on crop yield alone, other metrics like yield components or grains
-quality are not reported often.
-
-Very few studies conducted a general survey on weeds and rather reported the
-effects reagarding dominant weeds, with an average of 5 species per study.
+The decrease among fields are not different than that among greenhouses
+experiments.
+One of the two studies reporting economic analysis mentioned an increase of net
+benefits, but only in conjunction to reduced tillage.
 
 These preliminary results show that a study using a strong methodology and
 including factors such as economic income is needed to conclude on that matter.
---!>

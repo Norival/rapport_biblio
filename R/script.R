@@ -94,10 +94,10 @@ rg_crops$species %>%
   summarise(count = length(unique(article))) %>%
   mutate(percent = count / sum(count) * 100) %>%
   print()
-  ggplot(., aes(x = genus, y = count)) +
-  geom_bar(stat = 'identity') +
-  theme(axis.title = element_text(size = 15),
-        axis.text = element_text(size = 12))
+# ggplot(., aes(x = genus, y = count)) +
+# geom_bar(stat = 'identity') +
+# theme(axis.title = element_text(size = 15),
+#       axis.text = element_text(size = 12))
 
 # percent of greenhouse experiments
 rg_protocol %>%
@@ -169,16 +169,16 @@ summary_yield_qual <-
   summarise(count = length(unique(article)))
 
 results_yield <-
-  data.frame(article     = levels(factor(summary_yield$article)),
-             percent_dec = numeric(length(levels(factor(summary_yield$article)))))
+  data.frame(article     = levels(factor(summary_yield_quant$article)),
+             percent_dec = numeric(length(levels(factor(summary_yield_quant$article)))))
 
-for (art in levels(as.factor(summary_yield$article))) {
+for (art in levels(as.factor(summary_yield_quant$article))) {
   ttt <-
-    summary_yield %>%
+    summary_yield_quant %>%
     filter(article == art, type == 'treatment') %>%
     .$yield
   control <-
-    summary_yield %>%
+    summary_yield_quant%>%
     filter(article == art, grepl(x = type, pattern = "weedy_control")) %>%
     .$yield
 
@@ -192,3 +192,11 @@ results_yield <-
   results_yield %>%
   filter(percent_dec != 0)
 mean(results_yield$percent_dec)
+
+# results for iqbal
+rg_results %>%
+  filter(article == "iqbal1999")
+
+# economic analyses
+rg_results %>%
+  filter(!is.na(net_income), article == "kolb2012")
