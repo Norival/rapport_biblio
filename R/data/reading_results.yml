@@ -1,0 +1,216 @@
+name: reading_results
+description: results extracted from the studies
+fields:
+  - name: article
+    title: article
+    type: string
+    description: article's unique id, it refers to the bibtex database
+  - name: year
+    title: year
+    type: integer
+    description: the year considered
+  - name: weed_density
+    title: weeds density considered
+    type: number
+    unit: grains/ha
+    description: the density of weeds for that treatment
+  - name: weed_species
+    title: weed species
+    type: string
+    description: weed species considered in the treatment
+  - name: crop_density
+    title: crop density
+    type: number
+    unit: g/ha
+    description: 
+  - name: type
+    title: type
+    type: string
+    description: the type of experiment (control or treatment)
+  - name: treatment
+    title: treatment
+    type: string
+    description: the id of the treatment, might be study specific
+  - name: row_spacing
+    title: row spacing
+    type: number
+    unit: cm
+    description: the crop row spacing considered, when relevant
+  - name: days_after_sowing
+    title: days after sowing
+    type: integer
+    unit: days
+    description: the number of days after sowing the crop where the measures
+      were made
+  - name: soil_work
+    title: soil work
+    type: stirng
+    description: what type of soil work were done (e.g. ploughing, harrowing...)
+  - name: herbicide
+    title: the herbicide(s) used
+    type: string
+    description: the herbicide(sà considered. If several molecules, they are separated with a '+'
+  - name: treatment_timing
+    title: treatment timing
+    type: string
+    description: > the timing of herbicide treatment, it can ben one of POST
+      (Post emergence,EPOST (Early Post emergence), LPOST (Late Post emergence)
+      or PRE (Pre emergence)
+  - name: n_treatments
+    title: n treatments
+    type: integer
+    description: the number of treatments applied to the crop during the growing season
+  - name: application_rate
+    title: application rate
+    type: num
+    unit: g a.i./ha
+    description: the application rate of the herbicide
+  - name: statistic
+    title: statistic
+    type: string
+    description: the statistic being used for the analysis of results
+  - name: weed_percent_control
+    title: weed percent control
+    type: number
+    unit: percent
+    description: the percent of weed that have been removed by the treatment
+  - name: weed_percent_control_CI_min
+    title: weed percent control min CI
+    type: number
+    unit: percent
+    description: the percent of weed that have been removed by the treatment, min CI95
+  - name: weed_percent_control_CI_max
+    title: weed percent control man CI
+    type: number
+    unit: percent
+    description: the percent of weed that have been removed by the treatment, man CI95
+  - name: n_ears
+    title: number of ears
+    type: number
+    unit: ears/plant
+    description: the number of ears per plant
+  - name: n_rows
+    title: number of rows
+    type: number
+    unit: n_row/ear
+    description: the number of row per ear
+  - name: crop_ag_biomass
+    title: crop aboveground biomass
+    type: number
+    unit: g/ha
+    description: aboveground parts dry biomass of crop
+  - name: kernels_per_row
+    title: kernels per row
+    type: number
+    unit: kernels/row
+    description: the number of kernels per row
+  - name: kernels_per_plant
+    title: kernels per plant
+    type: number
+    unit: kernels/plant
+    description: the mean number of kernels per plant
+  - name: kernel_weight
+    title: kernel weight
+    type: number
+    unit: g
+    description: the mean weight of one kernel
+  - name: crop_leaf_area
+    title: crop leaf area
+    type: number
+    unit: cm^2
+    description: the total leaf area of the plant
+  - name: r_increase
+    title: R increase
+    type: number
+    description: the R^2 for the yield variation, xhen present
+  - name: n_obs
+    title: number of observations
+    type: number
+    description: the numbers of observations on which rely the statistic
+  - name: p
+    title: p value
+    type: number
+    description: the p value for the experiment
+  - name: grain_yield_quant
+    title: quantitative grain yield
+    type: number
+    unit: tons/ha
+    description: the grain yield of crop
+  - name: percent_decrease_yield
+    title: percent decrease of yield
+    type: number
+    unit: percent
+    description: the percentage of decrease observed on the grain yield
+  - name: percent_decrease_ag_biomass
+    title: percent decrease of aboveground biomass
+    type: number
+    unit: percent
+    description: the percentage of decrease observed on the crop aboveground biomass
+  - name: percent_decrease_ug_biomass
+    title: percent decrease of underground biomass
+    type: number
+    unit: percent
+    description: the percentage of decrease observed on the crop underground biomass
+  - name: grain_yield_qual
+    title: qualitative variation of grain yield
+    type: string
+    description: qualitative variation of grain yield (stable, decrease, increase)
+  - name: oil_yield
+    title: oil yield
+    type: number
+    unit: tons/ha
+    description: the oil yield of crop
+  - name: crop_n_uptake
+    title: crop N uptake
+    type: number
+    unit: mg/plant
+    description: the total uptake of N by the plant
+  - name: crop_p_uptake
+    title: crop P uptake
+    type: number
+    unit: mg/plant
+    description: the total uptake of P by the plant
+  - name: crop_k_uptake
+    title: crop K uptake
+    type: number
+    unit: mg/plant
+    description: the total uptake of K by the plant
+  - name: crop_height
+    title: crop height
+    type: number
+    unit: cm
+    description: the height of the crop
+  - name: weed_density_quant
+    title: quantitative weed density
+    type: number
+    unit: plants/m^2
+    description: the density of weeds
+  - name: weed_density_qual
+    title: qualitative weed density
+    type: string
+    description: qualitative variation of weed density (stable, decrease, increase)
+  - name: weed_ag_biomass_quant
+    title: quantitative weeds aboveground biomass
+    type: number
+    unit: g/ha
+    description: aboveground parts dry biomass of weeds
+  - name: weed_ag_biomass_qual
+    title: qualitative weeds aboveground biomass
+    type: number
+    unit: g/ha
+    description: qualitative aboveground parts dry biomass of weeds
+  - name: weed_height
+    title: weed height
+    type: number
+    unit: cm
+    description: mean height of the weeds
+  - name: weed_n_uptake
+    title: weed N uptake
+    type: number
+    unit: mg/plant
+    description: the total uptake of N by the plant
+  - name: net_income
+    title: net income
+    type: number
+    unit: USD
+    description: the net income generated by the crop
