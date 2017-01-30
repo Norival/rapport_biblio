@@ -1,4 +1,4 @@
-A lack of standardization among studies may temper the negatice effects of weeds-crop competition
+A lack of standardization among studies may temper the negative effects of weeds-crop competition
 =================================================================================================
 
 
@@ -18,14 +18,14 @@ variety of metrics used on weeds and crops.
 First, what appears most relevant is a huge lack of standardization among these
 papers, which did not allow for a proper quantitative summary of the results.
 
-From the 54 articles first selected, only 40 could be reviewed.
-16 studies were conducted in North America, 12 in Europe, 10 in Asia and 2 in
-South America.
+From the 54 articles first selected, only 40 could be reviewed, including 16
+studies conducted in North America, 12 in Europe, 10 in Asia and 2 in South
+America.
 The dominant crop is wheat, with 20 studies, then corn (18 studies) and oilseed
 rape (2 studies).
 5 % are greenhouses experiment and, among the field experiments, only 12 % are
 from actual farms.
-70 % of studies test the effect of a single herbicide, 18 % are using 2
+70 % of studies assess the effect of a single herbicide, 18 % are using 2
 herbicides and 12 % are using 3 or more herbicides.
 Only 16 % of studies are testing multiple doses of herbicides.
 49 % of studies do not mention the weed richness, 13 % consider a single
