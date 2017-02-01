@@ -16,11 +16,7 @@ fields:
   - name: experiment_type
     title: experiment type
     type: string
-    description: the type of experiment (e.g. field, greenhouse, ...)
-  - name: farmer
-    title: actual farm
-    type: boolean
-    description: whether or not the experiment took place in an actual farm
+    description: the type of experiment (exp_field, farmer_field or greenhouse)
   - name: n_farms
     title: number of farms
     type: integer

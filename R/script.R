@@ -99,16 +99,9 @@ rg_crops$species %>%
 # theme(axis.title = element_text(size = 15),
 #       axis.text = element_text(size = 12))
 
-# percent of greenhouse experiments
+# percentage of each experiment type
 rg_protocol %>%
   group_by(experiment_type) %>%
-  summarise(count = length(unique(article))) %>%
-  mutate(percent = count / sum(count) * 100)
-
-# percent of experimental farms vs actual farms
-rg_protocol[rg_protocol$experiment_type != "greenhouse", ] %>%
-  .[!is.na(.$farmer), ] %>%
-  group_by(farmer) %>%
   summarise(count = length(unique(article))) %>%
   mutate(percent = count / sum(count) * 100)
 
