@@ -258,6 +258,18 @@ Ajout de la colonne oil_yield en tonnes/ha.
 
 ### hamouz2013
 
+Cet article regarde l'effet de la réduction de la dose d'herbicides sur le
+rendement et plus particulièrement en appliquant les herbicides seulement aux
+endroits où il y a des adventices.
+
+Les mesures faites sur les adventices servent uniquement à définir le traitement
+hebricide et le seuil de tolérance.
+Elles ne sont pas reliées au rendement et l'efficacité des herbicides n'est pas
+mentionnée.
+
+Il conclue que l'application site-specific est plus efficace que l'application
+blanket, quelquesoit le seuil de tolérance.
+
 Il faut rechercher les codes EPPO des espèces adventices.
 `other_dicot` et `other_monocot` correspondent à l'ensemble des adventices de la
 parcelle autre que les trois nommées.

@@ -36,5 +36,4 @@
 (F) @read @results freeman2004 00 the effects of timing of control of weeds on the yield of winter oilseed rape (brassica napus), in the context of the potential commercialization of herbicide-tolerant winter rape
 (F) @read @results unay2006 00 effects of different herbicides and application times on the apical development and grain yield of wheat (triticum aestivum l.)
 (H) @find @general_info mason1996effect 08 effect of weeds and nitrogen fertiliser on yield and grain protein concentration of wheat
-(H) @read @results hamouz2009 02 impact of site-specific weed management on herbicide savings and winter wheat yield
 (H) @read @results young1994tillage 43 tillage and weed management affects winter-wheat yield in an integrated pest-management system

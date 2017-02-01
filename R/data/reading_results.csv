@@ -351,3 +351,7 @@ bijanzadeh2010,2005,,,,treatment,,,112,,trifluralin+hadoxyfo+pronamide,1200+100+
 bijanzadeh2010,2005,,,,treatment,,,112,,trifluralin+hadoxyfo+pronamide,1200+200+1500,,,,,,,,,,,,,,,,,2996,,,,,1.364,,,,,,,52.2,,,,
 bijanzadeh2010,2005,,,,treatment,,,112,,trifluralin+hadoxyfo+isoxaben,1200+100+500,,,,,,,,,,,,,,,,,3347,,,,,1.533,,,,,,,36.7,,,,
 bijanzadeh2010,2005,,,,treatment,,,112,,trifluralin+hadoxyfo+isoxaben,1200+200+250,,,,,,,,,,,,,,,,,3183,,,,,1.446,,,,,,,33.5,,,,
+hamouz2013,,,,,control,blanket,,,,,,,,,,,,,,,,,,,,,,8497,,,,,,,,,,,,,,,,
+hamouz2013,,,,,treatment,low_threshold,,,,,,,,,,,,,,,,,,,,,,8647,,,,,,,,,,,,,,,,
+hamouz2013,,,,,treatment,middle_threshold,,,,,,,,,,,,,,,,,,,,,,8747,,,,,,,,,,,,,,,,
+hamouz2013,,,,,treatment,high_threshold,,,,,,,,,,,,,,,,,,,,,,8752,,,,,,,,,,,,,,,,
