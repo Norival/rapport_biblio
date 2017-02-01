@@ -1,20 +1,26 @@
 ---
-title: "Rapport bibliographique"
-author: "Xavier Laviron"
+title: "Résultats rapport bibliographique"
 date: \today
 lang: fr
 fontsize: 12pt
-output: pdf_document
+output:
+  pdf_document:
+    fig_caption: true
 ---
 
 Résumé des données
 ==================
 
 ### Informations générales
-
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/',
+                      echo=FALSE, warning=FALSE, message=FALSE)
+```
 ```{r load_pkgs_and_datas, echo=FALSE, eval=TRUE}
+library(dplyr)
 library(magrittr)
 library(ggplot2)
+library(stringi)
 
 rg_general  <- read.csv("data/reading_general.csv", stringsAsFactors = FALSE)
 rg_protocol <- read.csv("data/reading_protocol.csv", stringsAsFactors = FALSE)
@@ -29,41 +35,77 @@ for (i in 1:nrow(rg_results)) {
   rg_results$crop_species[i] <- 
     rg_crops$species[rg_crops$article == rg_results$article[i]][1]
 }
+
+# group countries by continent
+for (i in 1:nrow(rg_general)) {
+  rg_general$continent[i] <-
+    rg_general$country[i] %>%
+    switch(.,
+           australia  = "oceania",
+           bohemia    = "europe",
+           brazil     = "south_america",
+           bulgaria   = "europe",
+           canada     = "north_america",
+           croatia    = "europe",
+           denmark    = "europe",
+           france     = "europe",
+           germany    = "europe",
+           india      = "asia",
+           iran       = "asia",
+           pakistan   = "asia",
+           poland     = "europe",
+           spain      = "europe",
+           turkey     = "asia",
+           uk         = "europe",
+           usa        = "north_america",
+           "unknown")
+}
 ```
 
-Il y a `r unique(rg_general$article) %>% length()` articles complétés.
-Au total, les études ont été portées dans `r unique(rg_general$country) %>%
-length()` pays différents.
+Il y a `r unique(rg_general$article) %>% length()` articles complétés dont
+`r unique(rg_results$article) %>% length()` avec les résultats.
 
-```{r countries, echo=FALSE}
-aggregate(rg_general$country,
-          by  = list(id = rg_general$article, country = rg_general$country),
-          FUN = "length")[,2:3] %>%
-  ggplot(., aes(x = country)) +
-  geom_bar() +
-  theme_bw() +
-  xlab("Pays") +
-  ylab("n") +
-  theme(axis.title = element_text(size = 15),
-        axis.text = element_text(size = 12),
-        axis.text.x = element_text(angle = 90, hjust = 1, vjust = .5))
+#### Nombre d'articles par continent
+```{r continents, echo=FALSE}
+# number of articles per continent
+rg_general[!(duplicated(rg_general$article)),] %>%
+  group_by(continent) %>%
+  summarise(count = length(continent)) %>%
+  mutate(percent = count / sum(count) * 100) %>%
+  arrange(desc(percent)) %>%
+  knitr::kable()
 ```
 
-### Informations sur les cultures
-
-```{r crop_species, echo=FALSE}
-aggregate(rg_crops$species,
-          by  = list(id = rg_crops$article, species = rg_crops$species),
-          FUN = "length")[,2:3] %>%
-  ggplot(., aes(x = species)) +
-  geom_bar() +
-  xlab("Espèce cultivée") +
-  ylab("n") +
-  theme_bw() +
-  theme(axis.title = element_text(size = 15),
-        axis.text = element_text(size = 12))
+#### Proportions du type d'expérimentation
+```{r experiment_type}
+# percentage of each experiment type
+rg_protocol %>%
+  group_by(experiment_type) %>%
+  summarise(count = length(unique(article))) %>%
+  mutate(percent = count / sum(count) * 100) %>%
+  knitr::kable()
 ```
-```{r crop_metrics, echo=FALSE}
+
+#### Proportion d'espèces cultivées
+```{r crop_species, echo=FALSE, fig.width=4, fig.height=2.5}
+# get the percentage of each crops, grouped by genus
+rg_crops$species %>%
+  gsub(pattern = "..\\>", replacement = "XX") %>%
+  gsub(pattern = "ZEA[\\+[:upper:][:digit:]]*", replacement = "ZEAXX") %>%
+  cbind.data.frame(article = rg_crops$article, genus = .) %>%
+  .[.$genus != "",] %>%
+  group_by(genus) %>%
+  summarise(count = length(unique(article))) %>%
+  mutate(percent = count / sum(count) * 100) %>%
+  ggplot(., aes(x = genus, y = count)) +
+    geom_bar(stat = 'identity') +
+    xlab("Espèce cultivée") +
+    ylab("n") +
+    theme_bw() +
+    theme(axis.title  = element_text(size = 15),
+          axis.text   = element_text(size = 12))
+```
+```{r crop_metrics, echo=FALSE,eval=F}
 aggregate(rg_crops$metric,
           by  = list(id = rg_crops$article, metric = rg_crops$metric),
           FUN = "length")[,2:3] %>%
@@ -78,51 +120,152 @@ aggregate(rg_crops$metric,
         axis.text.x = element_text(angle = 90, hjust = 1, vjust = .5))
 ```
 
-### Informations sur les adventices
+#### Nombre d'herbicides
+```{r herbicides}
+# get the number of herbicide used
+n_herb <- numeric(nrow(rg_crops))
+for (i in 1:nrow(rg_crops)) {
+  n_herb[i] <- length(stri_split(rg_crops$herbicide[i], fixed = "+", simplify = TRUE))
+}
+cbind(rg_crops, n_herb) %>%
+  group_by(n_herb) %>%
+  summarise(count = length(unique(article))) %>%
+  mutate(percent = round(count / sum(count) * 100, 1)) %>%
+  knitr::kable()
+```
 
-```{r weeds_metrics, echo=FALSE}
-aggregate(rg_weeds$metric,
-          by  = list(id = rg_weeds$article, metric = rg_weeds$metric),
-          FUN = "length")[,2:3] %>%
+#### Nombre de doses d'herbicides
+```{r n_doses}
+# single dose or multiple doses tested ?
+rg_crops %>%
+  .[!is.na(.$application_rate), ] %>%
+  group_by(article, herbicide)  %>%
+  summarise(n_dose = length(unique(application_rate))) %>%
+  group_by(n_dose) %>%
+  summarise(count = length(unique(article))) %>%
+  mutate(percent = round(count / sum(count) * 100, 2)) %>%
+  knitr::kable()
+```
+
+#### Métriques utilisées sur les cultures
+```{r metrics_crop}
+# metrics used to quantify the impact of weeds
+rg_crops %>%
   .[.$metric != "", ] %>%
-  ggplot(., aes(x = metric)) +
-  geom_bar() +
-  xlab("Métrique") +
-  ylab("n") +
-  theme_bw() +
-  theme(axis.title  = element_text(size = 15),
-        axis.text   = element_text(size = 12),
-        axis.text.x = element_text(angle = 90))
-```
-```{r weeds_species, echo=FALSE}
-aggregate(rg_weeds$n_species,
-          by  = list(id = rg_weeds$article, n_species = rg_weeds$n_species),
-          FUN = "length")[,2:3] %>%
-  ggplot(., aes(x = n_species)) +
-  geom_bar() +
-  theme_bw() +
-  theme(axis.title  = element_text(size = 15)) +
-  theme(axis.text   = element_text(size = 12)) +
-  theme(panel.grid  = element_blank()) +
-  scale_x_continuous(breaks = seq(1, 22))
+  group_by(metric) %>%
+  summarise(count = length(unique(article))) %>%
+  mutate(percent = round(count / sum(count) * 100, 2)) %>%
+  arrange(desc(count)) %>%
+  knitr::kable()
 ```
 
-### Résultats
+#### Nombre d'adventices considérées
+```{r n_weeds}
+# mean number of weeds
+rg_weeds %>%
+  # .[!is.na(.$n_species), ] %>%
+  group_by(n_species) %>%
+  summarise(count = length(unique(article))) %>%
+  mutate(percent = round(count / sum(count) * 100, 2),
+         mean = round(mean(n_species, na.rm = TRUE), 2)) %>%
+  knitr::kable()
+```
 
-```{r grain_yield, echo=FALSE}
-# mean grain yield by treatment and crop species
-aggregate(data = rg_results,
-          grain_yield_quant ~ article + type + crop_species,
-          FUN = "mean", na.rm = TRUE) %>%
-  aggregate(data = .,
-            grain_yield_quant ~ type + crop_species,
-            FUN = "mean", na.rm = TRUE) %>%
-  ggplot(., aes(x = type, y = grain_yield_quant, fill = crop_species)) +
-  geom_bar(stat = "identity", position = "dodge") +
-  xlab("Traitement") +
-  ylab("Rendement en grains (kg/ha)") +
+#### Origine des adventices
+```{r n_natural_weeds}
+# percent of studies considering "natural" weeds
+rg_weeds %>%
+  group_by(origin) %>%
+  summarise(count = length(unique(article))) %>%
+  mutate(percent = round(count / sum(count) * 100, 2)) %>%
+  arrange(desc(percent)) %>%
+  knitr::kable()
+```
+
+#### Métriques utilisées sur les adventices
+```{r metrics_weeds}
+# metrics used to quantify the impact of weeds
+rg_weeds %>%
+  .[.$metric != "", ] %>%
+  group_by(metric) %>%
+  summarise(count = length(unique(article))) %>%
+  mutate(percent = round(count / sum(count) * 100, 2)) %>%
+  arrange(desc(count)) %>%
+  knitr::kable()
+```
+
+
+Résultats
+---------
+
+### Variation du rendement en grain de la culture
+
+Moyenne et écart-type du rendement en fonction du traitement pour les articles
+reportant une valeur quantitative.
+
+```{r results_yield}
+# results on grain yield
+summary_yield_quant <-
+  rg_results %>%
+  .[!is.na(.$grain_yield_quant), ] %>%
+  group_by(article, type) %>%
+  summarise(mean_yield = round(mean(grain_yield_quant), 2),
+            n = length(grain_yield_quant),
+            sd = round(sd(grain_yield_quant), 2))
+summary_yield_quant %>%
+  knitr::kable()
+
+summary_yield_quant %>%
+  ggplot(aes(x = article, y = mean_yield, fill = type)) +
+    geom_bar(stat = "identity", position = "dodge")+
+    theme_bw() +
+  theme(axis.title  = element_text(size = 21),
+        axis.text   = element_text(size = 19),
+        legend.title = element_text(size = 21),
+        axis.text.x = element_text(angle = 90, hjust = 1, vjust = .5),
+        legend.text = element_text(size = 19))
+```
+
+### Variation du pourcentage de contrôle des adventices
+
+Pourcentage de contrôle des adventices par rapport à un témoin non traité.
+
+```{r results_control, fig.height=5}
+summary_percent_control <-
+  rg_results %>%
+  .[!is.na(.$weed_percent_control), ] %>%
+  filter(type == "treatment") %>%
+  group_by(article) %>%
+  summarise(mean_control = mean(weed_percent_control))
+
+summary_percent_control %>%
+  ggplot(aes(x = article, y = mean_control)) +
+    geom_bar(stat = "identity", position = "dodge")+
+    theme_bw() +
+    theme(axis.title  = element_text(size = 21),
+          axis.text   = element_text(size = 19),
+          legend.text = element_text(size = 19))
+```
+
+### Variation de la densité d'adventices
+```{r results_density}
+summary_weed_density <-
+  rg_results %>%
+  .[!is.na(.$weed_density_quant), ] %>%
+  group_by(article, type) %>%
+  summarise(mean_density = round(mean(weed_density_quant), 2),
+            n = length(weed_density_quant),
+            sd = round(sd(weed_density_quant), 2))
+
+summary_weed_density %>%
+  knitr::kable()
+
+summary_weed_density %>%
+  ggplot(aes(x = article, y = mean_density, fill = type)) +
+  geom_bar(stat = "identity", position = "dodge")+
   theme_bw() +
-  theme(axis.title  = element_text(size = 15)) +
-  theme(axis.text   = element_text(size = 12)) +
-  theme(panel.grid  = element_blank())
+  theme(axis.title  = element_text(size = 21),
+        axis.text   = element_text(size = 19),
+        legend.title = element_text(size = 21),
+        legend.text = element_text(size = 19))
 ```

@@ -186,6 +186,14 @@ results_yield <-
   filter(percent_dec != 0)
 mean(results_yield$percent_dec)
 
+summary_yield_quant %>%
+  ggplot(aes(x = article, y = yield, fill = type)) +
+    geom_bar(stat = "identity", position = "dodge")+
+    theme_bw() +
+    theme(axis.title  = element_text(size = 15),
+          axis.text   = element_text(size = 12),
+          axis.text.x = element_text(angle = 90, hjust = 1, vjust = .5))
+
 # results for iqbal
 rg_results %>%
   filter(article == "iqbal1999")
@@ -193,3 +201,18 @@ rg_results %>%
 # economic analyses
 rg_results %>%
   filter(!is.na(net_income), article == "kolb2012")
+
+rg_results$weed_percent_control
+summary_percent_control <-
+  rg_results %>%
+  .[!is.na(.$weed_percent_control), ] %>%
+  filter(type == "treatment") %>%
+  group_by(article) %>%
+  summarise(mean_control = mean(weed_percent_control))
+summary_percent_control %>%
+  ggplot(aes(x = article, y = mean_control)) +
+    geom_bar(stat = "identity", position = "dodge")+
+    theme_bw() +
+    theme(axis.title  = element_text(size = 15),
+          axis.text   = element_text(size = 12),
+          axis.text.x = element_text(angle = 90, hjust = 1, vjust = .5))
