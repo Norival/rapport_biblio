@@ -216,3 +216,65 @@ summary_percent_control %>%
     theme(axis.title  = element_text(size = 15),
           axis.text   = element_text(size = 12),
           axis.text.x = element_text(angle = 90, hjust = 1, vjust = .5))
+
+# -- maps ----------------------------------------------------------------------
+
+library(maps)
+library(tikzDevice)
+
+# define a clear theme for the maps
+theme_clean <- function(base_size = 12) {
+  require(grid) # Needed for unit() function
+  theme_grey(base_size) %+replace%
+    theme(axis.title = element_blank(),
+          axis.text = element_blank(),
+          panel.background = element_blank(),
+          panel.grid = element_blank(),
+          axis.ticks.length = unit(0, "cm"),
+          axis.ticks.margin = unit(0, "cm"),
+          panel.spacing = unit(0, "lines"),
+          plot.margin = unit(c(0, 0, 0, 0), "lines"),
+          complete = TRUE)
+}
+
+# get the data for world map
+# TODO: find another data, this one is buggy for mercator projections...
+world <-
+  map_data("world") %>%
+  mutate(region = tolower(region))
+
+# map the number of articles per country
+p <-
+  rg_general %>%
+  group_by(country) %>%
+  summarise(count = length(unique(article))) %>%
+  merge(world, ., by.x = "region", by.y = "country", all.x = TRUE) %>%
+  arrange(group, order) %>%
+  ggplot(aes(x = long, y = lat, group = group, fill = as.factor(count))) +
+  geom_polygon(colour = "black") +
+  coord_fixed() +
+  coord_map() +
+  labs(fill = "Nombre d'études") +
+  theme_clean() +
+  expand_limits(x = world$long, y = world$lat) +
+  lims(x = c(-200, 200), y = c(-180, 180)) +
+  theme(legend.position = "bottom")
+ggsave("../../report/img/map_world.pdf", plot = p, scale = 0.4)
+# tikz("map_world.tex")
+# p
+# dev.off()
+
+
+# table for the evolution by year and by continent
+sum_continent <-
+  rg_general %>%
+  group_by(continent) %>%
+  summarise(n = length(unique(article)),
+            year_min = min(year_start),
+            year_max = max(year_end),
+            duration = round(mean(year_end - year_start + 1), 1))
+library(xtable)
+con <- file("sum_continent.tex", open = "w")
+writeLines(text = print(xtable(x = sum_continent)), con = con)
+  writeLines(text = ., con = con)
+close(con)
