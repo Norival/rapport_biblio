@@ -292,7 +292,11 @@ sum_empiric <-
   rg_protocol %>%
   group_by(experiment_type, empiric) %>%
   summarize(count = length(unique(article)),
-            n_plots = round(mean(n_plots, na.rm = TRUE), 2)) %>%
+            .n_plots = round(mean(n_plots, na.rm = TRUE), 2),
+            min_n_plots = round(min(n_plots, na.rm = TRUE), 2),
+            max_n_plots = round(max(n_plots, na.rm = TRUE), 2)) %>%
+  print()
+sd(rg_protocol$n_plots, na.rm = TRUE)
   rbind.data.frame(., 
                    c("greenhouse", TRUE, 0, 0),
                    c("exp_field", TRUE, 0, 0)) %>%
@@ -329,6 +333,19 @@ sum_truc <-
 rg_protocol %>%
   # group_by(experiment_type, empiric, weedfree_control, weedy_control, cropfree_control) %>%
   # group_by(experiment_type, empiric, weedfree_control) %>%
-  group_by(experiment_type, empiric, weedy_control) %>%
-  # group_by(experiment_type, empiric, cropfree_control) %>%
+  # group_by(experiment_type, empiric, weedy_control) %>%
+  group_by(experiment_type, empiric, cropfree_control) %>%
   summarise(count = length(unique(article)))
+
+# generate bibliographic list
+con <- file("../../report/tex/ref_list.tex", open = "w")
+cat("% list of references generated on", date(), "\n", file = con)
+for (bib in levels(as.factor(rg_general$article))) {
+  cat("\\nocitesec{", bib, "}\n", sep = "", file = con)
+}
+close(con)
+
+rg_protocol %>%
+  filter(weedfree_control == FALSE,
+         weedy_control == FALSE,
+         cropfree_control == FALSE)
