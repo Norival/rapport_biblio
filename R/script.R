@@ -276,5 +276,59 @@ sum_continent <-
 library(xtable)
 con <- file("sum_continent.tex", open = "w")
 writeLines(text = print(xtable(x = sum_continent)), con = con)
-  writeLines(text = ., con = con)
 close(con)
+
+
+# financing
+rg_general %>%
+  group_by(financing) %>%
+  summarise(count = length(unique(article))) %>%
+  mutate(percent = count / sum(count) * 100)
+
+# type of experience
+# With dirty hack to show empty levels in summary table: I cannot make
+# tidyr::complete() work...
+sum_empiric <-
+  rg_protocol %>%
+  group_by(experiment_type, empiric) %>%
+  summarize(count = length(unique(article)),
+            n_plots = round(mean(n_plots, na.rm = TRUE), 2)) %>%
+  rbind.data.frame(., 
+                   c("greenhouse", TRUE, 0, 0),
+                   c("exp_field", TRUE, 0, 0)) %>%
+  mutate(count = as.numeric(count),
+         n_plots = as.numeric(n_plots)) %>%
+  arrange(experiment_type)
+
+con <- file("sum_empiric.tex", open = "w")
+writeLines(text = print(xtable(x = sum_empiric), include.rownames = FALSE), con = con)
+close(con)
+
+# graph: this graph is weird
+# aa %>%
+#   ggplot(aes(x = experiment_type, y = n_plots, fill = empiric)) +
+#   geom_bar(stat = 'identity', position = "dodge")
+
+# heatmap showing the differences in methods betwenn empiric and expe
+sum_truc <-
+  rg_protocol %>%
+  group_by(experiment_type, empiric) %>%
+  # group_by(experiment_type, empiric, weedfree_control, weedy_control, cropfree_control) %>%
+  summarize(count = length(unique(article)),
+            n_wf = length(filter(weedfree_control == TRUE)),
+            n_plots = round(mean(n_plots, na.rm = TRUE), 2)) %>%
+  print()
+  rbind.data.frame(., 
+                   c("greenhouse", TRUE, 0, 0),
+                   c("exp_field", TRUE, 0, 0)) %>%
+  mutate(count = as.numeric(count),
+         n_plots = as.numeric(n_plots)) %>%
+  arrange(experiment_type)
+
+# exp field n weed_free
+rg_protocol %>%
+  # group_by(experiment_type, empiric, weedfree_control, weedy_control, cropfree_control) %>%
+  # group_by(experiment_type, empiric, weedfree_control) %>%
+  group_by(experiment_type, empiric, weedy_control) %>%
+  # group_by(experiment_type, empiric, cropfree_control) %>%
+  summarise(count = length(unique(article)))
