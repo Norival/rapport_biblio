@@ -349,3 +349,119 @@ rg_protocol %>%
   filter(weedfree_control == FALSE,
          weedy_control == FALSE,
          cropfree_control == FALSE)
+
+
+# get the number of herbicide used
+n_herb <- numeric(nrow(rg_crops))
+
+for (i in 1:nrow(rg_crops)) {
+  n_herb[i] <- length(stri_split(rg_crops$herbicide[i], fixed = "+", simplify = TRUE))
+}
+cbind(rg_crops, n_herb) %>%
+  group_by(n_herb) %>%
+  summarise(count = length(unique(article))) %>%
+  mutate(percent = round(count / sum(count) * 100, 1)) %>%
+  print()
+mean(n_herb)
+
+# single dose or multiple doses tested ?
+aa <-
+  rg_crops %>%
+  .[!is.na(.$application_rate), ] %>%
+  group_by(article, herbicide)  %>%
+  summarise(n_dose = length(unique(application_rate))) %>%
+  group_by(n_dose) %>%
+  summarise(count = length(unique(article))) %>%
+  mutate(percent = round(count / sum(count) * 100, 2)) %>%
+  mutate(mean = mean(n_dose))
+
+weighted.mean(aa$n_dose, w = aa$count)
+
+herbs <- numeric(0)
+
+for (i in 1:nrow(rg_crops)) {
+  herbs[i] <- length(stri_split(rg_crops$herbicide[i], fixed = "+", simplify = TRUE))
+}
+herbs <-
+  rg_crops %>%
+  filter(herbicide != "no_herbicide", herbicide != "") %>%
+  .$herbicide %>%
+  stri_split(fixed = "+", simplify = TRUE) %>%
+  as.character() %>%
+  unique() %>%
+  sort()
+herbs <- herbs[herbs != ""]
+  print()
+
+rg_crops %>%
+  filter(herbicide != "no_herbicide", herbicide != "") %>%
+  stri_split(fixed = "+", simplify = TRUE) %>%
+  as.character() %>%
+  unique() %>%
+  sort()
+herbs <- herbs[herbs != ""]
+  print()
+
+rg_crops$herbicide %>%
+  stri_split(fixed = "+", simplify = TRUE)
+
+tab_herbs <- data.frame(article = character(0),
+                        herb    = character(0),
+                        dose = numeric(0),
+                        stringsAsFactors = FALSE)
+for (i in 1:nrow(rg_crops)) {
+  herb <-
+    stri_split(rg_crops$herbicide[i], fixed = "+", simplify = TRUE) %>%
+    as.character()
+  dose <-
+    stri_split(rg_crops$application_rate[i], fixed = "+", simplify = TRUE) %>%
+    as.character()
+
+  tab_herbs <-
+    rbind.data.frame(tab_herbs, cbind(rg_crops$article[i], herb, dose),
+                     stringsAsFactors = FALSE)
+}
+colnames(tab_herbs) <- c("article", "herb", "dose")
+
+tab_herb_sum <-
+  tab_herbs %>%
+  mutate(dose = as.numeric(dose)) %>%
+  group_by(herb) %>%
+  summarise(count = length(unique(article)),
+            dose = mean(dose, na.rm = TRUE))
+
+con <- file("sum_herbs.tex", open = "w")
+writeLines(text = print(xtable(x = tab_herb_sum, include.rownames = FALSE)), con = con)
+close(con)
+
+# -- cutlures ------------------------------------------------------------------
+# get the percentage of each crops, grouped by genus
+rg_crops$genus <-
+  rg_crops$species %>%
+  gsub(pattern = "..\\>", replacement = "XX") %>%
+  gsub(pattern = "ZEA[\\+[:upper:][:digit:]]*", replacement = "ZEAXX")
+
+p <-
+  rg_crops %>%
+  filter(genus != "") %>%
+  group_by(genus, gmo) %>%
+  # group_by(genus, gmo) %>%
+  summarise(count = length(unique(article))) %>%
+  mutate(percent = count / sum(count) * 100) %>%
+  ggplot(aes(x = genus, y = count, fill = gmo)) +
+    geom_bar(stat = 'identity') +
+    xlab("Espèce cultivée") +
+    ylab("Nombre d'études") +
+    theme_bw() +
+    labs(fill = "OGM") +
+    theme(axis.title  = element_text(size = 15),
+          axis.text   = element_text(size = 12),
+          panel.grid = element_blank(),
+          axis.text.x = element_text(angle = 30, hjust = 1, vjust = 1.1)) +
+    scale_x_discrete(labels = c("\\textit{B. napus}", "\\textit{H. vulgare}",
+                                "\\textit{T. aestivum}", "\\textit{V. sativa}",
+                                "\\textit{Z. mays}"))
+
+tikz("../../report/img/crops.tex", height = 3.3, width = 5)
+plot(p)
+dev.off()
