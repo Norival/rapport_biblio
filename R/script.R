@@ -79,7 +79,7 @@ aggregate(rg_general$country,
   geom_bar() +
   theme(axis.title = element_text(size = 15),
         axis.text = element_text(size = 12))
-ggsave("countries.png", path = graphs_dir)
+# ggsave("countries.png", path = graphs_dir)
 
 
 # --- GENERAL INFORMATIONS ABOUT CROPS ----------------------------------------
@@ -292,16 +292,14 @@ sum_empiric <-
   rg_protocol %>%
   group_by(experiment_type, empiric) %>%
   summarize(count = length(unique(article)),
-            .n_plots = round(mean(n_plots, na.rm = TRUE), 2),
+            n_plots = round(mean(n_plots, na.rm = TRUE), 2),
             min_n_plots = round(min(n_plots, na.rm = TRUE), 2),
             max_n_plots = round(max(n_plots, na.rm = TRUE), 2)) %>%
-  print()
-sd(rg_protocol$n_plots, na.rm = TRUE)
   rbind.data.frame(., 
                    c("greenhouse", TRUE, 0, 0),
                    c("exp_field", TRUE, 0, 0)) %>%
-  mutate(count = as.numeric(count),
-         n_plots = as.numeric(n_plots)) %>%
+  mutate(count    = as.numeric(count),
+         n_plots  = as.numeric(n_plots)) %>%
   arrange(experiment_type)
 
 con <- file("sum_empiric.tex", open = "w")
@@ -314,20 +312,19 @@ close(con)
 #   geom_bar(stat = 'identity', position = "dodge")
 
 # heatmap showing the differences in methods betwenn empiric and expe
-sum_truc <-
-  rg_protocol %>%
-  group_by(experiment_type, empiric) %>%
-  # group_by(experiment_type, empiric, weedfree_control, weedy_control, cropfree_control) %>%
-  summarize(count = length(unique(article)),
-            n_wf = length(filter(weedfree_control == TRUE)),
-            n_plots = round(mean(n_plots, na.rm = TRUE), 2)) %>%
-  print()
-  rbind.data.frame(., 
-                   c("greenhouse", TRUE, 0, 0),
-                   c("exp_field", TRUE, 0, 0)) %>%
-  mutate(count = as.numeric(count),
-         n_plots = as.numeric(n_plots)) %>%
-  arrange(experiment_type)
+# sum_truc <-
+#   rg_protocol %>%
+#   group_by(experiment_type, empiric) %>%
+#   # group_by(experiment_type, empiric, weedfree_control, weedy_control, cropfree_control) %>%
+#   summarize(count = length(unique(article)),
+#             n_wf = length(filter(weedfree_control == TRUE)),
+#             n_plots = round(mean(n_plots, na.rm = TRUE), 2)) %>%
+#   rbind.data.frame(., 
+#                    c("greenhouse", TRUE, 0, 0),
+#                    c("exp_field", TRUE, 0, 0)) %>%
+#   mutate(count = as.numeric(count),
+#          n_plots = as.numeric(n_plots)) %>%
+#   arrange(experiment_type)
 
 # exp field n weed_free
 rg_protocol %>%
@@ -344,11 +341,6 @@ for (bib in levels(as.factor(rg_general$article))) {
   cat("\\nocitesec{", bib, "}\n", sep = "", file = con)
 }
 close(con)
-
-rg_protocol %>%
-  filter(weedfree_control == FALSE,
-         weedy_control == FALSE,
-         cropfree_control == FALSE)
 
 
 # get the number of herbicide used
@@ -391,7 +383,6 @@ herbs <-
   unique() %>%
   sort()
 herbs <- herbs[herbs != ""]
-  print()
 
 rg_crops %>%
   filter(herbicide != "no_herbicide", herbicide != "") %>%
@@ -400,7 +391,6 @@ rg_crops %>%
   unique() %>%
   sort()
 herbs <- herbs[herbs != ""]
-  print()
 
 rg_crops$herbicide %>%
   stri_split(fixed = "+", simplify = TRUE)
@@ -454,14 +444,45 @@ p <-
     ylab("Nombre d'études") +
     theme_bw() +
     labs(fill = "OGM") +
-    theme(axis.title  = element_text(size = 15),
-          axis.text   = element_text(size = 12),
+    theme(axis.title  = element_text(size = 12),
+          axis.text   = element_text(size = 9),
           panel.grid = element_blank(),
           axis.text.x = element_text(angle = 30, hjust = 1, vjust = 1.1)) +
     scale_x_discrete(labels = c("\\textit{B. napus}", "\\textit{H. vulgare}",
                                 "\\textit{T. aestivum}", "\\textit{V. sativa}",
-                                "\\textit{Z. mays}"))
+                                "\\textit{Z. mays}")) +
+  scale_fill_discrete(labels = c("Non", "Oui"))
 
-tikz("../../report/img/crops.tex", height = 3.3, width = 5)
+tikz("../../report/img/crops.tex", height = 3, width = 4)
 plot(p)
 dev.off()
+
+
+# -- adventices ----------------------------------------------------------------
+
+# mean number of weeds
+rg_weeds %>%
+  filter(!is.na(species)) %>%
+  group_by(n_species) %>%
+  summarise(count = length(unique(article))) %>%
+  mutate(percent = round(count / sum(count) * 100, 2),
+         mean = round(mean(n_species, na.rm = TRUE), 2),
+         sum = sum(count)) %>%
+  knitr::kable()
+
+rg_weeds %>%
+  filter(species != "NA") %>%
+  group_by(article) %>%
+  mutate(n_cons = length(unique(species))) %>%
+  group_by(n_cons) %>%
+  summarise(n = length(unique(article))) %>%
+  mutate(mean = mean(n_cons)) %>%
+  knitr::kable()
+
+# percent of studies considering "natural" weeds
+rg_weeds %>%
+  group_by(origin) %>%
+  summarise(count = length(unique(article))) %>%
+  mutate(percent = round(count / sum(count) * 100, 2)) %>%
+  arrange(desc(percent)) %>%
+  knitr::kable()
