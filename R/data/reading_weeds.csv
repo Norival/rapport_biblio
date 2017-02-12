@@ -44,7 +44,7 @@ cox2006,,5,CYPFE,plants,natural,,weed_density
 cox2006,,5,CYPFE,plants,natural,,weed_height
 cox2006,,5,SINAR,plants,natural,,weed_density
 cox2006,,5,SINAR,plants,natural,,weed_height
-rueda2011,2008,NA,,plants,natural,,weed_percent_control
+rueda2011,2008,NA,NA,plants,natural,,weed_percent_control
 monks1996,1992,3,PANTE,plants,natural,,weed_percent_control
 monks1996,1992,3,CASOB,plants,natural,,weed_percent_control
 monks1996,1992,3,IPOSS,plants,natural,,weed_percent_control
@@ -169,7 +169,7 @@ sharma2011seed,,5,CYPRO,plants,natural,NA,weed_n_uptake
 sharma2011seed,,5,RUMDE,plants,natural,NA,weed_p_uptake
 sharma2011seed,,5,ANGAR,plants,natural,NA,weed_k_uptake
 sharma2011seed,,5,CHEAL,plants,natural,NA,weed_density
-sharma2011seed,,5,,plants,natural,NA,weed_percent_control
+sharma2011seed,,5,NA,plants,natural,NA,weed_percent_control
 weber2013influence,,NA,NA,NA,NA,NA,NA
 delchev2015durum,,NA,NA,NA,NA,NA,NA
 gaba2016herbicides,2007,108,POLAV,plants,natural,NA,weed_richness
@@ -190,10 +190,10 @@ freeman2004,2000,3,STEME,plants,planted,600,weed_ag_biomass
 freeman2004,2000,3,HORVX,plants,planted,400,weed_ag_biomass
 unay2006,,NA,NA,plants,natural,NA,NA
 young1994,,NA,NA,plants,natural,NA,NA
-cox2005weed,,NA,,plants,natural,NA,weed_density
-mueller2013winter,,,,plants,natural,NA,weed_percent_control
-mueller2013winter,,,,plants,natural,NA,weed_density
-mueller2013winter,,,,plants,natural,NA,weed_richness
-mueller2013winter,,,,plants,natural,NA,weed_ag_biomass
-mueller2013winter,,,,plants,natural,NA,weed_n_uptake
-mueller2013winter,,,,plants,natural,NA,weed_c_uptake
+cox2005weed,,NA,NA,plants,natural,NA,weed_density
+mueller2013winter,,,NA,plants,natural,NA,weed_percent_control
+mueller2013winter,,,NA,plants,natural,NA,weed_density
+mueller2013winter,,,NA,plants,natural,NA,weed_richness
+mueller2013winter,,,NA,plants,natural,NA,weed_ag_biomass
+mueller2013winter,,,NA,plants,natural,NA,weed_n_uptake
+mueller2013winter,,,NA,plants,natural,NA,weed_c_uptake
